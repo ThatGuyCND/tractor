@@ -9,7 +9,7 @@ $ sudo gem install bundler
 $ bundle
 ```
 
-Next you will either want to point your server at the app folder, or install Grunt (preferred method). To install to install Grunt you will first need [Node](http://nodejs.org/download/) installed. Then:
+Next you will either want to point your server at the app folder, or install Grunt (preferred method). To install Grunt you will first need [Node](http://nodejs.org/download/) and [NPM](https://npmjs.org/) installed. Then:
 
 ```shell
 $ sudo npm install
