@@ -2,7 +2,7 @@
 
 /* Directives */
 
-angular.module('ngProtobotsApp')
+angular.module('ngTractor')
   .directive('partial', function($compile) {
     return {
       restrict: "E",

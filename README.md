@@ -1,8 +1,8 @@
 ## About
-What is protobots, you ask? Why would you use it?
+What is Tractor, you ask? Why would you use it?
 
 ## Installation
-After downloading Protobots, you need to make sure you have the appropriate Ruby gems. To do this, we use bundler.
+After downloading Tractor, you need to make sure you have the appropriate Ruby gems. To do this, we use bundler.
 
 ```shell
 $ sudo gem install bundler
@@ -15,22 +15,22 @@ Next you will either want to point your server at the app folder, or install Gru
 $ sudo npm install
 ```
 
-This will download all of the appropriate javascript packages needing to create the server. Once this is complete you can run "grunt server" and Protobots will spin up a grunt server and open up the start page for you.
+This will download all of the appropriate javascript packages needing to create the server. Once this is complete you can run "grunt server" and Tractor will spin up a grunt server and open up the start page for you.
 
 ## Editing the Home Page
-To edit the start page in Protobots simply add valid markup to the views/home.html file. All pages inherit the basic HTML structure of index.html which includes ```<html>```  ```<head>```  ```<body>``` and a ```<div class="page">``` page wrapper.
+To edit the start page in Tractor simply add valid markup to the views/home.html file. All pages inherit the basic HTML structure of index.html which includes ```<html>```  ```<head>```  ```<body>``` and a ```<div class="page">``` page wrapper.
 
 ## Creating New Pages
 Any html file placed into the views directory can be accessed by visiting ```<root_url>/#/file_name```. So to create an about-us or blog page simply create ```app/views/about-us.html``` or ```app/views/blog.html``` file.
 
 # Glossary
 
-Terms specific to the functionality of protobots.
+Terms specific to the functionality of Tractor.
 
 ## Partials
 To create a HTML snippet or "partial", just create a new html file in the views/partials directory. The partial may only contain a single parent element, but can have as many child elements as needed.
 
-To include a partial into your homepage Protobots comes with a custom directive called <partial>. So if you have a partial called "navigation.html" in your partials folder this is the markup to insert into your home page:
+To include a partial into your homepage Tractor comes with a custom directive called <partial>. So if you have a partial called "navigation.html" in your partials folder this is the markup to insert into your home page:
 
 ```html
 <partial file="navigation"></partial>
@@ -46,7 +46,7 @@ Partials can also be called from within other partials. When doing so you will a
 
 ## Layout and Regions
 
-One of the most powerful features of Protobots is template inheritance. With it you are able to create various static templates and  dynamically apply them to pages of content.
+One of the most powerful features of Tractor is template inheritance. With it you are able to create various static templates and  dynamically apply them to pages of content.
 
 Template inheritance allows you to define all of your regions along with classes, ID's, aria roles in a single place, and use a set of regions for many pages.
 
@@ -65,7 +65,7 @@ Create an html file in the views/layouts folder. Best practice is to append the 
 <footer id="page-footer"> </footer>
 ```
 
-To convert this to a Protobots template file you will simply add a "region" attribute to each of the elements that you will be placing content into, and give it an appropriate name. Here is what your home_layout.html file will look once that is done:
+To convert this to a Tractor template file you will simply add a "region" attribute to each of the elements that you will be placing content into, and give it an appropriate name. Here is what your home_layout.html file will look once that is done:
 
 ```html
 <header region="header" id="page-header"> </header>
@@ -79,7 +79,7 @@ To convert this to a Protobots template file you will simply add a "region" attr
 ```
 ### Using a Layout
 
-Going back to our home.html page, there are 2 things we'll want to do in order to start using this template. First off we declare which template we want to inherit using Protobot's ```<template>``` directive:
+Going back to our home.html page, there are 2 things we'll want to do in order to start using this template. First off we declare which template we want to inherit using Tractor's ```<template>``` directive:
 
 ```html
 <layout file="home_layout">
@@ -92,7 +92,7 @@ Going back to our home.html page, there are 2 things we'll want to do in order t
 </layout>
 ```
 
-Secondly we need to place all of our markup and partials into a region using Protobot's ```<region>``` directive:
+Secondly we need to place all of our markup and partials into a region using Tractor's ```<region>``` directive:
 
 ```html
 <layout file="home_layout">

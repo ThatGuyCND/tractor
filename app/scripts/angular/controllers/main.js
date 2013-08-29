@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ngProtobotsApp')
+angular.module('ngTractor')
 
 
 // function PagesController($scope, $http, $route, $routeParams, $compile) {

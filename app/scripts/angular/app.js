@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ngProtobotsApp', [])
+angular.module('ngTractor', [])
   .config(function ($locationProvider, $routeProvider) {
     //$locationProvider.html5Mode(true);
     $routeProvider.
