@@ -1,0 +1,39 @@
+.content {
+	@include respond-to($small) {
+		width: 100%;
+		float: left;
+		margin-right: -($advert-size + $gutter-width);
+	}
+	.hero {
+		@include respond-to($small) {
+			margin-right: $advert-size + $gutter-width;
+		}
+		.small {
+			@include with-grid-settings(12,4em,.1em) {
+				@include span-columns(2,6);
+				@include nth-omega(3n);
+			}
+		}
+	}
+}
+
+.advert {
+	@include respond-to($small) {
+		width: $advert-size;
+		float: right;
+	}
+}
+
+.footer .small {
+	@include respond-to($medium, max-width) {
+		@include span-columns(4,12);
+		@include nth-omega(4n);
+		&:nth-child(3n) {
+			display: none;
+		}
+	}
+	@include respond-to($medium) {
+		@include span-columns(3,12);
+		@include nth-omega(4n);
+	}
+}

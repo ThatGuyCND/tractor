@@ -21,42 +21,21 @@ a:hover{
 	color: $link-dark-blue;
 }
 
-.button{
-  	margin-top:1em;
-  	height:3em;
-  	padding:0 5em;
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 1em;
 }
 
-.page{
-	box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.10);
+.header, .footer {
+	max-width: 1100px;
+	margin: 1em auto;
 }
 
-//header bits
-.header{
-	background:$lightest-grey;
-	h1{
-		text-align:center
-	}
-	h2{
-		@include respond-to($medium){
-			margin-top:0;
-		}
-	}
+.main {
+	@include container;
+	max-width: 1100px;
+	margin: 0 auto;
 }
 
-.introduction{
-	padding-bottom:3em;
-	.intro-text{
-		text-align:center;
-		@include respond-to($medium) {
-			padding-left:2em;
-			text-align:left;
-		};
-	}
-}
-
-
-
-.avatar-image img{
-  border-radius:50%;
-}

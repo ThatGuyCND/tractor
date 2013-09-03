@@ -1,0 +1,30 @@
+.cook-banner img{
+	@include with-grid-settings($gutter: 0em) {
+		@include span-columns(3,12);
+		@include nth-omega(4n);
+	} 
+}
+
+.cooking-essentials {
+	clear: both;
+	padding: 20px;
+	display: table;
+	.copy {
+		@include respond-to($medium) {
+			display: table-cell;
+			vertical-align: middle;
+			padding-right: $gutter-width;
+		}
+	}
+	.photos {
+		@include respond-to($medium) {
+			width: 400px;
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	.photo {
+		@include span-columns(4,12);
+		@include nth-omega(3n);
+	}
+}
