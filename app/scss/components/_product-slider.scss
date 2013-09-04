@@ -1,0 +1,22 @@
+.slider {
+  @extend %white-box;
+  margin-bottom: 1em;
+  .description {
+    text-align: center;
+    h4 {
+      @extend %caps-title;
+      margin-bottom: 0em;
+    }
+    p {
+      margin-top: .2em;
+    }
+  }
+  a {
+    @extend %bundle-link;
+  }
+  .slider-img {
+    img {
+      margin-bottom: 0;
+    }
+  }
+}

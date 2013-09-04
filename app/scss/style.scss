@@ -10,16 +10,7 @@
 @import "components/**/*";
 @import "layout/**/*";
 
-//animated links
-a{
-	color: $link-blue;
-	text-decoration: none;
-}
 
-a:hover{
-	transition: all 0.2s ease-in 0s;
-	color: $link-dark-blue;
-}
 
 img {
 	width: 100%;
@@ -28,14 +19,5 @@ img {
 	margin-bottom: 1em;
 }
 
-nav, .footer {
-	max-width: 1100px;
-	margin: 1em auto;
-}
 
-.main {
-	@include container;
-	max-width: 1100px;
-	margin: 0 auto;
-}
 

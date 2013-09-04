@@ -1,27 +1,13 @@
-.content {
-	@include respond-to($small) {
-		width: 100%;
-		float: left;
-		margin-right: -($advert-size + $gutter-width);
-	}
-	.hero {
-		@include respond-to($small) {
-			margin-right: $advert-size + $gutter-width;
-		}
-		.small {
-			@include with-grid-settings(12,4em,.1em) {
-				@include span-columns(2,6);
-				@include nth-omega(3n);
-			}
-		}
+nav, .footer {
+	margin: 1em auto;
+	@include with-grid-settings(12, 4.4em, 1.1em) {
+		@include container;
 	}
 }
 
-.advert {
-	@include respond-to($small) {
-		width: $advert-size;
-		float: right;
-	}
+.main {
+	@include container;
+	margin: 0 auto;
 }
 
 .footer .small {

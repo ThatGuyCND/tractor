@@ -1,0 +1,29 @@
+.content {
+  @include respond-to($small) {
+    width: 100%;
+    float: left;
+    margin-right: -($advert-size + $gutter-width);
+  }
+  .hero {
+    @include clearfix;
+    @include respond-to($small) {
+      margin-right: $advert-size + $gutter-width;
+    }
+    .small-group {
+      @include clearfix;
+    }
+    .small {
+      @include with-grid-settings($gutter:.1em) { // Smaller Gutter
+        @include span-columns(2,6);
+        @include nth-omega(3n);
+      }
+    }
+  }
+}
+
+.advert {
+  @include respond-to($small) {
+    width: $advert-size;
+    float: right;
+  }
+}

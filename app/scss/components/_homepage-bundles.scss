@@ -1,7 +1,6 @@
 .bundle-date {
-  @extend %grey-box;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  @extend %white-box;
+  margin-bottom: 1em;
   text-align: center;
   h2 {
    @extend %caps-title;
@@ -11,7 +10,7 @@
   }
 }
 .bundle-large {
-  @extend %grey-box;
+  @extend %white-box;
   margin-bottom: 1em;
   text-align: center;
   img {
@@ -36,7 +35,7 @@
 }
 .bundle-small {
   @include clearfix;
-  @extend %grey-box;
+  @extend %white-box;
   text-align: center;
   margin-bottom: 1em;
   h3 {
@@ -57,16 +56,18 @@
 
 .quote {
   background: darken($light-grey,15%);
-  padding: 3.5em 3.5em;
-  height: 100%;
+  padding: 5.5em 3.5em;
+
   border-radius: 50% 0 50% 50%;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .more-things {
+  margin-bottom: 1em;
   text-align: center;
   @include clearfix;
-  @extend %grey-box;
+  @extend %white-box;
   h2 {
     margin: 0 0 .4em;
     @extend %caps-title;
@@ -89,3 +90,4 @@
     @extend %bundle-link;
   }
 }
+

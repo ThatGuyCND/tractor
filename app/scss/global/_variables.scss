@@ -1,7 +1,7 @@
 $total-columns  : 12;
-$column-width   : 5.3em;
+$column-width   : 4em;
 $gutter-width   : 1.2em;
-$grid-padding   : 2 * $gutter-width;
+$grid-padding   : 0;
 
 
 // Breakpoints
@@ -21,11 +21,12 @@ $lightest-grey: #eee;
 
 //Font Stacks
 $sans-serif: helvetica, arial, sans-serif;
-
+$serif: georgia, serif;
 //Typography
-$copy-font-family: $sans-serif;
+$base-font-color: #666666;
+$copy-font-family: $serif;
 $copy-font-size: 16px;
-$copy-line-height: 1.8;
+$copy-line-height: 1.375;
 
 $header-font-family: $sans-serif;
 $header-font-weight: bold;

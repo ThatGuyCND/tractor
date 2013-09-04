@@ -1,0 +1,22 @@
+.cooking-essentials {
+	clear: both;
+	display: table;
+	.copy {
+		@include respond-to($medium) {
+			display: table-cell;
+			vertical-align: middle;
+			padding-right: $gutter-width;
+		}
+	}
+	.photos {
+		@include respond-to($medium) {
+			width: 400px;
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	.photo {
+		@include span-columns(2,6);
+		@include nth-omega(3n);
+	}
+}

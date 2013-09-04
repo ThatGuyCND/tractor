@@ -1,0 +1,17 @@
+.cooking-essentials {
+  @extend %white-box;
+  margin-bottom: 2em;
+  .copy {
+    text-align: center;
+    margin-bottom: 1em;
+    @include respond-to($medium) {
+      text-align: left;
+    }
+    h5 {
+      margin: 0;
+    }
+  }
+  a {
+    @extend %bundle-link;
+  }
+}

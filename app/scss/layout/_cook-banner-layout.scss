@@ -1,0 +1,6 @@
+.cook-banner img{
+  @include with-grid-settings($gutter: 0em) {
+    @include span-columns(3,12);
+    @include nth-omega(4n);
+  }
+}

@@ -1,0 +1,19 @@
+.content {
+  .hero {
+    margin-bottom: 1em;
+  }
+  .large {
+    margin-bottom: 0;
+  }
+  .small-group {
+    @extend %white-box;
+  }
+  .small {
+    margin-bottom: 0;
+  }
+}
+
+
+.advert {
+   margin-bottom: 1em;
+}

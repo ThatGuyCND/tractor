@@ -1,4 +1,4 @@
-%grey-box {
-	padding: 1em;
-	background: darken($light-grey,10%);
+%white-box {
+	padding: $gutter-width;
+	background: lighten($light-grey,10%);
 }

@@ -1,0 +1,10 @@
+.partyideas {
+	clear: both;
+	.small {
+		@include with-grid-settings($gutter:.1em) {
+			@include span-columns(3,12);
+			@include nth-omega(4n);
+		}
+	}
+}
+

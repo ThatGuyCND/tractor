@@ -12,7 +12,7 @@
         @include span-columns(6 omega,12);
       }
     }
-  }
+  } // End Grid Settings
   .bundle-date {
     clear: both;
     @include respond-to($medium){

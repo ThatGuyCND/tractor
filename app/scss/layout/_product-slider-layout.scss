@@ -1,0 +1,15 @@
+.slider {
+  @include respond-to($small) {
+    display: table;
+    .description {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0 10%;
+    }
+    .slider-img {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+

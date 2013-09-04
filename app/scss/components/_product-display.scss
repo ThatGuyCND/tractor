@@ -1,0 +1,18 @@
+.products {
+	@extend %white-box;
+	.product {
+		text-align: center;
+		margin-bottom: 1em;
+		h5 {
+			@extend %caps-title-small;
+			margin-bottom: 0;
+		}
+		p {
+			margin-top: .2em;
+			line-height: 1.2;
+		}
+		a {
+			@extend %bundle-link;
+		}
+	}
+}
