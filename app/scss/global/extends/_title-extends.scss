@@ -1,0 +1,34 @@
+%caps-title {
+	color: #171717;
+	display: inline-block;
+	font-family: din-condensed-web, sans-serif;
+	font-size: 29px;
+	font-weight: normal;
+	height: 33px;
+	letter-spacing: 1px;
+	line-height: 33px;
+	text-transform: uppercase;
+}
+
+%caps-title-small {
+	color: #171717;
+	cursor: auto;
+	font-family: din-condensed-web, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.2;
+	text-transform: uppercase;
+	&:hover {
+		color: #9dc82a;
+	}
+}
+
+%serif-title {
+	color: #171717;
+	cursor: auto;
+	font-family: acta-display, Georgia, serif;
+	font-size: 28px;
+	font-weight: 100;
+	line-height: 33px;
+	position: relative;
+}

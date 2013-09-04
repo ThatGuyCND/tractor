@@ -1,0 +1,16 @@
+nav {
+	position: relative;
+	ul {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	li {
+		list-style-type: none;
+		display: inline-block;
+	}
+	a {
+		@extend %bundle-link;
+		margin: 0 20px;
+	}
+}
