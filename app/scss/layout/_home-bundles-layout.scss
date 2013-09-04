@@ -1,0 +1,61 @@
+.toute {
+  clear: both;
+  @include with-grid-settings($gutter:3em){
+    .primary {
+      clear: both;
+      @include respond-to($small) {
+        @include span-columns(6,12);
+      }
+    }
+    .secondary {
+      @include respond-to($small) {
+        @include span-columns(6 omega,12);
+      }
+    }
+  }
+  .bundle-date {
+    clear: both;
+    @include respond-to($medium){
+      @include squish(2,2);
+      @include span-columns(8,12);
+    }
+  }
+  .quote {
+     @include span-columns(4 omega,6);
+  }
+  .bundle-small {
+    clear: both;
+    &:nth-child(2n+1) {
+      img {
+         @include span-columns(3 omega,6);
+      }
+      .description {
+        @include span-columns(3,6);
+      }
+    }
+     &:nth-child(2n) {
+      img {
+         @include span-columns(3,6);
+      }
+      .description {
+        @include span-columns(3 omega,6);
+      }
+    }
+  }
+}
+.more-things {
+  clear: both;
+  @include respond-to($medium) {
+    @include squish(1,1);
+  }
+  .thing {
+    @include respond-to($medium, max-width) {
+      @include span-columns(2,4);
+      @include nth-omega(2n);
+    }
+    @include respond-to($medium) {
+      @include span-columns(2,8);
+      @include nth-omega(4n);
+    }
+  }
+}
