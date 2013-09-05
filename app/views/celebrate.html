@@ -1,19 +1,20 @@
-<partial file="header"></partial>
+<layout file="internal-template">
 
-<div class="main">
-	<div class="content">
-		<partial file="hero"></partial>	
-		<partial file="hero"></partial>
-	</div>
-	<div class="advert">
-		<partial file="advert"></partial>		
-		<partial file="advert"></partial>		
-		<partial file="advert"></partial>		
-		<partial file="advert"></partial>		
-			
-	</div>
-	<partial file="party-ideas"></partial>
-	<partial file="party-ideas"></partial>
+	<region name="content">
+			<partial file="hero"></partial>	
+			<partial file="hero"></partial>
+	</region>
 
-</div>
-<partial file="footer"></partial>
+	<region name="advert">
+		<partial file="advert"></partial>		
+		<partial file="advert"></partial>		
+		<partial file="advert"></partial>		
+		<partial file="advert"></partial>		
+	</region>
+
+	<region name="middle">
+		<partial file="party-ideas"></partial>
+		<partial file="party-ideas"></partial>
+	</region>
+
+</layout>

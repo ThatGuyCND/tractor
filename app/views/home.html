@@ -1,33 +1,23 @@
-<partial file="header"></partial>
+<layout file="home-template">
 
-<div class="main">
-  <div class="toute">
+  <region name="topper">
     <partial file="bundle-date"></partial>
-    <div class="primary">
-      <partial file="bundle-large"></partial>
-      <partial file="quote"></partial>
+  </region>
 
-    </div>
-    <div class="secondary">
-       <partial file="bundle-small"></partial>
-       <partial file="bundle-small"></partial>
-       <partial file="bundle-small"></partial>
-       <partial file="bundle-small"></partial>
-    </div>
-  </div>
+  <region name="primary">  
+    <partial file="bundle-large"></partial>
+    <partial file="quote"></partial>
+  </region>
 
-  <partial file="more-things"></partial>
+  <region name="secondary">
+     <partial file="bundle-small"></partial>
+     <partial file="bundle-small"></partial>
+     <partial file="bundle-small"></partial>
+     <partial file="bundle-small"></partial>
+  </region>
 
-   <div class="toute">
-    <partial file="bundle-date"></partial>
-    <div class="primary">
-      <partial file="bundle-large"></partial>
-    </div>
-    <div class="secondary">
-       <partial file="bundle-small"></partial>
-       <partial file="bundle-small"></partial>
-       <partial file="bundle-small"></partial>
-    </div>
-  </div>
-</div>
-<partial file="footer"></partial>
+  <region name="middle">
+    <partial file="more-things"></partial>
+  </region>
+
+</layout>
