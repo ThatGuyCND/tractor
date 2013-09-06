@@ -1,0 +1,11 @@
+.bundle-date {
+  @extend %white-box;
+  margin-bottom: 1em;
+  text-align: center;
+  h2 {
+   @extend %caps-title;
+  }
+  p {
+    margin: 0;
+  }
+}

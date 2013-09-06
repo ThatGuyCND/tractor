@@ -1,0 +1,28 @@
+.more-things {
+  margin-bottom: 1em;
+  text-align: center;
+  @include clearfix;
+  @extend %white-box;
+  h2 {
+    margin: 0 0 .4em;
+    @extend %caps-title;
+  }
+  h3 {
+    @extend %caps-title-small;
+    margin: 0 0 .2em;
+  }
+  p {
+    line-height: 1.2;
+    margin: 0 0 .2em;
+    font-size: .9em;
+  }
+  img {
+    width: 70%;
+    margin: 0 auto 1em;
+    display: block;
+  }
+  a {
+    @extend %bundle-link;
+  }
+}
+
