@@ -5,14 +5,35 @@
   img {
     margin-bottom: -43px;
   }
-  h3 {
+  .nav-tabs {
     @extend %serif-title;
-    display: inline-block;
     position: relative;
     z-index: 10;
     background: white;
-     margin: 0 0 .3em;
-    padding: .2em 1em;
+    margin: 0;
+    padding: .2em;
+    li {
+      width: 50%;
+      text-align: center;
+      display: inline-block;
+      background: rgba(150,150,150,.1);
+      &.active {
+        background: rgba(0,0,0,.15);
+        a {
+          color: #171717;
+        }
+      }
+      a {
+        color: lighten(#171717,50%);
+        line-height: inherit;
+      }
+    }
+  }
+  .tab-pane {
+    display: none;
+    &.active {
+      display: block;
+    }
   }
   p {
     margin-bottom: 1em;
