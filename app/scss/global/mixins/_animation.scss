@@ -1,0 +1,72 @@
+@mixin animation($content) {
+  animation: $content;
+  -moz-animation: $content;
+  -webkit-animation: $content;
+}
+
+@mixin animation-play-state(
+    $state-1: running,
+    $state-2: false, $state-3: false, $state-4: false, $state-5: false, $state-6: false, $state-7: false, $state-8: false, $state-9: false,
+    $prefix: false
+  ) {
+
+  $full: compact($state-1, $state-2, $state-3, $state-4, $state-5, $state-6, $state-7, $state-8, $state-9);
+  $value: $full;
+
+  // running | paused
+  @if $prefix {
+    @include declaration(animation-play-state, $value, $prefix);
+  } @else {
+    @include experimental(animation-play-state, $value);
+  }
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} { @content; }
+  @-moz-keyframes #{$name} { @content; }
+  @-webkit-keyframes #{$name} { @content; }
+}
+
+/**
+ * Animations
+ *
+ *  - Menu Animations
+ */
+@include keyframes(showAnimation) {
+	0% {
+		@include transform(scaleY(0.1));
+	}
+	40% {
+		@include transform(scaleY(1.04));
+	}
+	60% {
+		@include transform(scaleY(0.98));
+	}
+	80% {
+		@include transform(scaleY(1.04));
+	}
+	100% {
+		@include transform(scaleY(0.98));
+	}				
+	80% {
+		@include transform(scaleY(1.02));
+	}
+	100% {
+		@include transform(scaleY(1));
+	}
+}
+
+@include keyframes(hideAnimation) {
+  0% {
+  	@include transform(scaleY(1));
+  }
+  60% {
+  	@include transform(scaleY(0.98));
+  }
+  80% {
+  	@include transform(scaleY(1.02));
+  }
+  100% {
+  	@include transform(scaleY(0));
+  }
+}

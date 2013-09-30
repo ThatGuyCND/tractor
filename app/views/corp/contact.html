@@ -1,0 +1,36 @@
+<layout file="main">
+  <region name="header">
+    <partial file="corp/site/header"></partial>
+  </region>
+  <region name="highlighted">
+    <partial file="corp/site/nav__main"></partial>
+  </region>
+  <region name="main-content">
+    <div class="l-2col col__12">
+      <h2 class="page--title">Contact Us</h2>
+      <div class="col__12-7 col-left">
+        <form action="" id="form--contact" class="form form--contact" name="form_contact" method="post">
+          <p ph-txt="" words="15"></p>
+          <input type="text" class="full-name" alt="Please enter your full name." required="" name="name" placeholder="Name" />
+          <input type="email" class="email" required="" name="email" placeholder="your.email@domain.ext" />
+          <input type="tel" class="phone" name="telephone" placeholder="+1 (407) 234-5555" />
+          <input type="text" class="subject" list="subjects" name="subject" placeholder="Subject" />
+          <datalist id="subjects">
+            <option value="option 1"></option>
+            <option value="option 2"></option>
+            <option value="option 3"></option>
+            <option value="option 4"></option>
+          </datalist>
+          <textarea name="message" id="" cols="30" rows="16" class="message" required="" placeholder="Comments/Questions"></textarea>
+        </form>
+      </div>
+      <div class="col__12-5 col-right">
+        <h3 class="sub-heading">22nd Century Media</h3>
+        <partial file="corp/components/contact_office" repeat="2"></partial>
+      </div>
+    </div>
+  </region>
+  <region name="footer">
+    <partial file="corp/site/footer"></partial>
+  </region>
+</layout>

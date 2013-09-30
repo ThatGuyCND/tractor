@@ -1,0 +1,182 @@
+.dropdown {
+  @include respond-to($medium, max-width) {
+    position: relative;
+  
+  	[data-toggle="dropdown"] {
+  		display: block;
+  		padding: 10px;
+      
+      &:before {
+  			position: absolute;
+  			display: block;
+        content: '\25BC';
+  			font-size: 0.7em;
+  			top: 8px;
+  			right: 10px;
+  		}
+  	}
+  
+  	> .dropdown-menu {
+  		max-height: 0;
+  		overflow: hidden;
+  
+  		li {
+  			padding: 0;
+  
+  			a {
+  				display: block;
+  				padding: 10px 10px;
+  			}
+  		}
+  	}
+    
+    > input[type="checkbox"] {
+      opacity: 0;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 15%;
+      min-width: 32px;
+      height: 100%;
+      cursor: pointer;
+      z-index: 1;
+      
+      &:checked ~ .dropdown-menu {
+        max-height: 9999px;
+  			display: block;
+      }
+    }
+  }
+  
+  @include respond-to($medium) {
+    > input[type="checkbox"] {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+}
+
+/*
+.w-highlighted {
+  background-color: lighten($med-grey, 30%);
+}
+*/
+
+#primary-nav {
+  background-color: lighten($med-grey, 30%);
+  
+  @include respond-to($medium, max-width) {
+    > ul {
+      > li {
+        display: block;
+        position: relative;
+    		> a {
+      		display: block;
+      		padding: 10px;
+    		}
+      }
+    }
+  }
+  
+  @include respond-to($small, $medium) {
+    > ul {
+      font-size: 0;
+      > li {
+        display: inline-block;
+        width: 50%;
+        font-size: 1rem;
+/*
+        @include span-columns(6, 12);
+        
+        &:nth-child(2n + 2) {
+          @include omega;
+        }
+*/
+      }
+    }
+  }
+  
+  @include respond-to($medium) {
+    > ul {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+      position: relative;
+      
+      > li {
+        display: table-cell;
+        text-align: center;
+        
+        &:hover {
+          ul {
+            display: block;
+            visibility: visible;
+            z-index: 5;
+          }
+        }
+        
+        ul {
+          text-align: left;
+          background-color: $med-grey;
+          width: 100%;
+          
+          li {
+            display: inline-block;
+            
+            a:link,
+            a:visited {
+              padding: 0.25em 1em;
+            }
+          }
+        }
+        
+        &:last-child {
+          ul {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+  
+  a {
+    &:link,
+    &:visited {
+      color: $black;
+      display: block;
+      font-weight: bold;
+      padding: 0.25em 0.5em;
+    }
+  
+    &.active,
+    &.active-trail,
+    &:hover,
+    &:focus {
+      background-color: $med-grey;
+      color: $white;
+      font-weight: normal;
+    }
+  
+    &.active,
+    &.active-trail {
+      + ul {
+        display: block;
+        visibility: visible;
+        z-index: 1;
+      
+        a.active,
+        a.active-trail {
+          background-color: $white;
+          color: $black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  
+  ul {
+    @include ul-nostyle;
+  }
+}

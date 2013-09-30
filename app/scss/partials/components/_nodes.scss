@@ -1,0 +1,153 @@
+.page--title {
+  border-bottom: 3px solid $black;
+}
+
+.node--title {
+  margin-top: 0;
+}
+
+.block--title {
+  border-bottom: 2px solid $black;
+}
+
+.sub-heading {
+  margin-top: 0.675rem;
+}
+
+/** Elements
+ *   - Submission Info
+ */
+.node--submitted {
+  font-family: serif;
+  .byline {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .date {
+    font-size: 0.875em;
+  }
+  
+  @include respond-to($medium, max-width) {
+    border-color: $hero-grey transparent $black;
+    border-style: solid none;
+    border-width: 1px 0px;
+    padding: 0.25em 0;
+    
+    .byline,
+    .date {
+      display: inline-block;
+      font-size: 1em
+    }
+    
+    .byline {
+      margin-right: 0.5em;
+    }
+  }
+}
+
+/** Pages
+ *   - Contact
+ */
+.form--contact {
+  input {
+    display: block;
+    margin-bottom: 1em;
+    padding: 5px 8px;
+    width: 100%;
+    height: 32px;
+  }
+  
+  textarea {
+    padding: 8px;
+  }
+  
+  button {
+    margin-left: 156px;
+  }
+}
+
+/**
+ *   - Contact:
+ *     + Staff 
+ */
+.staff--member {
+  line-height: 1.3em;
+}
+
+.member--company-name {
+  margin-bottom: 0;
+}
+
+/**
+ *   - News:
+ *     + News Item - teaser
+ */
+.l-sub {
+  .node--news {
+    @include container($total-columns);
+    border-bottom: medium none;
+    &:first-child {
+      /* border-top: 1px solid $black;
+      padding-top: $base-line-height * 0.65; */
+    }
+    
+    &:last-child {
+      margin-bottom: -3em;
+    }
+  }
+}
+.news--full {
+  @include respond-to ($medium) {
+    border-right: 1px solid $black;
+    padding-right: emp($gutter-width) - 1px;
+  }
+}
+
+.news--teaser {
+  border-bottom: 1px solid $black;
+  margin-bottom:  $base-line-height;
+  padding-bottom: $base-line-height * 0.65;
+  
+  .node--links {
+    text-align: right;
+  }
+  
+  .read-more {
+    display: inline-block;
+    padding-right: 2em;
+    position: relative;
+    
+    &:before,
+    &:after {
+      @include transition(all 300ms ease);
+      content: "";
+      font-family: "linecons";
+      position: absolute;
+      width: $base-line-height;
+      height: $base-line-height;
+    }
+    
+    &:before {
+      @include border-radius(100px);
+      background-color: $link-blue;
+      top: (pem($base-line-height) - 1em) / 4;
+      right: 0;
+    }
+    
+    &:after {
+    	content: "\e033";
+    	color: $white;
+    	right: 0.175em;
+  	}
+  	
+  	&:hover {
+    	&:before {
+      	background-color: $link-dark-blue;
+    	}
+    	
+    	&:after {
+      	color: $lightest-grey;
+    	}
+  	}
+  }
+}

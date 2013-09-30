@@ -1,0 +1,31 @@
+<layout file="main">
+  <region name="header">
+    <partial file="corp/site/header"></partial>
+  </region>
+  <region name="highlighted">
+    <partial file="corp/site/nav__main"></partial>
+  </region>
+  <region name="main-content">
+    <div class="l-2col col__12">
+      <h2 class="page--title">Industry News</h2>
+      <div class="col__12-9 col-left">
+        <article class="node node--news news--full">
+          <h1 class="node--title" ph-txt="" words="14"></h1>
+          <partial file="corp/components/node"></partial>
+        </article>
+      </div>
+      <div class="col__12-3 col-right">
+        <header class="node--meta">
+          <partial file="corp/components/author"></partial>
+          <!-- <ui file="share"></ui> -->
+        </header>
+      </div>
+    </div>
+  </region>
+  <region name="sub-content">
+    <partial file="corp/components/news-item" repeat="2"></partial>
+  </region>
+  <region name="footer">
+    <partial file="corp/site/footer"></partial>
+  </region>
+</layout>

@@ -1,0 +1,80 @@
+.dropdown {
+  @include respond-to($medium, max-width) {
+  	a {
+    	text-decoration: none;
+    }
+  
+  	[data-toggle="dropdown"] {
+      &:before {
+  			color: #fff;
+  			@include transform(rotate(0deg));
+  			@include transition(transform 300ms);
+  		}
+  	}
+  
+  	> .dropdown-menu {
+  		@include ul-nostyle;
+  		@include transform(scaleY(0));
+  		@include transform-origin(50%, 0%);
+  		@include transition-property(max-height, transform);
+  		@include transition-duration(600ms, 300ms);
+  		@include transition-delay(0s);
+  		//@include animation(hideAnimation 400ms);
+  
+  		li {
+  			padding: 0;
+  
+  			a {
+  				@include double-shadow($gray);
+  				@include hover-style($gray);
+  				@include text-shadow(0 -1px 0 rgba(255,255,255,0.3));
+  				color: darken($gray, 50%);
+  				background: $gray;
+  			}
+  		}
+  	}
+    
+    > input[type="checkbox"] {
+      &:checked ~ .dropdown-menu {
+  			@include transform(scaleY(1));
+  			@include transition-property(max-height, transform);
+  			@include transition-duration(600ms, 300ms);
+    		@include transition-delay(0s);
+  			//@include animation(showAnimation 500ms);
+      }
+      
+      &:checked + a[data-toggle="dropdown"] {
+        &:before {
+          @include transform(rotate(-180deg));
+          @include transition(transform 300ms);
+        }
+      }
+      
+      &:hover + a[data-toggle="dropdown"],
+      &:focus + a[data-toggle="dropdown"] {
+      	@include transition(all 200ms ease-in 0s);
+    		background: lighten($main-nav-grey, 3%);
+      }
+    }
+  }
+}
+
+#primary-nav {
+  @include respond-to($medium, max-width) {
+    > ul {
+      > li {
+    		> a {
+      		@include double-shadow($main-nav-grey);
+      		@include hover-style($main-nav-grey);
+      		@include text-shadow(0 -1px 0 rgba($black, 0.3));
+      		color: white;
+      		background: $main-nav-grey;
+    		}
+      }
+    }
+  }
+  
+  ul {
+    @include ul-nostyle;
+  }
+}

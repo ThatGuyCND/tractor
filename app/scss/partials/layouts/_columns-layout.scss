@@ -1,0 +1,21 @@
+/**
+ * Column Classes
+ */
+@for $i from 1 through $total-columns {
+  .col__#{$total-columns}-#{$i} {
+    @include span-columns($total-columns);
+    @include respond-to($medium) {
+      @include span-columns($i);
+    }
+  }
+  
+  .col__#{$total-columns} {
+    @include container($total-columns);
+    margin-bottom: $grid-padding;
+    @include respond-to($medium) {
+      .col-right {
+        @include omega;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<layout file="main">
+  <region name="header">
+    <partial file="corp/site/header"></partial>
+  </region>
+  <region name="highlighted">
+    <partial file="corp/site/nav__main"></partial>
+  </region>
+  <region name="main-content">
+    <div class="l-2col col__12">
+      <h2 class="page--title">22nd Century Media Staff Directory</h2>
+      <div class="col__12-6 col-left">
+        <div class="block block--staff__list">
+          <h3 class="sub-heading">Southwest Office - Sales</h3>
+          <partial file="corp/components/staff" repeat="10"></partial>
+        </div>
+        <div class="block block--staff__list">
+          <h3 class="sub-heading">Southwest Office - Editorial</h3>
+          <partial file="corp/components/staff"></partial>
+        </div>
+      </div>
+      <div class="col__12-6 col-right">
+        <div class="block block--staff__list">
+          <h3 class="sub-heading">North Shore Office - Sales</h3>
+          <partial file="corp/components/staff" repeat="5"></partial>
+        </div>
+        <div class="block block--staff__list">
+          <h3 class="sub-heading">North Shore Office - Editorial</h3>
+          <partial file="corp/components/staff" repeat="5"></partial>
+        </div>
+      </div>
+    </div>
+  </region>
+  <region name="footer">
+    <partial file="corp/site/footer"></partial>
+  </region>
+</layout>
