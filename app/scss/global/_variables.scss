@@ -1,3 +1,4 @@
+$container-style: magic;
 $total-columns  : 12;
 $column-width   : 5.3em;
 $gutter-width   : 1.2em;
@@ -19,8 +20,17 @@ $med-grey:#484848;
 $light-grey: #ddd;
 $lightest-grey: #eee;
 
+$black: #1a1a1a;
+$trueBlack: #000;
+$white: #fcfcfc;
+$trueWhite: #fff;
+$orange: #C0392B;
+$blue: #2980B9;
+$gray: #EEE;
+
 //Font Stacks
-$sans-serif: helvetica, arial, sans-serif;
+$sans-serif: "Lato", helvetica, arial, sans-serif;
+$script: "Pacifico", "Brush Script MT", Optima, Segoe, "Segoe UI", cursive;
 
 //Typography
 $copy-font-family: $sans-serif;

@@ -6,3 +6,7 @@
 @function pem($pxval, $base: 16) {
   @return strip-unit($pxval) / $base * 1em;
 }
+
+@function emp($emval, $base: 16) {
+  @return (strip-unit($emval) * $base) + 0px;
+}

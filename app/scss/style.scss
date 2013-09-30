@@ -7,36 +7,92 @@
 @import "base/vendor/**/*";
 @import "base/html/**/*";
 @import "base/page/**/*";
-@import "components/**/*";
-@import "layout/**/*";
+@import "partials/components/**/*";
+//@import "partials/components/site/**/*";
+@import "partials/layouts/**/*";
+@import "theme/components/**/*";
+//@import "theme/components/site/**/*";
+@import "theme/layouts/**/*";
 
-//animated links
-a{
-	color: $link-blue;
-	text-decoration: none;
+*, *:before, *:after {
+	-webkit-border-sizing: border-box;
+	-moz-border-sizing: border-box;
+	border-sizing: border-box;
 }
 
-a:hover{
-	transition: all 0.2s ease-in 0s;
-	color: $link-dark-blue;
+//animated links
+a {
+	color: $link-blue;
+	text-decoration: none;
+	&:hover,
+	&:focus {
+  	transition: all 0.2s ease-in 0s;
+  	color: $link-dark-blue;
+	}
 }
 
 .button{
-  	margin-top:1em;
-  	height:3em;
-  	padding:0 5em;
+  	margin-top: 1em;
+  	height: 3em;
+  	padding: 0 5em;
 }
 
+/*
 .page{
 	box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.10);
+}
+*/
+
+//lists
+ul {
+  &.inline {
+    list-style: none outside none;
+    padding-left: 0;
+    
+    > li {
+      display: inline-block;
+    }
+  }
+  
+  &.links {
+    padding-left: 1em;
+    
+    &.inline {
+      padding-left: 0;
+    }
+    
+    > li {
+      position: relative;
+      vertical-align: top;
+    }
+  }
+  
+  &.menu {
+    @include respond-to($medium) {
+      > li {
+        position: static;
+      }
+      
+      ul {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        min-width: 100%;
+      }
+    }
+  }
 }
 
 //header bits
 .header{
-	background:$lightest-grey;
+	/* background:$lightest-grey; */
+	
 	h1{
 		text-align:center
 	}
+	
 	h2{
 		@include respond-to($medium){
 			margin-top:0;
@@ -44,19 +100,14 @@ a:hover{
 	}
 }
 
-.introduction{
-	padding-bottom:3em;
-	.intro-text{
-		text-align:center;
-		@include respond-to($medium) {
-			padding-left:2em;
-			text-align:left;
-		};
-	}
-}
-
-
-
-.avatar-image img{
-  border-radius:50%;
+.hidden {
+  @include hidden;
+  
+  + img,
+  + div,
+  + span,
+  + ul,
+  + ol {
+		margin-top: 78px;
+  }
 }

@@ -438,7 +438,6 @@ angular.module('ngTractor')
       }
     };
   })
-
   .directive( 'phTxt', [ 'TextGeneratorService', function ( TextGeneratorService ) {
     return {
       restrict: "EA",
@@ -471,20 +470,20 @@ angular.module('ngTractor')
     };
   }])
   .directive('tabs', function() {
-   return {
+    return {
      restrict: 'E',
      transclude: true,
      scope: {},
      controller: function($scope, $element) {
        var panes = $scope.panes = [];
-
+    
        $scope.select = function(pane) {
          angular.forEach(panes, function(pane) {
            pane.selected = false;
          });
          pane.selected = true;
        }
-
+    
        this.addPane = function(pane) {
          if (panes.length == 0) $scope.select(pane);
          panes.push(pane);
@@ -500,9 +499,9 @@ angular.module('ngTractor')
          '<div class="tab-content" ng-transclude></div>' +
        '</div>',
      replace: true
-   };
- }).
- directive('pane', function() {
+    };
+  })
+  .directive('pane', function() {
    return {
      require: '^tabs',
      restrict: 'E',
@@ -516,5 +515,41 @@ angular.module('ngTractor')
        '</div>',
      replace: true
    };
- });
+  })
+  .directive('activeLink', ['$location', function(location) {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs, controller) {
+        var clazz = attrs.activeLink;
+        var path = attrs.href;
+        path = path.substring(1); //hack because path does bot return including hashbang
+        scope.location = location;
+        scope.$watch('location.path()', function(newPath) {
+          if (path === newPath) {
+            element.addClass(clazz);
+          } else {
+            element.removeClass(clazz);
+          }
+        });
+      }
+    };
+  }])
+  .directive('activeTrail', ['$location', function(location) {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs, controller) {
+        var clazz = 'active-trail';
+        var path = attrs.activeTrail;
+        path = path.substring(1); //hack because path does bot return including hashbang
+        scope.location = location;
+        scope.$watch('location.path()', function(newPath) {
+          if (path === newPath) {
+            element.addClass(clazz);
+          } else {
+            element.removeClass(clazz);
+          }
+        });
+      }
+    };
+  }]);
 

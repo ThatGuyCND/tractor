@@ -1,21 +1,37 @@
 .page {
-
+  float: right;
 }
-.header {
 
+.page,
+.zone {
+  width: 100%;
+  position: relative;
 }
-.main {
 
-}
-.content {
+.l-header {}
+.l-highlighted {}
+.l-preface {}
+.l-main {}
+.l-sub {}
+.l-postscript {}
+.l-sidebar-first {}
+.l-sidebar-second {}
+.l-footer {}
+.l-footer-sub {}
 
-}
-.sidebar-first {
-
-}
-.sidebar-second {
-
-}
-.footer {
-
+.l-header,
+.l-highlighted,
+.l-preface,
+.l-main,
+.l-sub,
+.l-postscript,
+.l-sidebar-first,
+.l-sidebar-second,
+.l-footer,
+.l-footer-sub {
+  @include container;
+  @include respond-to($medium, max-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
