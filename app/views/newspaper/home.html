@@ -1,32 +1,34 @@
-<layout file="main">
+<layout file="sidebar__right">
   <region name="header">
     <partial file="newspaper/site/header"></partial>
   </region>
   <region name="highlighted">
     <partial file="newspaper/site/nav__main"></partial>
+    <partial file="newspaper/site/search"></partial>
+    <partial file="newspaper/components/breaking-news_single"></partial>
   </region>
   <region name="preface">
-    <partial file=""></partial>
-  </region>
-  <region name="sidebar-first">
-    <partial file=""></partial>
+    <partial file="newspaper/components/ad_big"></partial>
+    <partial file="newspaper/components/aotm"></partial>
   </region>
   <region name="main-content">
-    <partial file=""></partial>
+    <partial file="newspaper/components/section_teaser-listing"></partial>
+    <partial file="newspaper/components/section_teaser-listing"></partial>
+    <partial file="newspaper/components/section_teaser-listing"></partial>
+    <partial file="newspaper/components/section_teaser-listing"></partial>
   </region>
   <region name="sidebar-second">
-    <partial file=""></partial>
+    <partial file="newspaper/components/most_viewed"></partial>
+    <partial file="newspaper/components/reader_poll"></partial>
   </region>
   <region name="sub-content">
-    <partial file=""></partial>
   </region>
   <region name="postscript">
-    <partial file=""></partial>
   </region>
   <region name="footer">
     <partial file="newspaper/site/footer"></partial>
   </region>
   <region name="footer-sub">
-    <partial file="newspaper/components/copyright"></partial>
+    <partial file="newspaper/site/copyright"></partial>
   </region>
 </layout>

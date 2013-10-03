@@ -111,43 +111,44 @@
   .node--links {
     text-align: right;
   }
+}
+
+.read-more {
+  display: inline-block;
+  text-align: right;
+  padding-right: 2em;
+  position: relative;
   
-  .read-more {
-    display: inline-block;
-    padding-right: 2em;
-    position: relative;
-    
-    &:before,
-    &:after {
-      @include transition(all 300ms ease);
-      content: "";
-      font-family: "linecons";
-      position: absolute;
-      width: $base-line-height;
-      height: $base-line-height;
-    }
-    
-    &:before {
-      @include border-radius(100px);
-      background-color: $link-blue;
-      top: (pem($base-line-height) - 1em) / 4;
-      right: 0;
-    }
-    
-    &:after {
-    	content: "\e033";
-    	color: $white;
-    	right: 0.175em;
+  &:before,
+  &:after {
+    @include transition(all 300ms ease);
+    content: "";
+    font-family: "linecons";
+    position: absolute;
+    width: $base-line-height;
+    height: $base-line-height;
+  }
+  
+  &:before {
+    @include border-radius(100px);
+    background-color: $link-blue;
+    top: (pem($base-line-height) - 1em) / 4;
+    right: 0;
+  }
+  
+  &:after {
+  	content: "\e033";
+  	color: $white;
+  	right: 0.175em;
+	}
+	
+	&:hover {
+  	&:before {
+    	background-color: $link-dark-blue;
   	}
   	
-  	&:hover {
-    	&:before {
-      	background-color: $link-dark-blue;
-    	}
-    	
-    	&:after {
-      	color: $lightest-grey;
-    	}
+  	&:after {
+    	color: $lightest-grey;
   	}
-  }
+	}
 }

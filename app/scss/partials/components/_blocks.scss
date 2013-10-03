@@ -1,0 +1,33 @@
+.block--menu {
+  .block--title {
+    border-bottom: medium none;
+    font-size: 1.5em;
+  }
+}
+
+.block--title {
+  font-family: serif;
+}
+
+.block--popular-posts {
+  border-bottom: 1px solid $black;
+  
+  .view--footer {
+    text-align: right;
+  }
+}
+
+.block--webform {
+  .webform--footer {
+    text-align: right;
+  }
+}
+
+.block--breaking-news {
+  .block--title {
+    border-bottom: medium none;
+    display: inline;
+    float: left;
+    font-size: 1.5rem;
+  }
+}

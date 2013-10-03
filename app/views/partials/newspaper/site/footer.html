@@ -1,8 +1,8 @@
 <footer>
   <div class="block block--menu block--menu__sections footer--menu footer--menu__sections">
     <h2 class="block--title">Sections</h2>
-    <ul class="links menu">
-      <li>
+    <ul id="tallestMenu" class="links clearfix">
+      <li id="tallestlist">
         <a href="#/newspaper/news">News</a>
         <ul class="dropdown">
           <li><a href="#/newspaper/news_breaking">Breaking</a></li>
@@ -12,16 +12,7 @@
           <li><a href="#/newspaper/news_obits">Obituaries</a></li>
         </ul>
       </li>
-      <li>
-        <a href="#/newspaper/sports">Sports</a>
-        <ul class="dropdown">
-          <li><a href="#/newspaper/sports_high-school">High School</a></li>
-          <li><a href="#/newspaper/sports_youth">Youth</a></li>
-          <li><a href="#/newspaper/sports_aotw">Athlete of the Week</a></li>
-          <li><a href="#/newspaper/sports_aotm">Athlete of the Month</a></li>
-        </ul>
-      </li>
-      <li>
+      <li cssequalheight="tallestlist">
         <a href="#/newspaper/opinion">Opinion</a>
         <ul class="dropdown">
           <li><a href="#/newspaper/opinion_editor">From the Editor</a></li>
@@ -30,21 +21,30 @@
           <li><a href="#/newspaper/opinion_photo-poll">Photo Poll</a></li>
         </ul>
       </li>
-      <li>
-        <a href="#/newspaper/life-arts">Life &amp; Arts</a>
-        <ul class="dropdown">
-          <li><a href="#/newspaper/life-arts_dining">Dining Out</a></li>
-          <li><a href="#/newspaper/life-arts_movies">Movie Times</a></li>
-        </ul>
-      </li>
-      <li>
+      <li cssequalheight="tallestlist">
         <a href="#/newspaper/marketplace">Marketplace</a>
         <ul class="dropdown">
           <li><a href="#/newspaper/marketlace_classifieds">Classifieds</a></li>
           <li><a href="#/newspaper/marketplace_real-estate">Real Estate</a></li>
         </ul>
       </li>
-      <li>
+      <li cssequalheight="tallestlist">
+        <a href="#/newspaper/sports">Sports</a>
+        <ul class="dropdown">
+          <li><a href="#/newspaper/sports_high-school">High School</a></li>
+          <li><a href="#/newspaper/sports_youth">Youth</a></li>
+          <li><a href="#/newspaper/sports_aotw">Athlete of the Week</a></li>
+          <li><a href="#/newspaper/sports_aotm">Athlete of the Month</a></li>
+        </ul>
+      </li>
+      <li cssequalheight="tallestlist">
+        <a href="#/newspaper/life-arts">Life &amp; Arts</a>
+        <ul class="dropdown">
+          <li><a href="#/newspaper/life-arts_dining">Dining Out</a></li>
+          <li><a href="#/newspaper/life-arts_movies">Movie Times</a></li>
+        </ul>
+      </li>
+      <li cssequalheight="tallestlist">
         <a href="#/newspaper/hometown">Hometown Advantage</a>
         <ul>
           <li><a href="#/newspaper/hometown_benefits">Member Benefits</a></li>
@@ -57,7 +57,7 @@
   </div>
   <div class="block block--menu block--menu__publications footer--menu footer--menu__publications">
     <h2 class="block--title">Publications</h2>
-    <ul>
+    <ul class="links clearfix" cssequalheight="tallestMenu">
       <li>
         <a href="">Southwest Suburbs</a>
         <ul>
@@ -81,9 +81,9 @@
       </li>
     </ul>
   </div>
-  <div class="block block--menu block--menu__company footer--menu footer--menu__company">
+  <div class="block block--menu block--menu__company footer--menu footer--menu__company" cssequalheight="tallestMenu">
     <h2 class="block--title">Company</h2>
-    <ul>
+    <ul class="links clearfix" cssequalheight="tallestMenu">
       <li>
         <a href="">22nd Century Media</a>
         <ul>
@@ -97,9 +97,6 @@
         </ul>
       </li>
     </ul>
-  </div>
-  <div class="block block--copyright">
-    <p class="copyright">&copy; <a href="#/newspaper/sitemap">Copyright 2013</a> 22nd Century Media, LLC. All rights reserved.</p>
   </div>
 <!--
   <script type="text/javascript">

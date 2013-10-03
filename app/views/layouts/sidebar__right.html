@@ -1,6 +1,6 @@
 <!-- ZenCoding partial: layout[file=main]>(region[name=header]>partial[file=site/header])+(region[name=highlighted]>partial[file=site/nav__main])+(region[name=preface]>partial[file=])+(region[name=sidebar-first]>partial[file=])+(region[name=main-content]>partial[file=])+(region[name=sidebar-second]>partial[file=])+(region[name=sub-content]>partial[file=])+(region[name=postscript]>partial[file=])+(region[name=footer]>partial[file=site/footer])+(region[name=footer-sub]>partial[file=site/copyright]) -->
 
-<div class="container" id="container">
+<div class="container newspaper sidebar-right" id="container">
   <!-- <partial file="site/nav__off-canvas"></partial> -->
   <div class="z-header zone">
     <div class="w-header">
@@ -16,10 +16,13 @@
     </div>
   </div>
   <div class="z-content zone">
-    <div class="l-sidebar-first sidebar-first" region="sidebar-first"></div>
-    <div class="l-main main" region="main-content"></div>
-    <div class="l-sidebar-second sidebar-second" region="sidebar-second"></div>
-    <div class="l-sub sub" region="sub-content"></div>
+    <div class="w-content">
+      <div class="l-content">
+        <div class="l-main main" region="main-content"></div>
+        <div class="l-sidebar-second sidebar-second" region="sidebar-second"></div>
+        <div class="l-sub sub" region="sub-content"></div>
+      </div>
+    </div>
   </div>
   <div class="z-postscript zone">
     <div class="w-postscript">
@@ -29,6 +32,10 @@
   <div class="z-footer zone">
     <div class="w-footer">
       <div class="l-footer footer" region="footer"></div>
+    </div>
+  </div>
+  <div class="z-sub zone">
+    <div class="w-sub">
       <div class="l-footer-sub footer-sub" region="footer-sub"></div>
     </div>
   </div>

@@ -25,11 +25,11 @@
   			padding: 0;
   
   			a {
-  				@include double-shadow($gray);
-  				@include hover-style($gray);
+  				@include double-shadow($grey);
+  				@include hover-style($grey);
   				@include text-shadow(0 -1px 0 rgba(255,255,255,0.3));
-  				color: darken($gray, 50%);
-  				background: $gray;
+  				color: darken($grey, 50%);
+  				background: $grey;
   			}
   		}
   	}

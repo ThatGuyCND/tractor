@@ -551,5 +551,16 @@ angular.module('ngTractor')
         });
       }
     };
-  }]);
-
+  }])
+  .directive('cssequalheight', function () {
+    return {
+      restrict: 'A',
+      scope: {},
+      link: function (scope, element, attrs) {
+        var elementToCopyProperty = attrs.cssequalheight,
+        source = document.getElementById( elementToCopyProperty.toString() );
+        //set height
+        element[0].style.height = source.clientHeight + 'px';
+      }
+    };
+  });

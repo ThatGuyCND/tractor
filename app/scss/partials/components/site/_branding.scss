@@ -1,13 +1,15 @@
-#branding {
-  padding: 1em 0;
-}
-
-.branding--logo {
-  text-align: center;
+.corporate {
+  #branding {
+    padding: 1em 0;
+  }
   
-  img {
-    display: inline-block;
-    margin: 0 auto;
+  .branding--logo {
+    text-align: center;
+    
+    img {
+      display: inline-block;
+      margin: 0 auto;
+    }
   }
 }
 

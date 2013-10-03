@@ -22,7 +22,7 @@
 .l-header,
 .l-highlighted,
 .l-preface,
-.l-main,
+.l-content,
 .l-sub,
 .l-postscript,
 .l-sidebar-first,
@@ -33,5 +33,41 @@
   @include respond-to($medium, max-width) {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+.corporate {
+  .l-main {
+    @include container;
+    @include respond-to($medium, max-width) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.sidebar-left {
+  @include respond-to($medium) {
+    .l-sidebar-first {
+      @include span-columns(4);
+    }
+    
+    .l-main {
+      @include span-columns(8);
+      @include omega;
+    }
+  }
+}
+
+.sidebar-right {
+  @include respond-to($medium) {
+    .l-main {
+      @include span-columns(8);
+    }
+    
+    .l-sidebar-second {
+      @include span-columns(4);
+      @include omega;
+    }
   }
 }

@@ -1,14 +1,7 @@
 .w-footer {
-  background-color: $med-grey;
   color: $white;
   font-weight: 300;
   margin-top: 3em;
-}
-
-.l-footer {
-  a {
-    color: $white;
-  }
 }
 
 .block--menu__footer,
@@ -52,5 +45,90 @@
   > p {
     line-height: $base-line-height * $header-line-height;
     padding: 1em 0;
+  }
+}
+
+.block--menu__sections {
+  @include span-columns(6);
+  
+  .links {
+    border-right: 1px solid $black;
+    
+    > li {
+      @include span-columns(1, 3);
+      margin-bottom: 1.5em;
+      
+      &:nth-child(3n + 3) {
+        @include omega;
+      }
+    }
+    
+    ul {}
+  }
+}
+
+.block--menu__publications {
+  @include span-columns(4);
+  
+  .links {
+    border-right: 1px solid $black;
+    
+    > li {
+      @include span-columns(1, 2);
+      
+      &:last-child {
+        @include omega;
+      }
+    }
+  }
+}
+
+.block--menu__company {
+  @include span-columns(2);
+}
+
+.corporate {
+  .w-footer {
+    background-color: $med-grey;
+  }
+
+  .l-footer {
+    a {
+      color: $white;
+    }
+  }
+}
+
+.newspaper {
+  font-family: serif;
+  .w-footer {
+    background-color: $middle-grey;
+  }
+  .l-footer {  
+    .block--menu {
+      margin-bottom: 1.5em;
+      
+      &:last-child {
+        @include omega;
+      }
+  
+      ul {
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .links {
+        > li {
+          > a {
+            color: $black;
+            font-weight: 600;
+          }
+        }
+        ul {
+          font-size: 0.9em;
+        }
+      }
+    }
   }
 }

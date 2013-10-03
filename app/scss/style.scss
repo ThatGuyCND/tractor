@@ -100,7 +100,8 @@ ul {
 	}
 }
 
-.hidden {
+.hidden,
+.element-invisible {
   @include hidden;
   
   + img,
@@ -110,4 +111,8 @@ ul {
   + ol {
 		margin-top: 78px;
   }
+}
+
+.clearfix {
+  @include clearfix;
 }

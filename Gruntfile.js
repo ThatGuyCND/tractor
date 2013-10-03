@@ -249,6 +249,16 @@ module.exports = function (grunt) {
           ]
         }]
       }
+    },
+    bower: {
+      dev: {
+        dest: '<%= yeoman.dist %>/scripts'
+      }
+    },
+    'bower-install': {
+      target: {
+        html: '<%= yeoman.dist %>/index.html'
+      }
     }
   });
 
@@ -287,7 +297,9 @@ module.exports = function (grunt) {
     'ngmin',
     'uglify',
     'rev',
-    'usemin'
+    'usemin',
+    'bower',
+    'bower-install'
   ]);
 
   grunt.registerTask('default', ['build']);
