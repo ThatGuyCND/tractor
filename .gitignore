@@ -2,3 +2,4 @@
 .sass-cache
 app/css/*
 node_modules/
+.htaccess
