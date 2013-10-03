@@ -9,9 +9,7 @@
   font-family: serif;
 }
 
-.block--popular-posts {
-  border-bottom: 1px solid $black;
-  
+.block--views__view {
   .view--footer {
     text-align: right;
   }
@@ -21,6 +19,10 @@
   .webform--footer {
     text-align: right;
   }
+}
+
+.block--popular-posts {
+  border-bottom: 1px solid $black;
 }
 
 .block--breaking-news {
