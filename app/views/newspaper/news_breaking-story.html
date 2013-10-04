@@ -1,0 +1,39 @@
+<layout file="sidebar__right">
+  <region name="header">
+    <partial file="newspaper/site/header"></partial>
+  </region>
+  <region name="highlighted">
+    <partial file="newspaper/site/nav__main"></partial>
+    <partial file="newspaper/site/search"></partial>
+  </region>
+  <region name="main-content">
+    <h1 class="page--title">Headlines Suffer From Multiple Mispellings</h1>
+    <div id="breadcrumbs">
+      <ul class="breadcrumbs">
+        <li class="breadcrumb"><a href="#/newsaper/home">Home</a></li>&nbsp;>&nbsp;
+        <li class="breadcrumb"><a href="#/newspaper/news">News</a></li>&nbsp;>&nbsp;
+        <li class="breadcrumb"><a href="#/newspaper/news_editors">Editors</a></li>
+      </ul>
+    </div>
+    <article class="node--full node--news">
+      <img src="" alt="" ph-img="620x340" text="News Article Image" />
+      <ui file="submitted-info"></ui>
+      <div class="node--content" ph-txt="" paragraphs="3"></div>
+      <ui file="share-this"></ui>
+      <ui file="comments"></ui>
+      <partial file="newspaper/components/columnist-stories"></partial>
+    </article>
+  </region>
+  <region name="sidebar-second">
+    <partial file="newspaper/components/ad_big"></partial>
+    <partial file="newspaper/components/aotm"></partial>
+    <partial file="newspaper/components/most_viewed"></partial>
+    <partial file="newspaper/components/reader_poll"></partial>
+  </region>
+  <region name="footer">
+    <partial file="newspaper/site/footer"></partial>
+  </region>
+  <region name="footer-sub">
+    <partial file="newspaper/site/copyright"></partial>
+  </region>
+</layout>
