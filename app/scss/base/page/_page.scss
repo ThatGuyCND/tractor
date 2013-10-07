@@ -25,10 +25,10 @@
 .l-header,
 /* .l-highlighted, */
 .l-preface,
-.l-super,
+/* .l-super, */
 .l-main,
-/* .l-content, */
-.l-sub,
+/* .l-content,
+.l-sub, */
 .l-postscript,
 .l-sidebar-first,
 .l-sidebar-second,
@@ -49,6 +49,12 @@
   }
 }
 
+.l-content {
+  @include respond-to($medium) {
+    margin-top: 3em;
+  }
+}
+
 .corporate {
   .l-main {
     @include container;
@@ -63,12 +69,13 @@
   @include respond-to($medium) {
     .l-sidebar-first {
       @include span-columns(4);
+      margin-top: 70px;
       padding-right: 0;
     }
     
-    .l-super,
+    /* .l-super, */
     .l-main,
-    .l-sub {
+    /* .l-sub */ {
       @include span-columns(8);
       @include omega;
       padding-left: 0;
@@ -81,9 +88,9 @@
         @include span-columns(3);
       }
       
-      .l-super,
+      /* .l-super, */
       .l-main,
-      .l-sub {
+      /* .l-sub */ {
         @include span-columns(5);
         padding-right: 0;
       }
@@ -91,6 +98,7 @@
       .l-sidebar-second {
         @include span-columns(4);
         @include omega;
+        margin-top: 70px;
         padding-left: 0;
       }
     }
@@ -99,9 +107,9 @@
 
 .sidebar-right {
   @include respond-to($medium) {
-    .l-super,
+    /* .l-super, */
     .l-main,
-    .l-sub {
+    /* .l-sub */ {
       @include span-columns(8);
       padding-right: 0;
     }
@@ -109,12 +117,15 @@
     .l-sidebar-second {
       @include span-columns(4);
       @include omega;
+      margin-top: 70px;
       padding-left: 0;
     }
 
+/*
     .l-super ~ .l-sidebar-second {
       position: absolute;
       top: 0.67em;
     }
+*/
   }
 }

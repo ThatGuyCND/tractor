@@ -33,6 +33,24 @@
   			}
   		}
   	}
+  	
+  	ul {
+      > li {
+      	> a {
+      	 &:link,
+      	 &:visited {
+        	 color: $light-grey;
+      	 }
+      	 
+      	 &:hover,
+      	 &:focus,
+      	 &:active,
+      	 &.active {
+        	 color: $black;
+      	 }
+      	}
+      }
+  	}
     
     > input[type="checkbox"] {
       &:checked ~ .dropdown-menu {

@@ -2,6 +2,10 @@
   border-bottom: 3px solid $black;
 }
 
+h4.node--title {
+  font-size: 1.25em;
+}
+
 .node--title {
   margin-top: 0;
 }
@@ -237,5 +241,159 @@
 .node--headline {
   .node--image {
     @include span-columns($total-columns);
+    
+    img {
+      @include rwdImage;
+    }
+  }
+  
+  .node--content {
+    padding: 0 $gutter-width;
+  }
+  
+  .node--title {
+    margin-bottom: 0;
+  }
+}
+
+.node--full {
+  .node--image {
+    @include span-columns($total-columns);
+    
+    img {
+      @include rwdImage;
+    }
+  }
+  
+  @include respond-to($medium) {
+    .node--content {
+      @include span-columns($total-columns - 2);
+    }
+    
+    .node--links {
+      @include span-columns(2);
+      @include omega;
+    }
+    
+    .node--links ~ .node--content {
+      border-right: 1px solid $black;
+    }
+  }
+}
+
+#node--comments {
+  @include span-columns(12);
+  position: relative;
+  
+  .block--header {
+    text-align: right;
+    
+    @include respond-to($small) {
+      position: absolute;
+      right: 0;
+      top: 1.65em;
+    }
+  }
+  
+  .comment,
+  .reply {
+    padding-left: 72px;
+    
+    .user--avatar {
+      margin-left: -72px;
+    }
+  }
+  
+  .comment {
+    border-top: 1px solid $black;
+  }
+  
+  .comment--content {
+    display: block;
+    border-bottom: 1px solid $black;
+    
+    p {
+      margin: 0;
+    }
+  }
+  
+  .reply {
+    .comment--content {
+      border-bottom: 1px solid $med-grey;
+    }
+    
+    .reply {
+      background-color: $lightest-grey;
+      border-top: 1px solid $light-grey;
+      border-bottom: 1px solid $light-grey;
+      padding-left: 80px;
+      
+      .user--full-name {
+        margin-top: 0;
+      }
+    }
+    
+    &:last-child {
+      .comment--content {
+        border-bottom: medium none;
+      }
+    }
+  }
+}
+
+/* Submission Info */  
+.node--submitted {
+  @include span-columns(12);
+}
+
+.node--submitted__simple {
+  > * {
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: normal;
+  }
+  
+  .byline {
+    font-size: 1em;
+    font-weight: normal;
+  }
+  
+  .terms ul {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+.node--submitted__extra {
+  margin-top: 0.5em;
+  
+  .user--avatar {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    margin-right: 1em;
+    
+    img {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+  }
+  .user--full-name,
+  .date {
+    line-height: 1.25rem;
+  }
+  .user--full-name {
+    font-size: 1.15em;
+  }
+  .date {
+    font-size: 0.9em;
+  }
+  
+  .user--links {
+    margin: 0;
+  }
+  
+  @include respond-to($small, $medium) {
+    margin-bottom: 1em;
   }
 }

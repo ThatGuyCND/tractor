@@ -10,19 +10,22 @@
     <partial data-show="desktop" file="newspaper/site/search"></partial>
   </region>
   <region name="main-content">
-    <h1 class="page--title">Headlines Suffer From Multiple Mispellings</h1>
     <div id="breadcrumbs">
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs links inline">
         <li class="breadcrumb"><a href="#/newsaper/home">Home</a></li>&nbsp;>&nbsp;
-        <li class="breadcrumb"><a href="#/newspaper/news">News</a></li>&nbsp;>&nbsp;
-        <li class="breadcrumb"><a href="#/newspaper/news_editors">Editors</a></li>
+        <li class="breadcrumb"><a href="#/newspaper/news">News</a></li>
       </ul>
     </div>
+    <h1 class="node--title">Headlines Suffer From Multiple Mispellings</h1>
     <article class="node--full node--news">
-      <img src="" alt="" ph-img="620x340" text="News Article Image" />
-      <ui file="submitted-info"></ui>
-      <div class="node--content" ph-txt="" paragraphs="3"></div>
-      <ui file="share-this"></ui>
+      <div class="node--image">
+        <img src="" alt="" ph-img="620x340" text="News Article Image" />
+      </div>
+      <div class="node--content">
+        <ui file="author-info"></ui>
+        <div class="node--body" ph-txt paragraphs="3"></div>
+      </div>
+      <ui data-show="desktop" file="share-this"></ui>
       <ui file="comments"></ui>
       <partial file="newspaper/components/columnist-stories"></partial>
     </article>

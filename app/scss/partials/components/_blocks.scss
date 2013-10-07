@@ -13,12 +13,6 @@ h2.block--title {
   font-family: serif;
 }
 
-.block--views__view {
-  .view--footer {
-    text-align: right;
-  }
-}
-
 .block--webform {
   .webform--footer {
     text-align: right;
@@ -123,4 +117,65 @@ h2.block--title {
       vertical-align: top;
     }
   }
+}
+
+/* Views */
+.block--views__view {
+  .view--footer {
+    text-align: right;
+    padding-right: $gutter-width;
+  }
+}
+
+.block--views__headline {
+  background-color: $lightest-grey;
+  margin-bottom: 1em;
+  padding-bottom: $gutter-width / 2;
+}
+
+.block--views__breaking-news {
+  h2.block--title {
+    background-color: $link-blue;
+    color: $white;
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    line-height: 2.25em;
+    margin-top: 1.15em;
+    margin-right: 1.5em;
+    padding-left: 0.5em;
+    padding-right: 5px;
+    position: relative;
+    z-index: 2;
+    
+    &:before {
+      content: " ";
+      border-color: transparent transparent transparent $link-blue;
+      border-style: solid;
+      border-width: 18px;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      z-index: 1;
+    }
+  }
+  
+  .node--simple {
+    &:first-child {
+      background-color: $light-grey;
+      border-top: 1px solid $black;
+    }
+    
+    &:last-child {
+      border-bottom: 1px solid $black;
+    }
+  }
+  
+  .view--footer {
+    border-bottom: 1px solid $black;
+  }
+}
+
+.block--columnist__related-posts {
+  @include span-columns($total-columns);
 }
