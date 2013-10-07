@@ -25,6 +25,15 @@ h2.block--title {
   }
 }
 
+.highlighted {
+  .block--search-form {
+    position: absolute;
+    right: 1.5em;
+    top: 0.625em;
+    z-index: 5;
+  }
+}
+
 .block--popular-posts {
   border-bottom: 1px solid $black;
 }
