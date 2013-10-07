@@ -1,0 +1,48 @@
+.topbar {
+  background-color: $black;
+}
+
+nav {
+  &.global,
+  &.user {
+    .dropdown {
+      background-color: $light-grey;
+      list-style: none outside none;
+      padding-left: 0;
+    }
+    
+    > ul {
+      > li {
+        border-right: 1px solid $white;
+          
+        > a {
+          @include transition-property(background-color, color);
+          @include transition-duration(200ms);
+          @include transition-delay(200ms);
+          color: $white;
+          
+          &.active,
+          &.open {
+            @include transition-delay(0);
+            background-color: $light-grey;
+            color: $black;
+          }
+          
+          i {
+            text-indent: 0.625em;
+          }
+        }
+      }
+    }
+  }
+  
+  &.user {
+    > ul {
+      > li {
+        &:last-child {
+          border-right: medium none;
+        }
+      }
+    }
+  }
+}

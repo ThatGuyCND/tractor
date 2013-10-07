@@ -87,13 +87,12 @@ ul {
 
 //header bits
 .header{
-	/* background:$lightest-grey; */
-	
+	/* background:$lightest-grey;
 	h1{
 		text-align:center
-	}
+	}*/
 	
-	h2{
+	h2 {
 		@include respond-to($medium){
 			margin-top:0;
 		}
@@ -103,16 +102,42 @@ ul {
 .hidden,
 .element-invisible {
   @include hidden;
-  
-  + img,
-  + div,
-  + span,
-  + ul,
-  + ol {
-		margin-top: 78px;
+}
+
+.col-right {
+  .hidden,
+  .element-invisible {
+    + img,
+    + div,
+    + span,
+    + ul,
+    + ol {
+  		margin-top: 78px;
+    }
   }
 }
 
 .clearfix {
   @include clearfix;
+}
+
+[data-show="mobile"] {
+  @include respond-to($small) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+[data-show="tablet"] {
+  @include respond-to($small, max-width) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+[data-show="desktop"] {
+  @include respond-to($medium, max-width) {
+    display: none !important;
+    visibility: hidden !important;
+  }
 }

@@ -2,7 +2,7 @@ $container-style: magic;
 $total-columns  : 12;
 $column-width   : 5.3em;
 $gutter-width   : 1.2em;
-$grid-padding   : 2 * $gutter-width;
+$grid-padding   : $gutter-width;
 
 
 // Breakpoints

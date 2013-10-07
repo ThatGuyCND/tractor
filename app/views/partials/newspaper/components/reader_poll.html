@@ -2,10 +2,16 @@
   <h2 class="block--title">Reader Poll</h2>
   <div class="block--content">
     <p ph-txt sentences="1"></p>
-    <form action="" id="poll--reader-poll">
-      <input type="radio" name="vote" value="Yes, definitely. I don't feel safe reading headlines anymore."/>&nbsp;Yes, definitely. I don't feel safe reading headlines anymore.<br />
-      <input type="radio" name="vote" value="No, of course not. Writers don't mispell headlines, headlines mispell headlines." />&nbsp;No, of course not. Writers don't mispell headlines, headlines mispell headlines.<br />
-      <input type="radio" name="vote" value="Undecided" />&nbsp;Undecided<br />
+    <form id="poll--reader-poll">
+      <div class="form-item">
+        <input id="yes" type="radio" name="yes" value="Yes"/>&nbsp;<label for="yes">Yes, definitely. I don't feel safe reading headlines anymore.</label>
+      </div>
+      <div class="form-item">
+        <input id="no" type="radio" name="vote" value="No" />&nbsp;<label for="no">No, of course not. Writers don't mispell headlines, headlines mispell headlines.</label>
+      </div>
+      <div class="form-item">
+        <input id="maybe" type="radio" name="vote" value="Undecided" />&nbsp;<label for="maybe">Undecided</label>
+      </div>
     </form>
     <div class="webform--footer">
       <ul class="links inline">

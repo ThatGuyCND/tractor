@@ -8,9 +8,11 @@
   position: relative;
 }
 
+.l-page-top {}
 .l-header {}
 .l-highlighted {}
 .l-preface {}
+.l-super {}
 .l-main {}
 .l-sub {}
 .l-postscript {}
@@ -19,10 +21,13 @@
 .l-footer {}
 .l-footer-sub {}
 
+/* .l-page-top, */
 .l-header,
-.l-highlighted,
+/* .l-highlighted, */
 .l-preface,
-.l-content,
+.l-super,
+.l-main,
+/* .l-content, */
 .l-sub,
 .l-postscript,
 .l-sidebar-first,
@@ -30,6 +35,14 @@
 .l-footer,
 .l-footer-sub {
   @include container;
+  position: relative;
+}
+
+.l-page-top,
+.l-highlighted,
+.l-content {
+  @include container;
+  position: relative;
   @include respond-to($medium, max-width) {
     padding-left: 0;
     padding-right: 0;
@@ -50,24 +63,53 @@
   @include respond-to($medium) {
     .l-sidebar-first {
       @include span-columns(4);
+      padding-right: 0;
     }
     
-    .l-main {
+    .l-super,
+    .l-main,
+    .l-sub {
       @include span-columns(8);
       @include omega;
+      padding-left: 0;
+    }
+  }
+  
+  &.sidebar-right {
+    @include respond-to($medium) {
+      .l-sidebar-first {
+        @include span-columns(3);
+      }
+      
+      .l-super,
+      .l-main,
+      .l-sub {
+        @include span-columns(5);
+        padding-right: 0;
+      }
+      
+      .l-sidebar-second {
+        @include span-columns(4);
+        @include omega;
+        padding-left: 0;
+      }
     }
   }
 }
 
 .sidebar-right {
   @include respond-to($medium) {
-    .l-main {
+    .l-super,
+    .l-main,
+    .l-sub {
       @include span-columns(8);
+      padding-right: 0;
     }
     
     .l-sidebar-second {
       @include span-columns(4);
       @include omega;
+      padding-left: 0;
     }
   }
 }

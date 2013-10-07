@@ -1,7 +1,11 @@
-<!-- ZenCoding partial: layout[file=main]>(region[name=header]>partial[file=site/header])+(region[name=highlighted]>partial[file=site/nav__main])+(region[name=preface]>partial[file=])+(region[name=sidebar-first]>partial[file=])+(region[name=main-content]>partial[file=])+(region[name=sidebar-second]>partial[file=])+(region[name=sub-content]>partial[file=])+(region[name=postscript]>partial[file=])+(region[name=footer]>partial[file=site/footer])+(region[name=footer-sub]>partial[file=site/copyright]) -->
+<!-- ZenCoding partial: layout[file=main]>(region[name=page-top]>partial[file=site/top_bar])+(region[name=header]>partial[file=site/header])+(region[name=highlighted]>partial[file=site/nav__main])+(region[name=preface]>partial[file=])+(region[name=sidebar-first]>partial[file=])+(region[name=main-content]>partial[file=])+(region[name=sidebar-second]>partial[file=])+(region[name=sub-content]>partial[file=])+(region[name=postscript]>partial[file=])+(region[name=footer]>partial[file=site/footer])+(region[name=footer-sub]>partial[file=site/copyright]) -->
 
 <div class="container newspaper sidebar-left" id="container">
-  <!-- <partial file="site/nav__off-canvas"></partial> -->
+  <div class="z-page-top zone">
+    <div class="w-page-top">
+      <div class="l-page-top page-top" region="page-top"></div>
+    </div>
+  </div>
   <div class="z-header zone">
     <div class="w-header">
       <div class="l-header header" region="header"></div>

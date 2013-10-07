@@ -1,15 +1,20 @@
 <layout file="sidebar__right">
+  <region name="page-top">
+    <partial file="newspaper/site/top_bar"></partial>
+  </region>
   <region name="header">
     <partial file="newspaper/site/header"></partial>
   </region>
   <region name="highlighted">
     <partial file="newspaper/site/nav__main"></partial>
-    <partial file="newspaper/site/search"></partial>
+    <partial data-show="desktop" file="newspaper/site/search"></partial>
   </region>
-  <region name="main-content">
+  <region name="super-content">
     <h1 class="page--title">News</h1>
     <partial file="newspaper/components/headline-article"></partial>
     <partial file="newspaper/components/breaking-news"></partial>
+  </region>
+  <region name="main-content">
     <partial file="newspaper/components/section_teaser-listing"></partial>
     <partial file="newspaper/components/section_teaser-listing"></partial>
     <partial file="newspaper/components/section_teaser-listing"></partial>

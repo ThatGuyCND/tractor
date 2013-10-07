@@ -1,0 +1,63 @@
+.z-page-top {
+  background-color: $black;
+}
+
+.topbar {
+  width: 100%;
+  height: 40px;
+}
+
+nav {
+  &.global,
+  &.user {
+    display: inline-block;
+    float: left;
+     
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      z-index: 50;
+      
+    }
+    
+    > ul {
+        display: table-row;
+        height: 40px;
+        
+      > li {
+        border-right: 1px solid $white;
+        display: table-cell;
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+        position: static;
+          
+        > a {
+          color: $white;
+          display: inline-block;
+          min-width: 40px;
+          min-height: 40px;
+          text-align: center;
+          margin: 0;
+          padding: 0.5em 0.625em 0;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  
+  &.user {
+    @include omega;
+    
+    > ul {
+      > li {
+        &:last-child {
+          border-right: medium none;
+        }
+      }
+    }
+  }
+}

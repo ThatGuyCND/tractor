@@ -1,15 +1,18 @@
 <layout file="sidebar__right">
+  <region name="page-top">
+    <partial file="newspaper/site/top_bar"></partial>
+  </region>
   <region name="header">
     <partial file="newspaper/site/header"></partial>
   </region>
   <region name="highlighted">
     <partial file="newspaper/site/nav__main"></partial>
-    <partial file="newspaper/site/search"></partial>
-    <partial file="newspaper/components/breaking-news_single"></partial>
+    <partial data-show="desktop" file="newspaper/site/search"></partial>
+    <partial data-show="tablet" data-show="desktop" file="newspaper/components/breaking-news_single"></partial>
   </region>
   <region name="preface">
-    <partial file="newspaper/components/ad_big"></partial>
-    <partial file="newspaper/components/aotm"></partial>
+    <partial data-show="tablet" data-show="desktop" file="newspaper/components/ad_big"></partial>
+    <partial data-show="tablet" data-show="desktop" file="newspaper/components/aotm"></partial>
   </region>
   <region name="main-content">
     <partial file="newspaper/components/section_teaser-listing"></partial>
@@ -19,11 +22,9 @@
   </region>
   <region name="sidebar-second">
     <partial file="newspaper/components/most_viewed"></partial>
+    <partial data-show="mobile" file="newspaper/components/ad_big"></partial>
+    <partial data-show="mobile" file="newspaper/components/aotm"></partial>
     <partial file="newspaper/components/reader_poll"></partial>
-  </region>
-  <region name="sub-content">
-  </region>
-  <region name="postscript">
   </region>
   <region name="footer">
     <partial file="newspaper/site/footer"></partial>

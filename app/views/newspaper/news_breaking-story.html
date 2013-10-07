@@ -1,10 +1,13 @@
 <layout file="sidebar__right">
+  <region name="page-top">
+    <partial file="newspaper/site/top_bar"></partial>
+  </region>
   <region name="header">
     <partial file="newspaper/site/header"></partial>
   </region>
   <region name="highlighted">
     <partial file="newspaper/site/nav__main"></partial>
-    <partial file="newspaper/site/search"></partial>
+    <partial data-show="desktop" file="newspaper/site/search"></partial>
   </region>
   <region name="main-content">
     <h1 class="page--title">Headlines Suffer From Multiple Mispellings</h1>

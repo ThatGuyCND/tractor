@@ -1,0 +1,42 @@
+<div class="topbar">
+  <nav class="global">
+    <ul class="menu links inline">
+      <li>
+        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).toggleClass('active open');" href="">22 CM</a>
+        <ul class="dropdown">
+          <li><a href="">Our Publications</a></li>
+        </ul>
+      </li>
+      <li>
+        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).toggleClass('active open');" href="">About Us</a>
+        <ul class="dropdown">
+          <li><a href="#/newspaper/about_masthead">About the Masthead</a></li>
+          <li><a href="#/newspaper/about_22cm">About 22nd Century Media</a></li>
+          <li><a href="#/corp/contact">Contact Us</a></li>
+          <li><a href="#/corp/advertise">Advertise With Us</a></li>
+          <li><a href="#/newspaper/about_careers">Careers</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <nav class="user">
+    <ul class="menu links inline">
+      <li>
+        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).toggleClass('active open');" href=""><i class="icon icon-user"/></a>
+        <ul class="dropdown">
+          <li><a href="">Sign In</a></li>
+          <li><a href="">Sign Up</a></li>
+        </ul>
+      </li>
+      <li><a href="">Subscribe</a></li>
+      <li data-show="mobile">
+        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).toggleClass('active open');" href=""><i class="icon icon-search"></i></a>
+        <ul class="dropdown">
+          <li>
+            <partial file="newspaper/site/search"></partial>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>

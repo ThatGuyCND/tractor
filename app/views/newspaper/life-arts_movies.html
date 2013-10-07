@@ -1,0 +1,65 @@
+<layout file="main__newspaper">
+  <region name="page-top">
+    <partial file="newspaper/site/top_bar"></partial>
+  </region>
+  <region name="header">
+    <partial file="newspaper/site/header"></partial>
+  </region>
+  <region name="highlighted">
+    <partial file="newspaper/site/nav__main"></partial>
+    <partial data-show="desktop" file="newspaper/site/search"></partial>
+  </region>
+  <region name="main-content">
+    <div class="l-2col col__12">
+      <h1 class="page--title">Movies</h1>
+      <div class="col__12-6">
+      
+      </div>
+      <div class="col__12-6 col-right">
+        <div class="block block--views__view block--views__feed block--view__movies block--view__movies--now-playing">
+          <h2 class="block--title">Now Playing</h2>
+          <div class="block--content">
+            <div class="view--content">
+              <partial file="newspaper/components/node--movie__teaser"></partial>
+              <partial file="newspaper/components/node--movie__teaser"></partial>
+              <partial file="newspaper/components/node--movie__teaser"></partial>
+              <partial file="newspaper/components/node--movie__teaser"></partial>
+              <partial file="newspaper/components/node--movie__teaser"></partial>
+              <partial file="newspaper/components/node--movie__teaser"></partial>
+            </div>
+            <div class="view--footer">
+              <ul class="links inline">
+                <li>
+                  <a href="" class="read-more">View More</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="block block--views__view block--views__feed block--view__movies block--view__movies--coming-soon">
+          <h2 class="block--title">Coming Soon</h2>
+          <div class="block--content">
+            <div class="view--content">
+              <partial file="newspaper/components/node--movie__teaser"></partial>
+              <partial file="newspaper/components/node--movie__teaser"></partial>
+              <partial file="newspaper/components/node--movie__teaser"></partial>
+            </div>
+            <div class="view--footer">
+              <ul class="links inline">
+                <li>
+                  <a href="" class="read-more">View More</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </region>
+  <region name="footer">
+    <partial file="newspaper/site/footer"></partial>
+  </region>
+  <region name="footer-sub">
+    <partial file="newspaper/site/copyright"></partial>
+  </region>
+</layout>

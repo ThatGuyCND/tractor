@@ -1,3 +1,7 @@
+h2.block--title {
+  font-size: 28px;
+}
+
 .block--menu {
   .block--title {
     border-bottom: medium none;
@@ -31,5 +35,83 @@
     display: inline;
     float: left;
     font-size: 1.5rem;
+  }
+}
+
+.block--section-teaser {
+  @include span-columns($total-columns);
+  
+  @include respond-to($small) {
+    @include span-columns($total-columns / 2);
+    @include nth-omega(2n);
+  }
+}
+
+.block--ad,
+.block--aotm,
+.block--aotw {
+  .block--content {
+    margin-top: 0;
+  }
+  
+  img {
+    @include rwdImage;
+  }
+  
+/*
+  @include respond-to($small) {
+    @include span-columns(4);
+    @include omega;
+    @include pre(8);
+  }
+*/
+}
+
+.block--popular-posts {
+  ol {
+    @include zebra(li);
+    counter-reset: item-counter;
+    list-style: none outside none; 
+    padding-left: 0;
+    
+    li:before {
+      content: counter(item-counter)'.';
+    	counter-increment: item-counter;
+    	font-size: 2em;
+    	position: absolute;
+    	right: calc(100% - 1.25em);
+    	top: 0;
+    	vertical-align: top;
+    }
+  }
+  
+  li {
+    position: relative;
+    padding: 0.5em;
+  }
+  
+  .node--index {
+    padding-left: 3em;
+  }
+}
+
+.block--webform__reader-poll {}
+
+#poll--reader-poll {
+  .form-item {
+    clear: both;
+    margin-bottom: 0.5em;
+    padding-left: 2em;
+    
+    input {
+      margin-left: -1.5em;
+    }
+    
+    label {
+      display: inline-block;
+      margin-bottom: 0.5em;
+      padding-left: 1em;
+      vertical-align: top;
+    }
   }
 }
