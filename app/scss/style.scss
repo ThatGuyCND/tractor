@@ -122,21 +122,40 @@ ul {
 }
 
 [data-show="mobile"] {
-  @include respond-to($small) {
-    display: none !important;
-    visibility: hidden !important;
+  display: none;
+  visibility: hidden;
+  
+  @include respond-to($small, max-width) {
+    display: block !important;
+    visibility: visible !important;
   }
 }
 
 [data-show="tablet"] {
-  @include respond-to($small, max-width) {
-    display: none !important;
-    visibility: hidden !important;
+  display: none;
+  visibility: hidden;
+  
+  @include respond-to($small, $medium) {
+    display: block !important;
+    visibility: visible !important;
   }
 }
 
 [data-show="desktop"] {
-  @include respond-to($medium, max-width) {
+  display: none;
+  visibility: hidden;
+  
+  @include respond-to($medium) {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+
+[data-hide="desktop"] {
+  display: block;
+  visibility: visible;
+  
+  @include respond-to($medium) {
     display: none !important;
     visibility: hidden !important;
   }

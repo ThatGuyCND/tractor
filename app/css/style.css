@@ -2430,7 +2430,14 @@ h2.block--title {
   font-size: 1.5rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000351}}
+.block--breaking-news__single .block--title {
+  color: red;
+  font-size: 1rem;
+  margin: 0.25em 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000358}}
 .block--section-teaser {
   width: 100%;
   float: left;
@@ -2438,7 +2445,7 @@ h2.block--title {
   display: inline;
 }
 @media screen and (min-width: 37.5em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000358}}
   .block--section-teaser {
     width: 49.21875%;
     float: left;
@@ -2452,20 +2459,20 @@ h2.block--title {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000370}}
 .block--ad .block--content,
 .block--aotm .block--content,
 .block--aotw .block--content {
   margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000374}}
 .block--ad img,
 .block--aotm img,
 .block--aotw img {
   /* @include rwdImage; */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000380}}
 .block--popular-posts ol {
   counter-reset: item-counter;
   list-style: none outside none;
@@ -2479,7 +2486,7 @@ h2.block--title {
 .block--popular-posts ol li:nth-child(odd) {
   background-color: #f4f4f4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000386}}
 .block--popular-posts ol li:before {
   content: counter(item-counter) ".";
   counter-increment: item-counter;
@@ -2489,27 +2496,27 @@ h2.block--title {
   top: 0;
   vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000397}}
 .block--popular-posts li {
   position: relative;
   padding: 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003102}}
 .block--popular-posts .node--index {
   padding-left: 3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003110}}
 #poll--reader-poll .form-item {
   clear: both;
   margin-bottom: 0.5em;
   padding-left: 2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003115}}
 #poll--reader-poll .form-item input {
   margin-left: -1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003119}}
 #poll--reader-poll .form-item label {
   display: inline-block;
   margin-bottom: 0.5em;
@@ -4271,14 +4278,20 @@ nav.global > ul > li > a, nav.user > ul > li > a {
   padding: 0.5em 0.625em 0;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_header--topbar\.scss}line{font-family:\0000352}}
+@media screen and (min-width: 56.25em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_header--topbar\.scss}line{font-family:\0000350}}
+  nav.global > ul > li:nth-child(2n), nav.user > ul > li:nth-child(2n) {
+    border-right: medium none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_header--topbar\.scss}line{font-family:\0000358}}
 nav.user {
   float: right;
   margin-right: 0;
   *margin-left: -1.2em;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_header--topbar\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_header--topbar\.scss}line{font-family:\0000363}}
 nav.user > ul > li:last-child {
   border-right: medium none;
 }
@@ -5656,25 +5669,53 @@ ul.links > li {
   clear: both;
 }
 
-@media screen and (min-width: 37.5em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003124}}
+[data-show="mobile"] {
+  display: none;
+  visibility: hidden;
+}
+@media screen and (max-width: 37.499em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003124}}
   [data-show="mobile"] {
-    display: none !important;
-    visibility: hidden !important;
+    display: block !important;
+    visibility: visible !important;
   }
 }
 
-@media screen and (max-width: 37.499em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003134}}
+[data-show="tablet"] {
+  display: none;
+  visibility: hidden;
+}
+@media screen and (min-width: 37.5em) and (max-width: 56.249em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003134}}
   [data-show="tablet"] {
-    display: none !important;
-    visibility: hidden !important;
+    display: block !important;
+    visibility: visible !important;
   }
 }
 
-@media screen and (max-width: 56.249em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003144}}
+[data-show="desktop"] {
+  display: none;
+  visibility: hidden;
+}
+@media screen and (min-width: 56.25em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003144}}
   [data-show="desktop"] {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003154}}
+[data-hide="desktop"] {
+  display: block;
+  visibility: visible;
+}
+@media screen and (min-width: 56.25em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003154}}
+  [data-hide="desktop"] {
     display: none !important;
     visibility: hidden !important;
   }

@@ -45,6 +45,12 @@ nav {
           padding: 0.5em 0.625em 0;
           vertical-align: middle;
         }
+        
+        @include respond-to($medium) {
+          &:nth-child(2n) {
+            border-right: medium none;
+          }
+        }
       }
     }
   }

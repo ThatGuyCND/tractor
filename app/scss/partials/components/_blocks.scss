@@ -47,6 +47,14 @@ h2.block--title {
   }
 }
 
+.block--breaking-news__single {
+  .block--title {
+    color: $red;
+    font-size: 1rem;
+    margin: 0.25em 1.5em;
+  }
+}
+
 .block--section-teaser {
   @include span-columns($total-columns);
   
