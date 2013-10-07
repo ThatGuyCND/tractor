@@ -2381,6 +2381,11 @@ h6 {
     display: inline;
     padding-left: 0;
   }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003115}}
+  .sidebar-right .l-super ~ .l-sidebar-second {
+    position: absolute;
+    top: 0.67em;
+  }
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\000031}}
@@ -4693,30 +4698,26 @@ nav.user > ul > li:last-child {
   #primary-nav > ul > li ul li a:visited {
     padding: 0.25em 1em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003136}}
-  #primary-nav > ul > li:last-child ul {
-    text-align: right;
-  }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003140}}
 #primary-nav a:link, #primary-nav a:visited {
   color: #1a1a1a;
   display: block;
   font-weight: normal;
   padding: 0.5em 0.75em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003156}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003150}}
 #primary-nav a.active, #primary-nav a.active-trail, #primary-nav a:hover, #primary-nav a:focus {
   background-color: #484848;
   color: #fcfcfc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003157}}
 #primary-nav a.active + ul, #primary-nav a.active-trail + ul {
   display: block;
   visibility: visible;
   z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003163}}
 #primary-nav a.active + ul a.active,
 #primary-nav a.active + ul a.active-trail, #primary-nav a.active-trail + ul a.active,
 #primary-nav a.active-trail + ul a.active-trail {
@@ -4724,38 +4725,45 @@ nav.user > ul > li:last-child {
   color: #1a1a1a;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003178}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003172}}
 #primary-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+@media screen and (min-width: 56.25em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003183}}
+  .corp #primary-nav > ul > li:last-child ul {
+    text-align: right;
+  }
+}
+
 /* Advanced Checkbox Hack */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003184}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003194}}
 body {
   -webkit-animation: bugfix infinite 1s;
 }
 
 @-webkit-keyframes bugfix {
-  /* line 189, ../scss/partials/components/site/_rwd-dropdown.scss */
+  /* line 199, ../scss/partials/components/site/_rwd-dropdown.scss */
   from {
     padding: 0;
   }
 
-  /* line 190, ../scss/partials/components/site/_rwd-dropdown.scss */
+  /* line 200, ../scss/partials/components/site/_rwd-dropdown.scss */
   to {
     padding: 0;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003204}}
 nav[role="custom-dropdown"] input#toggle-button[type=checkbox] {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003210}}
 nav[role="custom-dropdown"] label[for="toggle-button"] {
   display: none;
   cursor: pointer;
@@ -4763,13 +4771,13 @@ nav[role="custom-dropdown"] label[for="toggle-button"] {
 }
 
 /* custom-dropdown */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003208}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003218}}
 nav#primary-nav[role="custom-dropdown"] {
   position: relative;
   width: 100%;
   margin-bottom: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003213}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003223}}
 nav#primary-nav[role="custom-dropdown"] label {
   -webkit-transition: color 0.3s ease-in-out;
   -moz-transition: color 0.3s ease-in-out;
@@ -4777,7 +4785,7 @@ nav#primary-nav[role="custom-dropdown"] label {
   transition: color 0.3s ease-in-out;
   color: #fcfcfc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003228}}
 nav#primary-nav[role="custom-dropdown"] ul {
   padding: 0;
   margin: 0 auto;
@@ -4785,12 +4793,12 @@ nav#primary-nav[role="custom-dropdown"] ul {
   list-style: none;
 }
 @media screen and (max-width: 56.249em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003226}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003236}}
   nav#primary-nav[role="custom-dropdown"] > ul {
     display: none;
     height: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003241}}
   nav#primary-nav[role="custom-dropdown"] label[for="toggle-button"] {
     position: relative;
     display: block;
@@ -4800,7 +4808,7 @@ nav#primary-nav[role="custom-dropdown"] ul {
     font-size: 1.1em;
     margin: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003240}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003250}}
   nav#primary-nav[role="custom-dropdown"] label[for="toggle-button"]:after {
     position: absolute;
     right: .25em;
@@ -4811,28 +4819,28 @@ nav#primary-nav[role="custom-dropdown"] ul {
     text-align: center;
     min-width: 40px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003252}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003262}}
   nav#primary-nav[role="custom-dropdown"] input#toggle-button[type=checkbox]:checked ~ label[for="toggle-button"] {
     color: #e3e3e3;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003254}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003264}}
   nav#primary-nav[role="custom-dropdown"] input#toggle-button[type=checkbox]:checked ~ label[for="toggle-button"]:after {
     color: #e3e3e3;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003259}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003269}}
   nav#primary-nav[role="custom-dropdown"] input#toggle-button[type=checkbox]:checked ~ ul {
     display: block;
   }
 }
 @media screen and (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003265}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003275}}
   nav#primary-nav[role="custom-dropdown"] > ul {
     display: block;
     width: 100%;
     table-layout: auto;
     position: relative;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003271}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_rwd-dropdown\.scss}line{font-family:\00003281}}
   nav#primary-nav[role="custom-dropdown"] > ul > li {
     display: inline-block;
     text-align: center;
@@ -5709,12 +5717,38 @@ ul.links > li {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003154}}
+[data-hide="mobile"] {
+  display: block;
+  visibility: visible;
+}
+@media screen and (max-width: 37.499em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003154}}
+  [data-hide="mobile"] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003164}}
+[data-hide="tablet"] {
+  display: block;
+  visibility: visible;
+}
+@media screen and (min-width: 37.5em) and (max-width: 56.249em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003164}}
+  [data-hide="tablet"] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003174}}
 [data-hide="desktop"] {
   display: block;
   visibility: visible;
 }
 @media screen and (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003154}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/style\.scss}line{font-family:\00003174}}
   [data-hide="desktop"] {
     display: none !important;
     visibility: hidden !important;

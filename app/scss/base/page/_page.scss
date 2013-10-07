@@ -111,5 +111,10 @@
       @include omega;
       padding-left: 0;
     }
+
+    .l-super ~ .l-sidebar-second {
+      position: absolute;
+      top: 0.67em;
+    }
   }
 }

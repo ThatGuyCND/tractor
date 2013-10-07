@@ -13,19 +13,19 @@
   <region name="super-content">
     
   </region>
-  <region name="sidebar-second">
-    <partial data-show="tablet" data-show="desktop" file="newspaper/components/ad_big"></partial>
-    <partial data-show="tablet" data-show="desktop" file="newspaper/components/aotm"></partial>
-    <partial file="newspaper/components/most_viewed"></partial>
-    <partial data-show="mobile" file="newspaper/components/ad_big"></partial>
-    <partial data-show="mobile" file="newspaper/components/aotm"></partial>
-    <partial file="newspaper/components/reader_poll"></partial>
-  </region>
   <region name="main-content">
     <partial file="newspaper/components/section_teaser-listing"></partial>
     <partial file="newspaper/components/section_teaser-listing"></partial>
     <partial file="newspaper/components/section_teaser-listing"></partial>
     <partial file="newspaper/components/section_teaser-listing"></partial>
+  </region>
+  <region name="sidebar-second">
+    <partial data-hide="mobile" file="newspaper/components/ad_big"></partial>
+    <partial data-hide="mobile" data-show="desktop" file="newspaper/components/aotm"></partial>
+    <partial file="newspaper/components/most_viewed"></partial>
+    <partial data-show="mobile" file="newspaper/components/ad_big"></partial>
+    <partial data-show="mobile" file="newspaper/components/aotm"></partial>
+    <partial file="newspaper/components/reader_poll"></partial>
   </region>
   <region name="footer">
     <partial file="newspaper/site/footer"></partial>

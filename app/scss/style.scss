@@ -151,6 +151,26 @@ ul {
   }
 }
 
+[data-hide="mobile"] {
+  display: block;
+  visibility: visible;
+  
+  @include respond-to($small, max-width) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+ 
+[data-hide="tablet"] {
+  display: block;
+  visibility: visible;
+  
+  @include respond-to($small, $medium) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
 [data-hide="desktop"] {
   display: block;
   visibility: visible;

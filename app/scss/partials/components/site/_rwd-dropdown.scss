@@ -131,12 +131,6 @@
             }
           }
         }
-        
-        &:last-child {
-          ul {
-            text-align: right;
-          }
-        }
       }
     }
   }
@@ -177,6 +171,22 @@
   
   ul {
     @include ul-nostyle;
+  }
+}
+
+.corp {
+  #primary-nav {    
+    @include respond-to($medium) {
+      > ul {
+        > li {
+          &:last-child {
+            ul {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
