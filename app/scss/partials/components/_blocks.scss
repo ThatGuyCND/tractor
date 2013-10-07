@@ -55,16 +55,8 @@ h2.block--title {
   }
   
   img {
-    @include rwdImage;
+    /* @include rwdImage; */
   }
-  
-/*
-  @include respond-to($small) {
-    @include span-columns(4);
-    @include omega;
-    @include pre(8);
-  }
-*/
 }
 
 .block--popular-posts {

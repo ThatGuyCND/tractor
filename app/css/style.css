@@ -2444,18 +2444,6 @@ h2.block--title {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000352}}
-.block--ad,
-.block--aotm,
-.block--aotw {
-  /*
-    @include respond-to($small) {
-      @include span-columns(4);
-      @include omega;
-      @include pre(8);
-    }
-  */
-}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000353}}
 .block--ad .block--content,
 .block--aotm .block--content,
@@ -2466,12 +2454,10 @@ h2.block--title {
 .block--ad img,
 .block--aotm img,
 .block--aotw img {
-  min-width: 100%;
-  width: 100%;
-  height: auto;
+  /* @include rwdImage; */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000363}}
 .block--popular-posts ol {
   counter-reset: item-counter;
   list-style: none outside none;
@@ -2485,7 +2471,7 @@ h2.block--title {
 .block--popular-posts ol li:nth-child(odd) {
   background-color: #f4f4f4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000369}}
 .block--popular-posts ol li:before {
   content: counter(item-counter) ".";
   counter-increment: item-counter;
@@ -2495,27 +2481,27 @@ h2.block--title {
   top: 0;
   vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000380}}
 .block--popular-posts li {
   position: relative;
   padding: 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000385}}
 .block--popular-posts .node--index {
   padding-left: 3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000393}}
 #poll--reader-poll .form-item {
   clear: both;
   margin-bottom: 0.5em;
   padding-left: 2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000398}}
 #poll--reader-poll .form-item input {
   margin-left: -1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003102}}
 #poll--reader-poll .form-item label {
   display: inline-block;
   margin-bottom: 0.5em;
