@@ -245,8 +245,13 @@ h2.block--title {
 
 .block--view__movies--now-playing,
 .block--view__movies--coming-soon {
+  .view--content {
+    @include span-columns($total-columns);
+  }
+  
   .node--movie {
     @include span-columns($total-columns / 3);
+    @include remove-nth-omega(2n);
     @include nth-omega(3n);
   }
 }

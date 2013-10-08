@@ -2714,12 +2714,26 @@ h2.block--title {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003248}}
+.block--view__movies--now-playing .view--content,
+.block--view__movies--coming-soon .view--content {
+  width: 100%;
+  float: left;
+  margin-right: 1.5625%;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003252}}
 .block--view__movies--now-playing .node--movie,
 .block--view__movies--coming-soon .node--movie {
   width: 32.29167%;
   float: left;
   margin-right: 1.5625%;
   display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/\.rbenv\/versions\/1\.9\.3-p194\/lib\/ruby\/gems\/1\.9\.1\/gems\/susy-1\.0\.8\/sass\/susy\/_grid\.scss}line{font-family:\00003251}}
+.block--view__movies--now-playing .node--movie:nth-child(2n),
+.block--view__movies--coming-soon .node--movie:nth-child(2n) {
+  float: left;
+  margin-right: 1.5625%;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/\.rbenv\/versions\/1\.9\.3-p194\/lib\/ruby\/gems\/1\.9\.1\/gems\/susy-1\.0\.8\/sass\/susy\/_grid\.scss}line{font-family:\00003184}}
 .block--view__movies--now-playing .node--movie:nth-child(3n),
@@ -2728,16 +2742,16 @@ h2.block--title {
   margin-right: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003260}}
 .block--columnist__recent-articles ul.links {
   list-style: none outside none;
   padding-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003261}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003266}}
 .block--columnist__recent-articles .node--simple:last-child {
   border-bottom: 1px solid #1a1a1a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003266}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003271}}
 .block--columnist__recent-articles .view--footer {
   border-bottom: 1px solid #1a1a1a;
 }
@@ -5019,20 +5033,28 @@ nav.global > ul > li > a, nav.user > ul > li > a {
   padding: 0.5em 0.625em 0;
   vertical-align: middle;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_header--topbar\.scss}line{font-family:\0000349}}
+nav.global > ul > li > a.open ~ ul, nav.user > ul > li > a.open ~ ul {
+  visibility: visible;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_header--topbar\.scss}line{font-family:\0000355}}
+nav.global > ul > li .dropdown, nav.user > ul > li .dropdown {
+  padding-left: 1em;
+}
 @media screen and (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_header--topbar\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_header--topbar\.scss}line{font-family:\0000360}}
   nav.global > ul > li:nth-child(2n), nav.user > ul > li:nth-child(2n) {
     border-right: medium none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_header--topbar\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_header--topbar\.scss}line{font-family:\0000368}}
 nav.user {
   float: right;
   margin-right: 0;
   *margin-left: -1.2em;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_header--topbar\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Storage\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/site\/_header--topbar\.scss}line{font-family:\0000373}}
 nav.user > ul > li:last-child {
   border-right: medium none;
 }

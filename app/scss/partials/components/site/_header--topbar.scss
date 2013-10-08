@@ -44,6 +44,16 @@ nav {
           margin: 0;
           padding: 0.5em 0.625em 0;
           vertical-align: middle;
+          
+          &.open {
+            ~ ul {
+              visibility: visible;
+            }
+          }
+        }
+        
+        .dropdown {
+          padding-left: 1em;
         }
         
         @include respond-to($medium) {
