@@ -17,18 +17,24 @@
         <li class="breadcrumb"><a href="#/newspaper/news_editors">Editors</a></li>
       </ul>
     </div>
-    <h1 class="page--title">John Hancock</h1>
-    <h3 class="sub--title"><span class="user--role">Contributing Columnist</span></h3>
-    <article class="user--profile profile--columnst profile--full">
-      <div class="tabs">
-        <ul class="menu links inline tabs">
-          <li><a href="">Contact Author</a></li>
-          <li><a href="">View Recent Articles</a></li>
-        </ul>
-      </div>
-      <img ph-img="140x140" text="-" />
-      <p ph-txt="" sentences="6"></p>
-    </article>
+    <div class="user--profile">
+      <h1 class="page--title">John Hancock</h1>
+      <h3 class="sub--title"><span class="user--role">Contributing Columnist</span></h3>
+      <article class="profile--columnst user--profile__full">
+        <div class="profile--tabs">
+          <ul class="menu links inline tabs">
+            <li><a class="button" href="">Contact Author</a></li>
+            <li><a class="button" href="">View Recent Articles</a></li>
+          </ul>
+        </div>
+        <div class="profile--image">
+          <img ph-img="140x140" text="-" />
+        </div>
+        <div class="profile--content">
+          <p ph-txt="" sentences="6"></p>
+        </div>
+      </article>
+    </div>
     <partial file="newspaper/components/columnist-recent"></partial>
   </region>
   <region name="sidebar-second">

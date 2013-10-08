@@ -563,3 +563,64 @@ h4.node--title {
     margin-bottom: 1em;
   }
 }
+
+/* User Profiles */
+.user--profile {
+  .page--title {
+    border-bottom: medium none;
+    margin-bottom: 0;
+  }
+  
+  .sub--title {
+    border-bottom: 3px solid $black;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+.user--profile__full {
+  @include span-columns($total-columns);
+  
+  .profile--tabs {
+    ul {}
+    li {}
+    a {
+      &:link,
+      &:visited {}
+      
+      &:hover,
+      &:focus,
+      &.active {}
+      
+      &:active {}
+    }
+  }
+  .profile--image {
+    @include span-columns($total-columns);
+    margin-bottom: 0.5em;
+    
+    img {
+      @include rwdImage;
+      vertical-align: top;
+    }
+    
+    @include respond-to($small) {
+      @include span-columns($total-columns / 4);
+      margin-bottom: 0;
+    }
+  }
+  .profile--content {
+    @include span-columns($total-columns);
+    
+    p:first-child {
+      margin-top: 0;
+    }
+    
+    @include respond-to($small) {
+      @include span-columns(($total-columns / 4) * 3);
+      @include omega;
+    }
+  }
+}

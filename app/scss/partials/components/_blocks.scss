@@ -250,3 +250,20 @@ h2.block--title {
     @include nth-omega(3n);
   }
 }
+
+.block--columnist__recent-articles {
+  ul.links {
+    list-style: none outside none;
+    padding-left: 0;
+  }
+  
+  .node--simple {
+    &:last-child {
+      border-bottom: 1px solid $black;
+    }
+  }
+  
+  .view--footer {
+    border-bottom: 1px solid $black;
+  }
+}

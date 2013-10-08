@@ -21,6 +21,11 @@
 
 [role="newspaper"] {
   #branding {
+    @include span-columns($total-columns);
     text-align: left;
+    
+    @include respond-to($medium) {
+      @include span-columns($total-columns - 3);
+    }
   }
 }

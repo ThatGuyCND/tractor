@@ -122,8 +122,8 @@ ul {
 }
 
 [data-show="mobile"] {
-  display: none;
-  visibility: hidden;
+  display: none !important;
+  visibility: hidden !important;
   
   @include respond-to($small, max-width) {
     display: block !important;
@@ -132,8 +132,8 @@ ul {
 }
 
 [data-show="tablet"] {
-  display: none;
-  visibility: hidden;
+  display: none !important;
+  visibility: hidden !important;
   
   @include respond-to($small, $medium) {
     display: block !important;
@@ -142,8 +142,8 @@ ul {
 }
 
 [data-show="desktop"] {
-  display: none;
-  visibility: hidden;
+  display: none !important;
+  visibility: hidden !important;
   
   @include respond-to($medium) {
     display: block !important;

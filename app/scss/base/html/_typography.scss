@@ -17,6 +17,13 @@ h4 { font-size:  $h4-font-size; }
 h5 { font-size:  $h5-font-size; }
 h6 { font-size:  $h6-font-size; }
 
+.page--title,
+.node--title,
+.sub--title,
+.block--title {
+  font-family: serif;
+}
 
-
-
+.sub--title {
+  line-height: 1.8em;
+}
