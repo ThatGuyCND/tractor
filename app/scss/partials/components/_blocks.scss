@@ -62,7 +62,8 @@ h2.block--title {
 .block--ad,
 .block--aotm,
 .block--aotw {
-  .block--content {
+  .block--content,
+  p:first-child {
     margin-top: 0;
   }
   

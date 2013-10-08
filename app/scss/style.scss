@@ -180,3 +180,10 @@ ul {
     visibility: hidden !important;
   }
 }
+
+.home {
+  .sidebar-second,
+  .sidebar-first {
+    margin-top: 0;
+  }
+}
