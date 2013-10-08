@@ -285,6 +285,10 @@ h4.node--title {
   @include span-columns(12);
   position: relative;
   
+  .block--title {
+    margin-bottom: 0;
+  }
+  
   .block--header {
     text-align: right;
     
@@ -306,6 +310,10 @@ h4.node--title {
   
   .comment {
     border-top: 1px solid $black;
+    
+    &:first-child {
+      border-top: medium none;
+    }
   }
   
   .comment--content {
@@ -338,6 +346,164 @@ h4.node--title {
         border-bottom: medium none;
       }
     }
+  }
+}
+
+.node--movie__teaser {
+  border-bottom: medium none;
+  text-align: center;
+  
+  .movie--poster {
+    display: inline-block;
+    margin-bottom: 0.5em;
+    vertical-align: top;
+    width: 100%;
+    
+    img {
+      @include rwdImage;
+      vertical-align: bottom;
+      max-width: auto;
+    }
+  }
+  
+  button {
+    width: 100%;
+  }
+  
+  .node--title {
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 0.5em;
+  }
+}
+
+.node--obituary__teaser,
+.node--highlighted__teaser {
+  .node--image {
+    @include span-columns($total-columns);
+    
+    img {
+      @include rwdImage;
+      max-width: auto;
+      vertical-align: text-top;
+    }
+      
+    @include respond-to($medium, max-width) {
+      margin-bottom: 0.5em;
+      padding-right: 0;
+    }
+  }
+  
+  .node--content {
+    @include span-columns($total-columns);
+  }
+  
+  @include respond-to($small) {
+    .node--image {
+      @include span-columns($total-columns / 4);
+    }
+    
+    .node--content {
+      @include span-columns(($total-columns / 4) * 3);
+      @include omega;
+    }
+  }
+  
+  .node--title {
+    margin-bottom: 0;
+  }
+  
+  .node--submitted {
+    margin-bottom: 1em;
+    
+    @include respond-to($medium, max-width) {
+      margin-top: 0.5em;
+    }
+  }
+}
+
+.node--highlighted__teaser {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.node--athlete__index {
+  @include span-columns($total-columns / 3);
+  @include nth-omega(3n);
+  min-height: 336px;
+  max-height: 336px;
+  overflow: hidden;
+  margin-bottom: 1em;
+  
+  .athlete--headshot {
+    @include rwdImage;
+  }
+  
+  .full-name {
+    display: block;
+    width: 100%;
+  }
+  
+  @include respond-to($small) {
+    @include span-columns($total-columns / 4);
+    @include remove-nth-omega(3n);
+    @include nth-omega(4n);
+  }
+}
+
+.node--photo-poll {
+  @include span-columns($total-columns);
+  border-bottom: 1px solid $black;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  
+  &:last-child {
+    border-bottom: medium none;
+    margin-bottom: 0;
+  }
+  
+  .node--title {
+    border-bottom: 1px solid $black;
+  }
+  
+  .question {
+    text-align: center;
+  }
+  
+  .responses {
+    .node--index {
+      @include span-columns($total-columns / 2);
+      @include nth-omega(2n);
+      
+      @include respond-to($small) {
+        @include span-columns($total-columns / 4);
+        @include remove-nth-omega(2n);
+        @include nth-omega;
+      }
+    }
+  }
+}
+
+.node--photo-poll__response.node--index {
+  margin-bottom: 0.5em;
+  
+  .node--image {
+    width: 100%;
+    padding-right: 0;
+    float: none;
+    
+    img {
+      @include rwdImage;
+    }
+  }
+  
+  .quote {
+    font-size: 0.9rem;
+  }
+  
+  .full-name {
+    font-weight: bold;
   }
 }
 

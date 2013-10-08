@@ -179,3 +179,74 @@ h2.block--title {
 .block--columnist__related-posts {
   @include span-columns($total-columns);
 }
+
+.block--view__movies {
+  @include span-columns($total-columns);
+  .node--movie {
+    @include span-columns($total-columns / 2);
+    @include nth-omega(2n);
+    
+    @include respond-to($small) {
+      @include span-columns($total-columns / 4);
+      @include remove-nth-omega(2n);
+      
+      &:last-child {
+        @include omega;
+      }
+    }
+  }
+}
+
+.block--news__feed {
+  ul.links {
+    margin: 0;
+    padding-left: 0;
+  }
+  .node--simple {
+    list-style: none outside none;
+    
+    &:last-child {
+      border-bottom: 1px solid $black;
+      margin-bottom: 0.5em;
+    }
+  }
+  
+  .node--title {
+    @include respond-to($small) {
+      @include span-columns($total-columns - 3);      
+      max-height: 23px;
+      overflow: hidden;
+      padding-right: 0.5em;
+    }
+  }
+  
+  .post-date {
+    color: $hero-grey;
+    
+    @include respond-to($small, max-width) {
+      display: block;
+      text-align: right;
+      font-style: italic;
+      width: 100%;
+    }
+    @include respond-to($small) {
+      @include span-columns(3);
+      @include omega;
+       border-left: 1px solid $hero-grey;
+       margin-top: 0.5em;
+       padding-left: 0.5em;
+    }
+  }
+  
+  .pager {
+    text-align: right;
+  }
+}
+
+.block--view__movies--now-playing,
+.block--view__movies--coming-soon {
+  .node--movie {
+    @include span-columns($total-columns / 3);
+    @include nth-omega(3n);
+  }
+}
