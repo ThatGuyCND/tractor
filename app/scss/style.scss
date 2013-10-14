@@ -20,6 +20,15 @@ a {
   &:visited {
   	color: tint($pink, 30%);
   	text-decoration: none;
+  	
+  	&.drupal {
+    	color: $light-blue;
+    	
+    	&:hover,
+    	&:focus {
+      	color: $blue;
+    	}
+  	}
   }
   
   &:hover,

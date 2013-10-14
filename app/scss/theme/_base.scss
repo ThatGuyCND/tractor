@@ -36,7 +36,13 @@ html {
 .z-footer-sub {
   /* background-color: $dark-grey; */
   @include glass;
+  // @glass resets
+  @include border-radius(0);
   @include box-shadow(none);
+  padding: 0;
+  border-left: medium none;
+  border-right: medium none;
+  
   position: fixed;
   width: 100%;
   left: 0;
