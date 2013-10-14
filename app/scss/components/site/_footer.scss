@@ -1,0 +1,83 @@
+.w-footer {
+  min-height: 435px;
+  padding: 74px 0;
+  
+  @include respond-to($small) {}
+  @include respond-to($medium) {}
+}
+
+footer {
+  text-align: center;
+  bottom: 74px;
+  left: 50%;
+  margin-left: -35%;
+  position: fixed;
+  width: 70%;
+  z-index: 0;
+  
+  .contactus {
+    border-bottom: 1px solid rgba($lightest-grey, 0.6);
+    display: block;
+    letter-spacing: -1px;
+    margin-bottom: 34px;
+    overflow: hidden;
+    padding-bottom: 2.125em;
+    padding-left: 0;
+    
+    li {
+      color: $true-white;
+      display: inline-block;
+      font-size: 28px;
+      font-weight: 700;
+      
+      @include respond-to($small) {
+        margin-right: 34px;
+      
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    
+    a.mail {
+      position: relative;
+      font-size: 16px;
+      
+      @include respond-to($small) {
+        padding-left: 50px;
+        font-size: 28px;
+        
+        &:after {
+          background: image-url('spritesheet.png') no-repeat scroll 0 -476px transparent;
+          content: "";
+          height: 24px;
+          left: 0;
+          position: absolute;
+          top: 4px;
+          width: 36px;
+        }
+      }
+    }
+    
+    span.phone {
+      color: $white;
+      position: relative;
+      font-size: 20px;
+      
+      @include respond-to($small) {
+        font-size: 28px;
+        padding-left: 21px;
+        
+        &:after {
+          background: image-url('spritesheet.png') no-repeat scroll 0 -510px transparent;
+          content: "";
+          height: 27px;
+          left: 0;
+          position: absolute;
+          top: 3px;
+          width: 10px;
+        }
+      }
+    }
+  }
+}

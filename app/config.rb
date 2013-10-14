@@ -8,7 +8,8 @@ require "susy"
 http_path = "/"
 css_dir = "app/css"
 sass_dir = "app/scss"
-images_dir = "app/images"
+images_path = "app/images"
+images_dir = "images"
 javascripts_dir = "app/javascripts"
 
 # You can select your preferred output style here (can be overridden via the command line):

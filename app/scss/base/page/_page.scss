@@ -1,21 +1,35 @@
-.page {
-
+.page,
+.zone {
+  width: 100%;
+  position: relative;
 }
-.header {
 
-}
-.main {
+.l-page-top {}
+.l-header {}
+.l-highlighted {}
+.l-preface {}
+.l-super {}
+.l-main {}
+.l-sub {}
+.l-postscript {}
+.l-sidebar-first {}
+.l-sidebar-second {}
+.l-footer {}
+.l-footer-sub {}
 
-}
-.content {
-
-}
-.sidebar-first {
-
-}
-.sidebar-second {
-
-}
-.footer {
-
+/* .l-page-top, */
+.l-header,
+/* .l-highlighted, */
+.l-preface,
+/* .l-super, */
+.l-main,
+/* .l-content,
+.l-sub, */
+.l-postscript,
+.l-sidebar-first,
+.l-sidebar-second,
+.l-footer,
+.l-footer-sub {
+  @include container;
+  position: relative;
 }

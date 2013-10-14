@@ -1,0 +1,42 @@
+/**
+ * Sprite Mapping
+ *  - Social Media Icons
+ */
+.spritesheet {
+  background-image: image-url('spritesheet.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  
+  /* Twitter */
+  &.icntw {
+    background-position: 0 -267px;
+    height: 23px;
+    top: 20px;
+    width: 32px;
+  }
+  
+  /* FaceBook */
+  &.icnfb {
+    background-position: 0 -300px;
+    height: 27px;
+    top: 18px;
+    width: 12px;
+  }
+  
+  /* Dribbble */
+  &.icndribbble {
+    background-position: 0 -337px;
+    height: 29px;
+    top: 17px;
+    width: 28px;
+  }
+  
+  /* LinkedIn */
+  &.icnlinledin {
+    background-position: 0 -415px;
+    height: 20px;
+    top: 21px;
+    width: 20px;
+  }
+}

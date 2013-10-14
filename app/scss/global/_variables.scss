@@ -19,20 +19,37 @@ $med-grey:#484848;
 $light-grey: #ddd;
 $lightest-grey: #eee;
 
+// Base Colors
+$black: #1a1a1a;
+$white: #fcfcfc;
+$true-black: #000;
+$true-white: #fff;
+
+// Branding Colors
+$light-blue: #299DE6; // rgb(34, 25, 76)
+$blue: #0062A0; // rgb(0, 98, 160)
+$sky-blue: #0CACFF; // rgb(12, 172, 255)
+$dark-blue: #05275E; // rgb(5, 39, 94)
+
+$purple: #22194C; // rgb(34, 25, 76)
+$purpink: #8C21AF; // rgb(140, 33, 175)
+$pink: #DD13D7; // rgb(221, 19, 215)
+
 //Font Stacks
 $sans-serif: helvetica, arial, sans-serif;
+$branding: 'Homenaje', Verdana, Geneva, sans-serif;
 
 //Typography
 $copy-font-family: $sans-serif;
 $copy-font-size: 16px;
 $copy-line-height: 1.8;
 
-$header-font-family: $sans-serif;
-$header-font-weight: bold;
+$header-font-family: $branding;
+$header-font-weight: normal;
 $header-font-style: normal;
-$header-font-color: #222;
+$header-font-color: $white;
 $header-line-height: 1.3;
-$header-letter-spacing: -1px;
+$header-letter-spacing: 0.015em;
 
 $header-top-margin: .2em;
 $header-bottom-margin: .5em;

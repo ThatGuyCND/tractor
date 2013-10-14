@@ -1,10 +1,13 @@
 @include border-box-sizing;
 
 html {
+  background-color: $true-white;
   font-family: $copy-font-family;
   font-size: $copy-font-size;
   line-height: $copy-line-height;
-  background: $light-grey;
 }
 
-img {max-width:100%; height: auto}
+img {
+  max-width:100%;
+  height: auto
+}

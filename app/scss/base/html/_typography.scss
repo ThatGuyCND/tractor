@@ -1,22 +1,29 @@
 //styles
 
-h1, h2, h3, h4, h5, h6{
-  font-family: $header-font-family;
-  font-style:  $header-font-style;
-  color:       $header-font-color;
-  line-height: $header-line-height;
-  letter-spacing: $header-letter-spacing;
-  font-weight: $header-font-weight;
+$header-font-sizes: $h1-font-size, $h2-font-size, $h3-font-size, $h4-font-size, $h5-font-size, $h6-font-size;
 
+@for $i from 1 through length($header-font-sizes) {
+  h#{$i} {
+    font-size: nth($header-font-sizes, $i);
+    font-family: $header-font-family;
+    font-style:  $header-font-style;
+    color:       $header-font-color;
+    line-height: $header-line-height;
+    letter-spacing: $header-letter-spacing;
+    font-weight: $header-font-weight;
+    
+    a {
+      &:link,
+      &:visited,
+      &:hover,
+      &:focus,
+      &:active,
+      &.active,
+      &.active-trail {
+        font-family: $header-font-family;
+      }
+    }
+    
+  }
 }
-
-h1 { font-size:  $h1-font-size; }
-h2 { font-size:  $h2-font-size; }
-h3 { font-size:  $h3-font-size; }
-h4 { font-size:  $h4-font-size; }
-h5 { font-size:  $h5-font-size; }
-h6 { font-size:  $h6-font-size; }
-
-
-
 

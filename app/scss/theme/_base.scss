@@ -1,0 +1,45 @@
+html {
+  min-height: 100%;
+}
+
+.container {
+  color: shade($white, 2%);
+  font-weight: normal;
+  text-shadow: 0 2px 4px #002E46;
+}
+
+.z-header,
+.z-content {
+  position: relative;
+  z-index: 1;
+}
+.z-header {
+  @include background-image(radial-gradient(right bottom, $light-blue, $purple));
+}
+
+.z-content {
+  @include background-image(radial-gradient(right top, $light-blue, $purple));
+  @include box-shadow(
+    0 -10px 20px -10px rgba($true-black, 0.4) inset,
+    0 10px 20px -10px rgba($true-white, 0.4) inset
+  );
+  border-top: 1px solid tint($dark-blue, 40%);
+}
+
+.z-footer {
+  @include background-image(linear-gradient(center top, $purple 10%, shade($pink, 60%)));
+  @include box-shadow(0 12px 12px -12px rgba($true-black, 0.4) inset);
+  background-color: $purple;
+  border-top: 1px solid $dark-blue;
+}
+
+.z-footer-sub {
+  /* background-color: $dark-grey; */
+  @include glass;
+  @include box-shadow(none);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

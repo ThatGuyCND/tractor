@@ -438,7 +438,6 @@ angular.module('ngTractor')
       }
     };
   })
-
   .directive( 'phTxt', [ 'TextGeneratorService', function ( TextGeneratorService ) {
     return {
       restrict: "EA",
@@ -471,50 +470,61 @@ angular.module('ngTractor')
     };
   }])
   .directive('tabs', function() {
-   return {
-     restrict: 'E',
-     transclude: true,
-     scope: {},
-     controller: function($scope, $element) {
-       var panes = $scope.panes = [];
-
-       $scope.select = function(pane) {
-         angular.forEach(panes, function(pane) {
-           pane.selected = false;
-         });
-         pane.selected = true;
-       }
-
-       this.addPane = function(pane) {
-         if (panes.length == 0) $scope.select(pane);
-         panes.push(pane);
-       }
-     },
-     template:
-       '<div class="tabbable">' +
-         '<ul class="nav nav-tabs">' +
-           '<li ng-repeat="pane in panes" ng-class="{active:pane.selected}">'+
-             '<a href="" ng-click="select(pane)">{{pane.title}}</a>' +
-           '</li>' +
-         '</ul>' +
-         '<div class="tab-content" ng-transclude></div>' +
-       '</div>',
-     replace: true
-   };
- }).
- directive('pane', function() {
-   return {
-     require: '^tabs',
-     restrict: 'E',
-     transclude: true,
-     scope: { title: '@' },
-     link: function(scope, element, attrs, tabsCtrl) {
-       tabsCtrl.addPane(scope);
-     },
-     template:
-       '<div class="tab-pane" ng-class="{active: selected}" ng-transclude>' +
-       '</div>',
-     replace: true
-   };
- });
-
+    return {
+      restrict: 'E',
+      transclude: true,
+      scope: {},
+      controller: function($scope, $element) {
+        var panes = $scope.panes = [];
+  
+        $scope.select = function(pane) {
+          angular.forEach(panes, function(pane) {
+            pane.selected = false;
+          });
+          pane.selected = true;
+        }
+  
+        this.addPane = function(pane) {
+          if (panes.length == 0) $scope.select(pane);
+          panes.push(pane);
+        }
+      },
+      template:
+        '<div class="tabbable">' +
+          '<ul class="nav nav-tabs">' +
+            '<li ng-repeat="pane in panes" ng-class="{active:pane.selected}">'+
+              '<a href="" ng-click="select(pane)">{{pane.title}}</a>' +
+            '</li>' +
+          '</ul>' +
+          '<div class="tab-content" ng-transclude></div>' +
+        '</div>',
+      replace: true
+    };
+  })
+  .directive('pane', function() {
+    return {
+      require: '^tabs',
+      restrict: 'E',
+      transclude: true,
+      scope: { title: '@' },
+      link: function(scope, element, attrs, tabsCtrl) {
+        tabsCtrl.addPane(scope);
+      },
+      template:
+        '<div class="tab-pane" ng-class="{active: selected}" ng-transclude>' +
+        '</div>',
+      replace: true
+    };
+  })
+  .directive('cssequalheight', function () {
+    return {
+      restrict: 'A',
+      scope: {},
+      link: function (scope, element, attrs) {
+        var elementToCopyProperty = attrs.cssequalheight,
+        source = document.getElementById( elementToCopyProperty.toString() );
+        //set height
+        element[0].style.height = source.clientHeight + 'px';
+      }
+    };
+  });

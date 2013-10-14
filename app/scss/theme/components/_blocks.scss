@@ -1,0 +1,196 @@
+/**
+ * Feature
+ */
+.feature {
+  @include span-columns($total-columns);
+  .thanks {
+    text-align: center;
+  }
+  
+  @include respond-to($small) {
+    @include span-columns($total-columns - 2);
+    @include pre(1, $total-columns);
+    font-size: 1.2em;
+    margin-bottom: 1.8em;
+    
+    p {
+      text-align: justify;
+    }
+  }
+  
+  @include respond-to($medium) {
+    @include span-columns($total-columns - 4);
+    @include pre(2, $total-columns);
+    
+    .thanks {
+      text-align: left;
+    }
+  }
+}
+
+/**
+ * Social Media
+ */
+.block--social-media {
+  @include span-columns($total-columns);
+  text-align: center;
+  margin-bottom: 1.8em;
+  
+  .block--title {
+    display: inline-block;
+    margin: 0.125em 0 0;
+    vertical-align: text-top;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    
+    @include respond-to($small) {
+      padding-right: 1em !important;
+    }
+      
+    @include respond-to($small, max-width) {
+      @include container;
+    }
+  }
+}
+
+ul {
+  &.social-media {
+    margin-bottom: 0.625em;
+    padding-bottom: 0.5em;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    
+    li {
+      display: inline-block;
+      margin-right: 50px;
+      vertical-align: top;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+      
+      a {
+        @include border-radius(4px 4px 4px 4px);
+        position: relative;
+        z-index: 5;
+        
+        &:link,
+        &:visited {
+          @include box-shadow(0 0 0.5em 2px rgba($dark-blue, 0.4) inset);
+          background-color: $sky-blue;
+          display: inline-block;
+          width: 70px;
+          height: 65px;
+          left: 0;
+          top: 0;
+        }
+        
+        &:hover,
+        &:focus {
+          @include border-radius(6px);
+          @include box-shadow(
+            -2px -2px 8px rgba($black, 0.2) inset,
+            2px 2px 6px rgba($white, 0.15) inset,
+            0px 0px 1px rgb(12, 172, 255),
+            1px 1px 1px $white,
+            2px 2px 1px rgb(255, 255, 255),
+            3px 3px 1px rgb(255, 255, 255),
+            4px 4px 0 rgb(245, 245, 245),
+            20px 18px 24px rgba(18, 18, 18, 0.5)
+          );
+          background-color: darken($sky-blue, 12%);
+          left: -7px;
+          top: -7px;
+        }
+      }
+      
+      @include respond-to($small, max-width) {
+        @include span-columns($total-columns / 3);
+        @include nth-omega();
+      }
+    }
+      
+    @include respond-to($small, max-width) {
+      @include container;
+    }
+      
+    @include respond-to($small) {
+      display: inline-block;
+    }
+  }
+}
+
+/**
+ * Newsletter
+ */
+.webform--newsletter {
+  margin-bottom: 2.6em;
+  
+  form {
+    @include glass;
+  }
+  
+  @include respond-to($small) {
+    @include span-columns($total-columns - 2);
+    @include pre(1, $total-columns);
+    @include post(1, $total-columns);
+  }
+  
+  @include respond-to($medium) {
+    @include span-columns($total-columns);
+    @include pre(0);
+  }
+}
+
+#mc_embed_signup {
+  .title,
+  .mc-field-group,
+  .mc-field-submit {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .title {
+    &:after {
+      content: " :";
+    }
+    
+    @include respond-to($small) {
+      padding-right: 0.5em;
+    }
+  }
+  
+  .mc-field-group,
+  .mc-field-submit {
+    margin-bottom: 1em;
+    
+    input {
+      font-size: 1.3em;
+    }
+    
+    @include respond-to($small, $medium) {
+      margin-bottom: 32px;
+    }
+    
+    @include respond-to($medium) {
+      margin-bottom: 0;
+    }
+  }
+  
+  label {
+    display: none;
+  }
+}
+
+/**
+ * Copyright
+ */
+.block--copyright {
+  @include span-columns($total-columns);
+  color: $main-nav-grey;
+  font-size: 0.625em;
+  
+  p {
+    margin: 0.5em 0;
+  }
+}

@@ -1,0 +1,41 @@
+button,
+a.button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  @include transition(all 0.2s ease);
+  -webkit-appearance: none;
+  @include border-radius(0);
+  @include box-shadow(0 1px 0 rgba($white, 0.5) inset, 0 -1px 0 rgba(shade($dark-blue, 2%), 0.2) inset);
+  @include background-clip(padding-box);
+  background: $sky-blue;
+  @include background-image(linear-gradient(center top, $sky-blue, $light-blue));
+  border: 1px solid;
+  border-color: $blue lighten($blue, 5%) darken($blue, 10%) $dark-blue;
+  cursor: pointer;
+  color: $white;
+  display: inline-block;
+  outline: 0;
+  overflow: visible;
+  margin: 0;
+  padding: 0.3em 0.8em;
+  text-shadow: 1px 1px 0 rgba($black, 0.4);
+  text-decoration: none;
+  vertical-align: top;
+  width: auto;
+  
+  &:hover {
+    @include background-image(linear-gradient(center top, $light-blue, $blue));
+    border-color: $light-blue $sky-blue $blue $blue;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba($black, 0.4);
+  }
+  
+  &:active {
+    @include background-image(linear-gradient($blue, $light-blue));
+    @include box-shadow(rgba($black, 0.25) 0 1px 2px 0 inset);
+    border-color: $light-blue $light-blue lighten($sky-blue, 10%) tint($sky-blue, 10%);
+    color: tint($blue, 80%);
+    text-shadow: 0 -1px 0 rgba($black, 0.4);
+  }
+}

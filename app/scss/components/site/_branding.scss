@@ -1,0 +1,40 @@
+.branding {
+  color: $white;
+  font-family: $branding;
+  text-align: center;
+}
+
+.branding--logo {
+  padding-top: 4em;
+  
+  img {
+    vertical-align: bottom;
+  }
+}
+
+.site-name {
+  color: shade($white, 15%);
+  display: block;
+  font-size: 32px;
+  letter-spacing: 0.015em;
+  margin: 0 auto 0.5em;
+  text-shadow: 1px 0 0 $white,
+    0px 0px 0 rgb(159,159,159),
+    -1px 1px 0 rgb(113,113,113),
+    -2px 2px 0 rgb(68,68,68),
+    -3px 3px 0 rgb(23,23,23),
+    -4px 4px 3px rgba($black, 0.4),
+    -4px 4px 1px rgba($black, 0.5),
+    0px 0px 3px rgba($black, .2),
+    -6px 6px 11px rgba($dark-blue, 0.9),
+    -16px 16px 20px rgba($dark-blue, 0.6);
+  
+  @include respond-to($small) {
+    font-size: 56px;
+    text-indent: 16px;
+  }
+  
+  @include respond-to($medium) {
+    font-size: 84px;
+  }
+}

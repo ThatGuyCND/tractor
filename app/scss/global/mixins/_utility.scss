@@ -18,3 +18,18 @@
   }
 }
 
+@mixin rwdImage {
+  display: inline-block;
+  min-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+@mixin zebra($child) {
+  #{$child} {
+    background-color: darken($lightest-grey, 2.5%);
+    &:nth-child(odd) {
+      background-color: lighten($lightest-grey, 2.5%);
+    }
+  }
+}
