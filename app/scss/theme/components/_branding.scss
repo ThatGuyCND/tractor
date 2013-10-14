@@ -1,5 +1,7 @@
 // Background Video
 #video-container {
+  background: image-url('feature.jpg') no-repeat scroll center center transparent;
+  background-size: cover;
   position: absolute;
 	top:0%;
 	left:0%;

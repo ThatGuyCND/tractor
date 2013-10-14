@@ -527,4 +527,18 @@ angular.module('ngTractor')
         element[0].style.height = source.clientHeight + 'px';
       }
     };
+  })
+  .directive('iosvideo', function($window) {
+    return {
+      restrict: 'EA',
+      link: function(scope, element, attrs) {
+        var ua = $window.navigator.userAgent,
+          iphone = ~ua.indexOf('iPhone') || ~ua.indexOf('iPod'),
+          ipad = ~ua.indexOf('iPad'),
+          ios = iphone || ipad;
+          if (ios) {
+            element.remove();
+          }
+      }
+    };
   });
