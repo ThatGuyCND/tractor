@@ -11,7 +11,6 @@
     @include span-columns($total-columns - 2);
     @include pre(1, $total-columns);
     font-size: 1.2em;
-    margin-bottom: 1.8em;
     
     p {
       text-align: justify;
@@ -124,21 +123,73 @@ ul {
  * Newsletter
  */
 .webform--newsletter {
-  margin-bottom: 2.6em;
+  display: none;
+  background-color: rgba($black, 0.8);
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  
+  .close {
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+  }
   
   form {
     @include glass;
+    @include box-shadow(
+      0 3px 6px rgba(122, 222, 244, 0.3),
+      0 1px rgba(255, 255, 255, 0.3) inset,
+      0 10px 0 rgba(3, 73, 65, 0.3) inset,
+      0 10px 20px rgba(255, 255, 255, 0.25) inset,
+      0 -10px 3px rgba(3, 73, 65, 0.3) inset,
+      -5px 0 4px rgba(3, 73, 65, 0.4) inset,
+      5px 0 4px rgba(3, 73, 65, 0.4) inset,
+      0 10px 20px rgba(3, 73, 65, 0.6),
+      0 18px 24px 6px rgba($true-black, 0.6)
+    );
   }
   
-  @include respond-to($small) {
-    @include span-columns($total-columns - 2);
-    @include pre(1, $total-columns);
-    @include post(1, $total-columns);
+  #mc_embed_signup {
+    background-color: rgba(tint(rgb(3, 73, 65), 60%), .4);
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    margin-top: -115px;
+    margin-left: -45%;
+  
+    @include respond-to($small, $medium) {
+      width: 70%;
+      margin-left: -35%;
+      text-align: center;
+    }
+    
+    @include respond-to($medium) {
+      text-align: center;
+      width: 820px;
+      margin-left: -410px;
+    }
   }
   
-  @include respond-to($medium) {
-    @include span-columns($total-columns);
-    @include pre(0);
+  @include respond-to($small, max-width) {
+    .title {
+      font-size: 24px;
+    }
+    
+    .mc-field-group,
+    .mc-field-submit {
+      display: block;
+      width: 100%;
+    }
+    
+    input {
+      display: block;
+      width: 100%;
+    }
   }
 }
 
@@ -188,9 +239,27 @@ ul {
 .block--copyright {
   @include span-columns($total-columns);
   color: $main-nav-grey;
-  font-size: 0.625em;
+  font-size: 0.5em;
   
   p {
     margin: 0.5em 0;
+  }
+  
+  @include respond-to($small) {
+    font-size: 0.625em;
+  }
+  
+  @include respond-to($medium) {
+    font-size: 0.8em;
+  }
+}
+
+p.newsletter {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 2.25em;
+  
+  button {
+    margin: 0.25em 0.5em;
   }
 }

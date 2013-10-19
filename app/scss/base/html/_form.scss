@@ -38,4 +38,35 @@ input[type="button"] {
     color: tint($blue, 80%);
     text-shadow: 0 -1px 0 rgba($black, 0.4);
   }
+  
+  &.action--negative {
+    @include background-image(linear-gradient(center top, $red, darken($red, 20%)));
+    @include box-shadow(0 1px 0 rgba($white, 0.5) inset, 0 -1px 0 rgba(shade($red, 2%), 0.2) inset);
+    border-color: darken($red, 10%) $red darken($red, 15%) shade($red, 20%);
+    
+    &:hover {
+      @include background-image(linear-gradient(center top, darken($red, 35%), darken($red, 10%)));
+      border-bottom-color: darken($red, 5%);
+      
+      &:after {
+        @include opacity(0.8);
+      }
+    }
+    
+    &:after {
+      content: "x";
+      color: $white;
+      font-weight: normal;
+      text-shadow: 1px -1px 0 $black, -1px 1px 1px rgba($white, 0.4);
+    }
+  }
+  
+  &.icon {
+    padding-right: 2em;
+    
+    &:after {
+      position: absolute;
+      right: 0.6em;
+    }
+  }
 }

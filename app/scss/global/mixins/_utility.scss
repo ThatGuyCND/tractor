@@ -33,3 +33,63 @@
     }
   }
 }
+
+[data-show="mobile"] {
+  display: none !important;
+  visibility: hidden !important;
+  
+  @include respond-to($small, max-width) {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+
+[data-show="tablet"] {
+  display: none !important;
+  visibility: hidden !important;
+  
+  @include respond-to($small, $medium) {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+
+[data-show="desktop"] {
+  display: none !important;
+  visibility: hidden !important;
+  
+  @include respond-to($medium) {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+
+[data-hide="mobile"] {
+  display: block;
+  visibility: visible;
+  
+  @include respond-to($small, max-width) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+ 
+[data-hide="tablet"] {
+  display: block;
+  visibility: visible;
+  
+  @include respond-to($small, $medium) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+[data-hide="desktop"] {
+  display: block;
+  visibility: visible;
+  
+  @include respond-to($medium) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}

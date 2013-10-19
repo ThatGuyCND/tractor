@@ -3,7 +3,9 @@
   padding: 74px 0;
   
   @include respond-to($small) {}
-  @include respond-to($medium) {}
+  @include respond-to($medium) {
+    /* min-height: 600px; */
+  }
 }
 
 footer {
@@ -16,13 +18,13 @@ footer {
   z-index: 0;
   
   .contactus {
+    @include container;
     border-bottom: 1px solid rgba($lightest-grey, 0.6);
     display: block;
     letter-spacing: -1px;
     margin-bottom: 34px;
     overflow: hidden;
     padding-bottom: 2.125em;
-    padding-left: 0;
     
     li {
       color: $true-white;
@@ -78,6 +80,11 @@ footer {
           width: 10px;
         }
       }
+    }
+    
+    @include respond-to($medium, max-width) {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
