@@ -2,33 +2,21 @@
 @import "susy";
 @import "global/functions";
 @import "global/variables";
+@import "theme/themes";
 @import "global/extends/**/*";
 @import "global/mixins/**/*";
 @import "base/vendor/**/*";
 @import "base/html/**/*";
 @import "base/page/**/*";
 @import "partials/components/**/*";
-//@import "partials/components/site/**/*";
 @import "partials/layouts/**/*";
 @import "theme/components/**/*";
-//@import "theme/components/site/**/*";
 @import "theme/layouts/**/*";
 
 *, *:before, *:after {
 	-webkit-border-sizing: border-box;
 	-moz-border-sizing: border-box;
 	border-sizing: border-box;
-}
-
-//animated links
-a {
-	color: $link-blue;
-	text-decoration: none;
-	&:hover,
-	&:focus {
-  	transition: all 0.2s ease-in 0s;
-  	color: $link-dark-blue;
-	}
 }
 
 .button{
@@ -122,62 +110,49 @@ ul {
 }
 
 [data-show="mobile"] {
-  display: none !important;
-  visibility: hidden !important;
-  
-  @include respond-to($small, max-width) {
-    display: block !important;
-    visibility: visible !important;
+  @include respond-to($small) {
+    display: none !important;
+    visibility: hidden;
   }
 }
 
 [data-show="tablet"] {
-  display: none !important;
-  visibility: hidden !important;
+  @include respond-to($small, max-width) {
+    display: none !important;
+    visibility: hidden;
+  }
   
-  @include respond-to($small, $medium) {
-    display: block !important;
-    visibility: visible !important;
+  @include respond-to($medium) {
+    display: none !important;
+    visibility: hidden;
   }
 }
 
 [data-show="desktop"] {
-  display: none !important;
-  visibility: hidden !important;
-  
-  @include respond-to($medium) {
-    display: block !important;
-    visibility: visible !important;
+  @include respond-to($medium, max-width) {
+    display: none !important;
+    visibility: hidden;
   }
 }
 
 [data-hide="mobile"] {
-  display: block;
-  visibility: visible;
-  
   @include respond-to($small, max-width) {
     display: none !important;
-    visibility: hidden !important;
+    visibility: hidden;
   }
 }
  
 [data-hide="tablet"] {
-  display: block;
-  visibility: visible;
-  
   @include respond-to($small, $medium) {
     display: none !important;
-    visibility: hidden !important;
+    visibility: hidden;
   }
 }
 
 [data-hide="desktop"] {
-  display: block;
-  visibility: visible;
-  
   @include respond-to($medium) {
     display: none !important;
-    visibility: hidden !important;
+    visibility: hidden;
   }
 }
 

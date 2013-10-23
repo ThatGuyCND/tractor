@@ -1,14 +1,14 @@
 <div class="topbar">
   <nav class="global">
     <ul class="menu links inline">
-      <li>
-        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).toggleClass('active open');" href="">22 CM</a>
+      <li data-show="desktop">
+        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).parent('li').toggleClass('active open');" href="">22 CM</a>
         <ul class="dropdown">
           <li><a href="">Our Publications</a></li>
         </ul>
       </li>
-      <li>
-        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).toggleClass('active open');" href="">About Us</a>
+      <li data-show="desktop">
+        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).parent('li').toggleClass('active open');" href="">About Us</a>
         <ul class="dropdown">
           <li><a href="#/newspaper/about_masthead">About the Masthead</a></li>
           <li><a href="#/newspaper/about_22cm">About 22nd Century Media</a></li>
@@ -17,25 +17,114 @@
           <li><a href="#/newspaper/about_careers">Careers</a></li>
         </ul>
       </li>
+      <li data-hide="desktop">
+        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon icon-settings"/></a>
+        <ul class="dropdown">
+          <li><a href="">Sign In</a></li>
+          <li><a href="">Subscribe</a></li>
+        </ul>
+      </li>
+      <li data-hide="desktop">
+        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon icon-weather icon-cloud"/></a>
+        <ul class="dropdown">
+          <div class="weather">
+            <div class="temp">73<span class="scale">F</span></div>
+            <div class="icon"><i class="icon icon-world"></i></div>
+            <div class="date">
+              <span class="day">Tuesday</span>,&nbsp;
+              <span class="month">July</span>&nbsp;
+              <span class="date">2</span>,&nbsp;
+              <span class="year">2013</span>
+            </div>
+          </div>
+        </ul>
+      </li>
     </ul>
   </nav>
   <nav class="user">
     <ul class="menu links inline">
-      <li>
-        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).toggleClass('active open');" href=""><i class="icon icon-user"/></a>
+      <li data-show="desktop"><a href="">Sign In</a></li>
+      <li data-show="desktop"><a href="">Subscribe</a></li>
+      <li data-show="mobile">
+        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon icon-news"/></a>
         <ul class="dropdown">
-          <li><a href="">Sign In</a></li>
-          <li><a href="">Sign Up</a></li>
+          <li>
+            <partial file="newspaper/components/breaking-news_single"></partial>
+          </li>
         </ul>
       </li>
-      <li><a href="">Subscribe</a></li>
       <li data-hide="desktop">
-        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).toggleClass('active open');" href=""><i class="icon icon-search"></i></a>
+        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon icon-search"/></a>
         <ul class="dropdown">
           <li>
             <partial file="newspaper/site/search"></partial>
           </li>
         </ul>
+      </li>
+      <li data-hide="desktop">
+        <a onclick="jQuery('~ #primary-nav #toggle-button', this).trigger('click'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon icon-menu"/></a>
+        <nav id="primary-nav" role="custom-dropdown">
+          <input type="checkbox" id="toggle-button">
+          <ul class="menu--main-menu menu links inline">
+            <li class="menu-item dropdown">
+              <input type="checkbox" />
+              <a active-link="active" active-trail="#/newspaper/news_breaking-story" active-trail="#/newspaper/news_obits" data-toggle="dropdown" href="#/newspaper/news">News</a>
+              <ul class="menu--main-menu_sub dropdown-menu">
+                <li><a active-link="active" href="#/newspaper/news_breaking-story">Breaking</a></li>
+                <li><a href="#/newspaper/news_police">Police</a></li>
+                <li><a href="#/newspaper/news_village">Village</a></li>
+                <li><a href="#/newspaper/news_school">School</a></li>
+                <li><a active-link="active" href="#/newspaper/news_obits">Obituaries</a></li>
+              </ul>
+            </li>
+            <li class="menu-item dropdown">
+              <input type="checkbox" />
+              <a active-link="active" data-toggle="dropdown" href="#/newspaper/sports">Sports</a>
+              <ul class="menu--main-menu_sub dropdown-menu">
+                <li><a href="#/newspaper/sports_high-school">High School</a></li>
+                <li><a href="#/newspaper/sports_youth">Youth</a></li>
+                <li><a href="#/newspaper/sports_aotw">Athlete of the Week</a></li>
+                <li><a href="#/newspaper/sports_aotm">Athlete of the Month</a></li>
+              </ul>
+            </li>
+            <li class="menu-item dropdown">
+              <input type="checkbox" />
+              <a active-link="active" data-toggle="dropdown" href="#/newspaper/opinion">Opinion</a>
+              <ul class="menu--main-menu_sub dropdown-menu">
+                <li><a href="#/newspaper/opinion_editor">From the Editor</a></li>
+                <li><a href="#/newspaper/opinion_columnist">Contributing Columnists</a></li>
+                <li><a href="#/newspaper/opinion_letters">Letters to the Editor</a></li>
+                <li><a href="#/newspaper/opinion_photo-poll">Photo Poll</a></li>
+              </ul>
+            </li>
+            <li class="menu-item dropdown">
+              <input type="checkbox" />
+              <a active-link="active" data-toggle="dropdown" href="#/newspaper/life-arts">Life &amp; Arts</a>
+              <ul class="menu--main-menu_sub dropdown-menu">
+                <li><a href="#/newspaper/life-arts_dining">Dining Out</a></li>
+                <li><a href="#/newspaper/life-arts_movies">Movie Times</a></li>
+              </ul>
+            </li>
+            <li class="menu-item dropdown">
+              <input type="checkbox" />
+              <a active-link="active" data-toggle="dropdown" href="#/newspaper/marketplace">Marketplace</a>
+              <ul class="menu--main-menu_sub dropdown-menu">
+                <li><a href="#/newspaper/marketlace_classifieds">Classifieds</a></li>
+                <li><a href="#/newspaper/marketplace_real-estate">Real Estate</a></li>
+              </ul>
+            </li>
+            <li class="menu-item dropdown">
+              <input type="checkbox" />
+              <a active-link="active" data-toggle="dropdown" href="#/newspaper/hometown">Hometown Advantage</a>
+              <ul class="menu--main-menu_sub dropdown-menu">
+                <li><a href="#/newspaper/hometown_benefits">Member Benefits</a></li>
+                <li><a href="#/newspaper/hometown_subscribe">Subscribe</a></li>
+                <li><a href="#/newspaper/hometown_dig-paper">Digital Paper</a></li>
+                <li><a href="#/newspaper/hometown_special">Special Sections</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </li>
     </ul>
   </nav>

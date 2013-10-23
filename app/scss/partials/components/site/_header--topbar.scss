@@ -1,10 +1,25 @@
 .z-page-top {
-  background-color: $black;
+  @include box-shadow(0px -2px 0 0 $main-nav-grey inset);
+  background-color: $middle-grey;
 }
 
 .topbar {
   width: 100%;
   height: 40px;
+  
+  nav#primary-nav[role="custom-dropdown"] {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    
+    li.dropdown {
+      padding-left: 0;
+    }
+    
+    .dropdown {
+      top: 0;
+    }
+  }
 }
 
 nav {
@@ -16,7 +31,7 @@ nav {
     .dropdown {
       display: none;
       position: absolute;
-      top: 40px;
+      top: 49px;
       left: 0;
       width: 100%;
       z-index: 50;
@@ -28,7 +43,6 @@ nav {
         height: 40px;
         
       > li {
-        border-right: 1px solid $white;
         display: table-cell;
         margin: 0;
         padding: 0;
@@ -36,19 +50,20 @@ nav {
         position: static;
           
         > a {
-          color: $white;
+          border-right: 1px solid $main-nav-grey;
+          color: $black;
           display: inline-block;
           min-width: 40px;
-          min-height: 40px;
+          min-height: 24px;
           text-align: center;
-          margin: 0;
-          padding: 0.5em 0.625em 0;
+          margin: 8px 0;
+          padding: 5px 8px 0;
           vertical-align: middle;
+        }
           
-          &.open {
-            ~ ul {
-              visibility: visible;
-            }
+        &.open {
+          > ul {
+            visibility: visible;
           }
         }
         
@@ -56,9 +71,17 @@ nav {
           padding-left: 1em;
         }
         
+        &:last-child {
+          a {
+            border-right: medium none;
+          }
+        }
+        
         @include respond-to($medium) {
           &:nth-child(2n) {
-            border-right: medium none;
+            a {
+              border-right: medium none;
+            }
           }
         }
       }

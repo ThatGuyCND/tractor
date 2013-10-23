@@ -1,35 +1,53 @@
 .topbar {
-  background-color: $black;
+  background-color: $middle-grey;
+  
+  nav#primary-nav[role="custom-dropdown"] {
+    li.dropdown {}
+  }
 }
 
 nav {
   &.global,
   &.user {
     .dropdown {
-      background-color: $light-grey;
+      @include box-shadow(0 8px 10px -4px rgba($black, 0.6));
+      background-color: $white;
+      border-bottom: 2px solid $main-nav-grey;
       list-style: none outside none;
       padding-left: 0;
+      
+      @include respond-to($medium) {
+        border-left: 2px solid $main-nav-grey;
+        border-right: 2px solid $main-nav-grey;
+        top: 42px;
+      }
     }
     
     > ul {
       > li {
-        border-right: 1px solid $white;
-          
+        @include transition-property(background-color);
+        @include transition-duration(200ms);
+        @include transition-delay(200ms);
+
         > a {
-          @include transition-property(background-color, color);
-          @include transition-duration(200ms);
-          @include transition-delay(200ms);
-          color: $white;
+          color: $black;
           
-          &.active,
-          &.open {
-            @include transition-delay(0);
-            background-color: $light-grey;
-            color: $black;
+          @include respond-to($medium) {
+            font-size: 0.8em;
           }
           
           i {
             text-indent: 0.625em;
+          }
+        }
+          
+        &.active,
+        &.open {
+          @include transition-delay(0);
+          background-color: $white;
+          
+          a {
+            border-right-color: transparent;
           }
         }
       }

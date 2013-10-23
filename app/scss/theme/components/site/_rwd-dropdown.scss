@@ -25,11 +25,7 @@
   			padding: 0;
   
   			a {
-  				@include double-shadow($grey);
-  				@include hover-style($grey);
-  				@include text-shadow(0 -1px 0 rgba(255,255,255,0.3));
-  				color: darken($grey, 50%);
-  				background: $grey;
+  				color: $white;
   			}
   		}
   	}
@@ -71,23 +67,55 @@
       &:hover + a[data-toggle="dropdown"],
       &:focus + a[data-toggle="dropdown"] {
       	@include transition(all 200ms ease-in 0s);
-    		background: lighten($main-nav-grey, 3%);
       }
     }
   }
 }
 
 #primary-nav {
-  @include respond-to($medium, max-width) {
+  /*
+@include respond-to($medium, max-width) {
     > ul {
       > li {
     		> a {
-      		@include double-shadow($main-nav-grey);
-      		@include hover-style($main-nav-grey);
       		@include text-shadow(0 -1px 0 rgba($black, 0.3));
       		color: white;
       		background: $main-nav-grey;
     		}
+      }
+    }
+  }
+*/
+
+  a {
+    &:link,
+    &:visited {
+      color: $white;
+      display: block;
+      font-weight: normal;
+      padding: 0.5em 0.75em;
+    }
+  
+    &.active,
+    &.active-trail,
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  
+    &.active,
+    &.active-trail {
+      + ul {
+        display: block;
+        visibility: visible;
+        z-index: 1;
+      
+        a.active,
+        a.active-trail {
+          background-color: $white;
+          color: $black;
+          font-weight: bold;
+        }
       }
     }
   }

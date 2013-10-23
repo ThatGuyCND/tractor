@@ -11,7 +11,7 @@
   			display: block;
         content: '\25BC';
   			font-size: 0.7em;
-  			top: 8px;
+  			top: 1em;
   			right: 10px;
   		}
   	}
@@ -135,6 +135,7 @@
     }
   }
   
+/*
   a {
     &:link,
     &:visited {
@@ -168,6 +169,7 @@
       }
     }
   }
+*/
   
   ul {
     @include ul-nostyle;
@@ -253,9 +255,11 @@ nav#primary-nav[role="custom-dropdown"] {
         top: 0; 
         content:"\2261";
         font-size:3.5rem;
+        font-weight: 300;
         line-height: 3rem;
         text-align: center;
         min-width: 40px;
+        margin-top: -0.1em;
       }
     }
         

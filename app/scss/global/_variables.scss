@@ -11,7 +11,9 @@ $small: 600px;
 $medium: 900px;
 
 //Colors
-$link-blue: #13A7C7;
+/* $link-blue: #13A7C7; */
+$link-light-blue: rgb(99, 173, 197);
+$link-blue: rgb(0, 116, 180);
 $link-dark-blue: #10869f;
 $dark-grey: #333;
 $hero-grey: #8c8c8c;
@@ -29,23 +31,25 @@ $orange: #C0392B;
 $blue: #2980B9;
 $grey: #EEE;
 
-$red: red;
+$red: rgb(195, 40, 48);
 
 //Font Stacks
-$sans-serif: "Lato", helvetica, arial, sans-serif;
+/* $sans-serif: "Lato", helvetica, arial, sans-serif; */
+$sans-serif: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
+$serif: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif; ;
 $script: "Pacifico", "Brush Script MT", Optima, Segoe, "Segoe UI", cursive;
 
 //Typography
 $copy-font-family: $sans-serif;
 $copy-font-size: 16px;
-$copy-line-height: 1.8;
+$copy-line-height: 1.625;
 
-$header-font-family: $sans-serif;
+$header-font-family: $serif;
 $header-font-weight: bold;
 $header-font-style: normal;
-$header-font-color: #222;
-$header-line-height: 1.3;
-$header-letter-spacing: -1px;
+$header-font-color: $dark-grey;
+$header-line-height: 1.23;
+$header-letter-spacing: -0.05em;/* -1px; */
 
 $header-top-margin: .2em;
 $header-bottom-margin: .5em;

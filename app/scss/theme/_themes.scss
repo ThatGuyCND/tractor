@@ -1,0 +1,93 @@
+/** Theme Specific Colors
+ *
+ *   + Newspapers
+ */
+// Frankfort Station
+$FS-main: rgb(0, 88, 140);
+$FS-secondary: rgb(0, 53, 93);
+// Lockport Legend
+$LL-main: rgb(248, 181, 43);
+$LL-secondary: rgb(148, 122, 72);
+// Mokena Messenger
+$MM-main: rgb(0, 111, 65);
+$MM-secondary: rgb(0, 70, 34);
+// New Lonnox Patriot
+$NLP-main: rgb(211, 31, 48);
+$NLP-secondary: rgb(129, 14, 25);
+// Homer Horizon
+$HH-main: rgb(38, 101, 56);
+$HH-secondary: rgb(6, 67, 31);
+// Orland Park Prarie
+$OPP-main: rgb(211, 31, 48);
+$OPP-secondary: rgb(129, 14, 25);
+// Tinley Junction
+$TJ-main: rgb(0, 84, 126);
+$TJ-secondary: rgb(0, 45, 76);
+// Glenview Lantern
+$GL-main: rgb(251, 174, 64);
+$GL-secondary: rgb(154, 107, 34);
+// Wilmette Beacon
+$WB-main: rgb(9, 136, 110);
+$WB-secondary: rgb(0, 82, 63);
+// Winnetka Current
+$WC-main: rgb(61, 108, 121);
+$WC-secondary: rgb(29, 67, 75);
+// Northbrook Tower
+$NT-main: rgb(137, 148, 70);
+$NT-secondary: rgb(78, 82, 42);
+
+// fn will iterate through this array to build color schemes
+$themes: ("FS" $FS-main $FS-secondary) ("LL" $LL-main $LL-secondary) ("MM" $MM-main $MM-secondary) ("NLP" $NLP-main $NLP-secondary) ("HH" $HH-main $HH-secondary) ("OPP" $OPP-main $OPP-secondary) ("TJ" $TJ-main $TJ-secondary) ("GL" $GL-main $GL-secondary) ("WB" $WB-main $WB-secondary) ("WC" $WC-main $WC-secondary) ("NT" $NT-main $NT-secondary);
+
+@each $theme in $themes {
+  [theme=#{quote(nth($theme, 1))}] {
+    
+    .page--title,
+    .block--title {
+      border-bottom-color: #{nth($theme, 3)};
+    }
+    
+    #primary-nav {
+      background-color: #{nth($theme, 2)};
+      
+      a {        
+        &.active,
+        &.active-trail,
+        &:hover,
+        &:focus {
+          background-color: #{nth($theme, 3)};
+        }
+        
+        ~ ul {
+          background-color: #{nth($theme, 3)};
+        }
+      }
+    }
+    
+    .topbar {
+      #primary-nav {
+        .dropdown {
+          background-color: #{nth($theme, 3)};
+          
+          > a {
+            &:link,
+            &:visited {
+              background-color: #{nth($theme, 2)};
+            }
+          }
+        }
+      }
+    }
+    
+    .dropdown {
+/*       @include respond-to($medium, max-width) { */
+        > input[type="checkbox"] {
+          &:hover + a[data-toggle="dropdown"],
+          &:focus + a[data-toggle="dropdown"] {
+        		background-color: #{nth($theme, 3)};
+          }
+        }
+/*       } */
+    }
+  }
+}
