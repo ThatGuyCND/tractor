@@ -1,4 +1,5 @@
 $container-style: magic;
+$container-width: 64em;
 $total-columns  : 12;
 $column-width   : 5.3em;
 $gutter-width   : 1.2em;
@@ -9,11 +10,15 @@ $grid-padding   : $gutter-width;
 
 $small: 600px;
 $medium: 900px;
+$large: 1024px;
+$xLarge: 1280px;
 
 //Colors
 /* $link-blue: #13A7C7; */
 $link-light-blue: rgb(99, 173, 197);
 $link-blue: rgb(0, 116, 180);
+$btn-light-blue: rgb(107, 173, 201);
+$btn-blue: rgb(16, 114, 186);
 $link-dark-blue: #10869f;
 $dark-grey: #333;
 $hero-grey: #8c8c8c;

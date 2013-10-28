@@ -8,6 +8,26 @@
   position: relative;
 }
 
+.z-page-top {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 50;
+  
+  @include respond-to($medium) {
+    position: relative;
+  }
+}
+
+.w-header {
+  padding-top: 56px;
+  
+  @include respond-to($medium) {
+    padding-top: 0;
+  }
+}
+
 .l-page-top {}
 .l-header {}
 .l-highlighted {}

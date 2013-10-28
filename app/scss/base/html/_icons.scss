@@ -20,6 +20,17 @@
 		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
 
+@font-face {
+  font-family: "Theme Icons";
+  src:url("../fonts/22cm/22cm-icons.eot");
+  src:url("../fonts/22cm/22cm-icons.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/22cm/22cm-icons.ttf") format("truetype"),
+    url("../fonts/22cm/22cm-icons.svg#untitled-font-1") format("svg"),
+    url("../fonts/22cm/22cm-icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .icon:before {
 	font-family: 'linecons';
 	speak: none;
@@ -62,7 +73,6 @@
 .icon-arrow-right-4:before {
 	content: "\e033";
 }
-
 .icon-phone:before {
 	content: "\e000";
 }
@@ -209,5 +219,70 @@
 }
 
 .icon-menu:before {
-  content:"\2261";
+  @include background-clip(content-box);
+  content: " ";
+  background-color: $black;
+  width: 100%;
+  height: 2px;
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  padding: 5px 0;
+  position: relative;
+  top: 1px;
+}
+
+/* Theme Specific Icons */
+[class^="theme-icon-"]:before,
+[class*="theme-icon-"]:before {
+  @include transform(scale(2));
+  font-family: "Theme Icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-indent: 0.375em !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.theme-icon-22cm:before {
+  content: "a";
+}
+.theme-icon-arrow-left:before {
+  content: "b";
+}
+.theme-icon-arrow-right:before {
+  content: "d";
+}
+.theme- icon-arrow-left-round:before {
+ content: "c";
+}
+.theme-icon-arrow-right-round:before {
+  content: "e";
+}
+.theme-icon-check:before {
+  content: "f";
+}
+.theme-icon-email:before {
+  content: "g";
+}
+.theme-icon-menu:before {
+  content: "h";
+}
+.theme-icon-news:before {
+  content: "i";
+}
+.theme-icon-results:before {
+  content: "j";
+}
+.theme-icon-search:before {
+  content: "k";
+}
+.theme-icon-settings:before {
+  content: "l";
+}
+.theme-icon-user:before {
+  content: "m";
 }

@@ -1,0 +1,94 @@
+button,
+a.button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  -webkit-appearance: none;
+  @include border-radius(0);
+  @include background-clip(padding-box);
+  background: $btn-blue;
+  /* @include background-image(linear-gradient(white, #dddddd)); */
+  border: medium none;
+  cursor: pointer;
+  color: $white;
+  display: inline-block;
+  // Helvetica Neue present, because it works better
+  // for line-height on buttons than Arial, on OS X.
+  font-family: $sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  outline: 0;
+  overflow: visible;
+  margin: 0;
+  padding: 0.5em 0.8em;
+  text-shadow: 0 0 0 transparent;
+  text-decoration: none;
+  vertical-align: text-top;
+  width: auto;
+  &:hover {
+    background: $btn-light-blue;
+    /* @include background-image(linear-gradient(white, #eeeeee 1px, #cccccc)); */
+    text-decoration: none;
+  }
+  &:active {
+    /* @include background-image(linear-gradient(#dddddd, #eeeeee)); */
+    @include box-shadow(inset rgba(black, 0.25) 0 1px 2px 0);
+    border-color: #999999 #bbbbbb #dddddd;
+  }
+  &.button--action {
+    padding-right: 0.3em;
+    
+    &:after {
+      @include transform(scale(3.5));
+      color: $white;
+      content: "d";
+    	display: inline-block;
+      font-family: "Theme Icons" !important;
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-variant: normal !important;
+      line-height: 1;
+      text-indent: 0.3em !important;
+      text-transform: none !important;
+      margin-right: 0.5em;
+      speak: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      top: 1px;
+    }
+  }
+  // IE7
+  *padding-top: 2px;
+  *padding-bottom: 0;
+  // Kill phantom spacing and dotted
+  // border that appears in Firefox.
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+a.button {
+  // IE7
+  *padding-bottom: 6px;
+}
+
+button {
+  // IE7
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+
+button[disabled],
+a.button_disabled,
+a.button-disabled {
+  @include box-shadow(none);
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  color: #888888;
+  cursor: default;
+}

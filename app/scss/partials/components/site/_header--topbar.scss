@@ -31,7 +31,7 @@ nav {
     .dropdown {
       display: none;
       position: absolute;
-      top: 49px;
+      top: 47px;
       left: 0;
       width: 100%;
       z-index: 50;
@@ -67,9 +67,11 @@ nav {
           }
         }
         
+/*
         .dropdown {
           padding-left: 1em;
         }
+*/
         
         &:last-child {
           a {

@@ -13,10 +13,53 @@
 
 .highlighted {
   .block--search-form {
+    max-width: 33%;
+    width: 25%;
     position: absolute;
-    right: 1.5em;
-    top: 0.625em;
+    right: 24px;
+    top: 5px;
     z-index: 5;
+    
+    @include respond-to($large) {
+      width: 33%;
+    }
+  }
+}
+
+.block--search-form {}
+
+input.form--search__query {
+  border: medium none;
+  font-family: $serif;
+  font-size: 1em;
+  font-style: italic;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding: 7px 38px 6px 0.5em;
+}
+
+.form--search__submit {
+  @include border-radius(0);
+  background-color: $white;
+  background-image: none;
+  border: medium none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 7px 7px 6px 0;
+  
+  &:hover,
+  &:focus {
+    background-image: none;
+    background-color: $middle-grey;
+  }
+  
+  .icon:before {
+    text-align: right;
+    vertical-align: text-top;
+    width: 100%;
   }
 }
 
@@ -25,6 +68,8 @@
 }
 
 .block--breaking-news {
+  font-family: $sans-serif;
+  
   .block--title {
     border-bottom: medium none;
     display: inline;
@@ -39,6 +84,59 @@
     font-size: 1rem;
     margin: 0.25em 1.5em;
     margin-left: 0.5em;
+  }
+}
+
+.topbar {
+  .block--breaking-news__single {
+    padding: 0 1em;
+    
+    .block--title {
+      @include clearfix;
+      background-color: $red;
+      color: $white;
+      display: inline-block;
+      float: none;
+      font-family: $sans-serif;
+      font-weight: normal;
+      letter-spacing: 0.05em;
+      position: relative;
+      margin-left: -1em;
+      padding: 0.3em 0.8em;
+      padding-left: 1em;
+      
+      &:before {
+        @include box-sizing(border-box);
+        border-color: transparent;
+        border-left-color: $red;
+        border-style: solid;
+        border-width: 14px 0 14px 10px;
+        content: "";
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 0;
+        height: 100%;
+      }
+    }
+    
+    .block--content {
+      padding: 0.4em 0;
+      
+      div {
+        &:first-child {
+          border-bottom: 1px solid $lightest-grey;
+          margin-bottom: 0.3em;
+          padding-bottom: 0.3em;
+        }
+        
+        &:last-child {
+          a {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
   }
 }
 

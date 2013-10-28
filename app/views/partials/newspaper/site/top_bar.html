@@ -17,52 +17,37 @@
           <li><a href="#/newspaper/about_careers">Careers</a></li>
         </ul>
       </li>
-      <li data-hide="desktop">
-        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon icon-settings"/></a>
+      <li class="user--login" data-hide="desktop">
+        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon theme-icon-user"/></a>
         <ul class="dropdown">
-          <li><a href="">Sign In</a></li>
-          <li><a href="">Subscribe</a></li>
+          <li><button class="button--action" href="">Sign In</button></li>
+          <li><button class="button--action" href="">Subscribe</button></li>
         </ul>
       </li>
-      <li data-hide="desktop">
-        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon icon-weather icon-cloud"/></a>
+      <li class="breaking-news" data-show="mobile">
+        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon theme-icon-news"/></a>
         <ul class="dropdown">
-          <div class="weather">
-            <div class="temp">73<span class="scale">F</span></div>
-            <div class="icon"><i class="icon icon-world"></i></div>
-            <div class="date">
-              <span class="day">Tuesday</span>,&nbsp;
-              <span class="month">July</span>&nbsp;
-              <span class="date">2</span>,&nbsp;
-              <span class="year">2013</span>
-            </div>
-          </div>
+          <li>
+            <partial file="newspaper/components/breaking-news_single--topbar"></partial>
+          </li>
         </ul>
       </li>
     </ul>
   </nav>
   <nav class="user">
     <ul class="menu links inline">
-      <li data-show="desktop"><a href="">Sign In</a></li>
-      <li data-show="desktop"><a href="">Subscribe</a></li>
-      <li data-show="mobile">
-        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon icon-news"/></a>
-        <ul class="dropdown">
-          <li>
-            <partial file="newspaper/components/breaking-news_single"></partial>
-          </li>
-        </ul>
-      </li>
-      <li data-hide="desktop">
-        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon icon-search"/></a>
+      <li data-show="desktop"><a href=""><i class="icon theme-icon-user"/> Sign In</a></li>
+      <li data-show="desktop"><button class="button--action" href="">Subscribe</button></li>
+      <li class="mobile--menu--search" data-hide="desktop">
+        <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon theme-icon-search"/></a>
         <ul class="dropdown">
           <li>
             <partial file="newspaper/site/search"></partial>
           </li>
         </ul>
       </li>
-      <li data-hide="desktop">
-        <a onclick="jQuery('~ #primary-nav #toggle-button', this).trigger('click'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon icon-menu"/></a>
+      <li class="mobile--menu--main-menu" data-hide="desktop">
+        <a onclick="jQuery('~ #primary-nav #toggle-button', this).trigger('click'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon theme-icon-menu"/></a>
         <nav id="primary-nav" role="custom-dropdown">
           <input type="checkbox" id="toggle-button">
           <ul class="menu--main-menu menu links inline">
