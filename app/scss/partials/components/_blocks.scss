@@ -44,11 +44,13 @@ input.form--search__query {
   background-color: $white;
   background-image: none;
   border: medium none;
+  color: $med-grey;
   position: absolute;
   right: 0;
   top: 0;
+  min-width: 40px;
   height: 100%;
-  padding: 7px 7px 6px 0;
+  padding: 7px 0 6px;
   
   &:hover,
   &:focus {
@@ -57,9 +59,11 @@ input.form--search__query {
   }
   
   .icon:before {
-    text-align: right;
+    text-align: center;
     vertical-align: text-top;
     width: 100%;
+    margin-right: 0;
+    text-indent: 0 !important;
   }
 }
 

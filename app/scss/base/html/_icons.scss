@@ -247,6 +247,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Active state for specific icons */
+.active-icon .icon:before {
+  color: $red;
+}
+
 .theme-icon-22cm:before {
   content: "a";
 }
