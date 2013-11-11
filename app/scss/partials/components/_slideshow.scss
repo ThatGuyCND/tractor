@@ -1,7 +1,15 @@
 /* SLIDER STRUCTURE */
+#content-slider {
+  background-color: transparent;
+  background-image: url("../images/slider-shadow.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding-bottom: 57px;
+}
+
 #slider {
-  background: $med-grey;
-  box-shadow: 1px 1px 5px rgba($black, 0.7);
+  background-color: $light-grey;
   width: 100%;
   height: auto;
   max-height: 380px;
@@ -33,7 +41,7 @@
     height: 100%;
     max-height: 380px;
     position: absolute;
-    top: -100%;
+    right: -100%;
     list-style: none;
     
     &.firstanimation {
@@ -105,9 +113,10 @@
 }
 
 #mask {
-   overflow: hidden;
-   height: auto;
-   max-height: 380px; 
+  border: 1px solid darken($hero-grey, 2%);
+  overflow: hidden;
+  height: auto;
+  max-height: 380px; 
 }
 
 /* PROGRESS BAR */
@@ -122,55 +131,55 @@
 
 /* ANIMATION */
 @include keyframes(cycle) {
-  0%  { top: 0%; } /* When you start the slide, the first image is already visible */
-  4%  { top: 0%; } /* Original Position */
-  16% { top: 0%; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
-  20% { top: 100%; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
-  21% { top: -100%; opacity: 0; z-index: -1; } /* Return to Original Position */
-  92% { top: -100%; opacity: 0; z-index: 0; }
-  96% { top: -100%; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
-  100%{ top: 0%; opacity: 1; }
+  0%  { right: 0%; } /* When you start the slide, the first image is already visible */
+  4%  { right: 0%; } /* Original Position */
+  16% { right: 0%; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
+  20% { right: 100%; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
+  21% { right: -100%; opacity: 0; z-index: -1; } /* Return to Original Position */
+  92% { right: -100%; opacity: 0; z-index: 0; }
+  96% { right: -100%; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
+  100%{ right: 0%; opacity: 1; }
 }
 
 @include keyframes(cycletwo) {
-  0%  { top: -100%; opacity: 0; } /* Original Position */
-  16% { top: -100%; opacity: 0; }/* Starts moving after 16% to this position */
-  20% { top: 0%; opacity: 1; }
-  24% { top: 0%; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
-  36% { top: 0%; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
-  40% { top: 100%; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
-  41% { top: -100%; opacity: 0; z-index: -1; }   /* Return to Original Position */
-  100%{ top: -100%; opacity: 0; z-index: -1; }
+  0%  { right: -100%; opacity: 0; } /* Original Position */
+  16% { right: -100%; opacity: 0; }/* Starts moving after 16% to this position */
+  20% { right: 0%; opacity: 1; }
+  24% { right: 0%; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+  36% { right: 0%; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+  40% { right: 100%; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
+  41% { right: -100%; opacity: 0; z-index: -1; }   /* Return to Original Position */
+  100%{ right: -100%; opacity: 0; z-index: -1; }
 }
 
 @include keyframes(cyclethree) {
-  0%  { top: -100%; opacity: 0; }
-  36% { top: -100%; opacity: 0; }
-  40% { top: 0%; opacity: 1; }
-  44% { top: 0%; opacity: 1; } 
-  56% { top: 0%; opacity: 1; } 
-  60% { top: 100%; opacity: 0; z-index: 0; }
-  61% { top: -100%; opacity: 0; z-index: -1; } 
-  100%{ top: -100%; opacity: 0; z-index: -1; }
+  0%  { right: -100%; opacity: 0; }
+  36% { right: -100%; opacity: 0; }
+  40% { right: 0%; opacity: 1; }
+  44% { right: 0%; opacity: 1; } 
+  56% { right: 0%; opacity: 1; } 
+  60% { right: 100%; opacity: 0; z-index: 0; }
+  61% { right: -100%; opacity: 0; z-index: -1; } 
+  100%{ right: -100%; opacity: 0; z-index: -1; }
 }
 
 @include keyframes(cyclefour) {
-  0%  { top: -100%; opacity: 0; }
-  56% { top: -100%; opacity: 0; }
-  60% { top: 0%; opacity: 1; }
-  64% { top: 0%; opacity: 1; }
-  76% { top: 0%; opacity: 1; z-index: 0; }
-  80% { top: 100%; opacity: 0; z-index: 0; }
-  81% { top: -100%; opacity: 0; z-index: -1; }
-  100%{ top: -100%; opacity: 0; z-index: -1; }
+  0%  { right: -100%; opacity: 0; }
+  56% { right: -100%; opacity: 0; }
+  60% { right: 0%; opacity: 1; }
+  64% { right: 0%; opacity: 1; }
+  76% { right: 0%; opacity: 1; z-index: 0; }
+  80% { right: 100%; opacity: 0; z-index: 0; }
+  81% { right: -100%; opacity: 0; z-index: -1; }
+  100%{ right: -100%; opacity: 0; z-index: -1; }
 }
 @include keyframes(cyclefive) {
-  0%  { top: -100%; opacity: 0; }
-  76% { top: -100%; opacity: 0; }
-  80% { top: 0%; opacity: 1; }
-  84% { top: 0%; opacity: 1; }
-  96% { top: 0%; opacity: 1; z-index: 0; }
-  100%{ top: 100%; opacity: 0; z-index: 0; }
+  0%  { right: -100%; opacity: 0; }
+  76% { right: -100%; opacity: 0; }
+  80% { right: 0%; opacity: 1; }
+  84% { right: 0%; opacity: 1; }
+  96% { right: 0%; opacity: 1; z-index: 0; }
+  100%{ right: 100%; opacity: 0; z-index: 0; }
 }
 
 @include keyframes(fullexpand) {

@@ -261,6 +261,14 @@
 .theme-icon-arrow-right:before {
   content: "d";
 }
+.theme-icon-arrow-down:before {
+  @include transform(rotate(90deg));
+  content: "d";
+}
+.theme-icon-arrow-up:before {
+  @include transform(rotate(-90deg));
+  content: "d";
+}
 .theme- icon-arrow-left-round:before {
  content: "c";
 }

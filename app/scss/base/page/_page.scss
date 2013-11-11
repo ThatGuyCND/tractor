@@ -83,6 +83,12 @@
       padding-right: 0;
     }
   }
+  
+  @include respond-to($medium) {
+    .w-highlighted {
+      border-bottom: 5px solid $bright-green;
+    }
+  }
 }
 
 .sidebar-left {

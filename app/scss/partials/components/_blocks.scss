@@ -1,3 +1,20 @@
+/**
+ * Corporate Theme
+ *
+ **/
+.corporate {
+  .block--title {
+    border-bottom-color: $bright-green;
+    border-bottom-width: 2px;
+    color: $title-blue;
+    font-family: "Raleway";
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+
 .block--menu {
   .block--title {
     border-bottom: medium none;

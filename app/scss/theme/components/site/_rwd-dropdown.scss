@@ -73,20 +73,6 @@
 }
 
 #primary-nav {
-  /*
-@include respond-to($medium, max-width) {
-    > ul {
-      > li {
-    		> a {
-      		@include text-shadow(0 -1px 0 rgba($black, 0.3));
-      		color: white;
-      		background: $main-nav-grey;
-    		}
-      }
-    }
-  }
-*/
-
   a {
     &:link,
     &:visited {
@@ -122,5 +108,121 @@
   
   ul {
     @include ul-nostyle;
+  }
+}
+
+.corporate {
+  #primary-nav {
+    background-color: $bright-green;
+    
+    @include respond-to($medium) {
+      background-color: transparent;
+    }
+    
+    a {
+      position: relative;
+      border-bottom: 1px solid $white;
+      
+      &[data-toggle="dropdown"] {
+        &:before {
+          display: none;
+        }
+      }
+      
+      &:link,
+      &:visited {
+        color: $white;
+        display: block;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        text-transform: uppercase;
+        padding: 0.5em 0.75em;
+        
+        @include respond-to($medium) {
+          color: $hero-grey;
+        }
+      }
+    
+      &.active,
+      &.active-trail,
+      &:hover,
+      &:focus {
+        color: $white;
+        background-color: $bright-green;
+      }
+    
+      &.active,
+      &.active-trail {
+        font-weight: bold;
+        
+        + ul {
+          display: block;
+          visibility: visible;
+          z-index: 1;
+          
+          a.active,
+          a.active-trail {
+            background-color: $white;
+            color: $bright-green;
+            font-weight: bold;
+          }
+        }
+      }
+      
+      + ul {
+        background-color: $white;
+        
+        a:link,
+        a:visited {
+          color: $dark-grey;
+          font-family: $sans-serif;
+          font-weight: normal;
+          text-transform: none;
+          margin: 0.5em 0.75em;
+          padding: 0.25em 0.5em 0.15em;
+        }
+        
+        a.active,
+        a.active-trail {
+          background-color: $white;
+          color: $black;
+          font-weight: bold;
+        }
+        
+        li {
+          border-bottom: 1px solid $bright-green;
+          
+          &:last-child {
+            border-bottom: medium none;
+          }
+        }
+      }
+        
+      @include respond-to($medium) {
+        border-bottom: medium none;
+        
+        + ul {
+          background-color: $bright-green;
+          
+          a:link,
+          a:visited {
+            color: $white;
+          }
+        }
+      }
+    }
+    
+    i[class^="theme-icon-"],
+    i[class*="theme-icon-"] {
+      @include transform(scale(2.5));
+      position: absolute;
+      right: 0;
+      vertical-align: text-top;
+      width: 24px;
+      height: 26px;
+      top: 3px;
+      text-align: left;
+    }
   }
 }
