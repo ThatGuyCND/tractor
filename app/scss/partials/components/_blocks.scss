@@ -2,7 +2,7 @@
  * Corporate Theme
  *
  **/
-.corporate {
+.block--corporate {
   .block--title {
     border-bottom-color: $bright-green;
     border-bottom-width: 2px;
@@ -12,6 +12,28 @@
     font-weight: 300;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+  }
+}
+
+.block--callout {
+  background-color: $lightest-grey;
+  padding: 0.625em;
+  
+  .block--title {
+    border-bottom: medium none;
+    color: $dark-grey;
+    font-family: $sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .block--content {
+    color: lighten($med-grey, 10%);
+    
+    > p {
+      margin-top: 0;
+    }
   }
 }
 
@@ -383,5 +405,46 @@ input.form--search__query {
   
   .view--footer {
     border-bottom: 1px solid $black;
+  }
+}
+
+.block--explore-publications {
+  .field--item__select--single {
+    position: relative;
+  	display: block;
+  	
+  	&:after {
+  		@include transform(rotate(90deg) scale(1.5));
+  		background-color: $trueWhite; 
+  		border-bottom: 1px solid $main-nav-grey;
+  		color: $link-blue;
+  		font-family: "Theme Icons";
+  		font-size: 1.85em;
+  		line-height: 32px;
+  		text-indent: -9px;
+  		top: 0;
+  		left: calc(100% - 35px);
+  		content: "d";
+  		padding: 0 0 0 5px;
+  		position: absolute;
+  		width: 14px;
+  		height: 32px;
+  		pointer-events: none;
+  	}
+  }
+  
+  select {
+    @include border-radius(0);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: medium none;
+    color: $hero-grey;
+    font-family: $serif;
+    font-size: 0.8em;
+    font-style: italic;
+    padding: 0.75em;
+    width: 100%;
+    height: auto;
   }
 }
