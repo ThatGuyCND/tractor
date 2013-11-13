@@ -202,6 +202,24 @@
       @include respond-to($medium) {
         border-bottom: medium none;
         
+        &:hover,
+        &.active-trail {
+          + .menu--main-menu_sub {
+            margin-top: 6px !important;
+          }
+          
+          &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 8px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: $bright-green;
+          }
+        }
+        
         + ul {
           background-color: $bright-green;
           

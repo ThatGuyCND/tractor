@@ -1,6 +1,7 @@
 @include border-box-sizing;
 
 html {
+  color: lighten($med-grey, 12%);
   font-family: $copy-font-family;
   font-size: $copy-font-size;
   line-height: $copy-line-height;

@@ -84,8 +84,17 @@
     }
   }
   
-  @include respond-to($medium) {
-    .w-highlighted {
+  .w-highlighted {
+    @include respond-to($medium, max-width) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      z-index: 50;
+    }
+    
+    @include respond-to($medium) {
       border-bottom: 5px solid $bright-green;
       margin-bottom: 56px;
     }

@@ -31,6 +31,46 @@
   }
 }
 
+.block--menu--sidebar {
+  ul {
+    list-style: none outside none;
+  }
+  
+  li {
+    a {
+      &:link,
+      &:visited {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid $middle-grey;
+        padding: 0.5em;
+        position: relative;
+        overflow: hidden;
+        
+        &:after {
+          @include transform(scale(2.5));
+          content: "d";
+          font-family: "Theme Icons";
+          position: absolute;
+          right: 8px;
+          top: 0;
+          padding-top: 0.25em;
+          text-align: center;
+        }
+      }
+      
+      &:hover,
+      &:focus,
+      &:active,
+      &.active,
+      &.active-trail {
+        background-color: $link-blue;
+        color: $white;
+      }
+    }
+  }
+}
+
 .block--webform {
   .webform--footer {
     text-align: right;
