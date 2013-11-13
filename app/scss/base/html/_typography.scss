@@ -28,7 +28,7 @@ $header-font-sizes: $h1-font-size, $h2-font-size, $h3-font-size, $h4-font-size, 
 }
 
 .page--title {
-  font-size: 40px;
+  font-size: 32px;
 }
 .node--title {}
 .block--title {}
@@ -58,4 +58,18 @@ a {
   &:active,
   &.active,
   &.active-trail {}
+}
+
+.corporate {
+  .page--title {
+    border-bottom-color: $bright-green;
+    border-bottom-width: 2px;
+    color: $title-blue;
+    font-family: "Raleway";
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+  }
 }

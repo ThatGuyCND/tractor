@@ -1,18 +1,5 @@
-/**
- * Corporate Theme
- *
- **/
-.block--corporate {
-  .block--title {
-    border-bottom-color: $bright-green;
-    border-bottom-width: 2px;
-    color: $title-blue;
-    font-family: "Raleway";
-    font-size: 32px;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-  }
+.block {
+  margin-bottom: 1em;
 }
 
 .block--callout {
@@ -405,6 +392,23 @@ input.form--search__query {
   
   .view--footer {
     border-bottom: 1px solid $black;
+  }
+}
+
+/**
+ * Corporate Theme
+ *
+ **/
+.block--corporate {
+  .block--title {
+    border-bottom-color: $bright-green;
+    border-bottom-width: 2px;
+    color: $title-blue;
+    font-family: "Raleway";
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
   }
 }
 

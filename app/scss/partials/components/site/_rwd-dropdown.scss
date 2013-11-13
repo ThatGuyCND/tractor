@@ -226,13 +226,6 @@ nav#primary-nav[role="custom-dropdown"] {
     @include transition(color .3s ease-in-out);
     color: $white;
   }
-    
-  ul {
-    padding: 0;
-    margin: 0 auto;
-    width:100%;
-    list-style:none;
-  }
   
   @include respond-to($medium, max-width) {
     > ul {
@@ -273,6 +266,20 @@ nav#primary-nav[role="custom-dropdown"] {
     input#toggle-button[type=checkbox]:checked ~ ul {
       display:block;
     }
+  }
+    
+  @include respond-to($medium) {
+    margin-bottom: 0;
+  }
+}
+
+/* custom-dropdown */
+.newspaper nav#primary-nav[role="custom-dropdown"] {
+  ul {
+    padding: 0;
+    margin: 0 auto;
+    width:100%;
+    list-style:none;
   }
   
   @include respond-to($medium) {
