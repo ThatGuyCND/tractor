@@ -69,11 +69,10 @@
   }
 }
 
-.corporate {
-  .l-content {
-    @include respond-to($medium) {
-      margin-top: 3em;
-    }
+
+.l-content {
+  @include respond-to($medium) {
+    margin-top: 3em;
   }
 }
 

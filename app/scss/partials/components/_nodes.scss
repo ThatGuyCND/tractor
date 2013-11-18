@@ -265,6 +265,7 @@ h4.node--title {
     }
   }
   
+/*
   @include respond-to($medium) {
     .node--content {
       @include span-columns($total-columns - 2);
@@ -279,6 +280,7 @@ h4.node--title {
       border-right: 1px solid $black;
     }
   }
+*/
 }
 
 #node--comments {
