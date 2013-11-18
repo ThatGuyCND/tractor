@@ -34,6 +34,10 @@
 .block--menu--sidebar {
   ul {
     list-style: none outside none;
+    
+    &.links {
+      padding-left: 0;
+    }
   }
   
   li {
