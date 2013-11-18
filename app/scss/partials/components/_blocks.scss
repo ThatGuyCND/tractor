@@ -149,11 +149,24 @@ input.form--search__query {
 }
 
 .block--breaking-news__single {
+  display: block;
+  font-size: 14px;
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+  
   .block--title {
     color: $red;
-    font-size: 1rem;
+    font-size: 14px;
     margin: 0.25em 1.5em;
+    margin-top: 0.125em;
     margin-left: 0.5em;
+    
+    i:last-child {
+      display: inline-block;
+      position: relative;
+      font-weight: bold;
+      top: 0.125em;
+    }
   }
 }
 

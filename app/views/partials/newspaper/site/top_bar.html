@@ -19,9 +19,21 @@
       </li>
       <li class="user--login" data-hide="desktop">
         <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon theme-icon-user"/></a>
-        <ul class="dropdown">
-          <li><button class="button--action" href="">Sign In</button></li>
+        <ul class="user--authenticate dropdown">
+          <li><button class="button--action" href="" onclick="$('ul.user--authenticate, .user--actions, nav.user li.user--login, li.user--subscribe, li.user--welcome').toggleClass('hidden');">Sign In</button></li>
           <li><button class="button--action" href="">Subscribe</button></li>
+        </ul>
+        <ul class="user--actions dropdown hidden">
+          <li class="welcome">
+            <div class="message">You are signed in as</div>
+            <div class="username">Johnnie Knoxville</div>
+            <li class="signout">
+              <button class="button--action" href="" onclick="$('ul.user--authenticate, .user--actions, nav.user li.user--login, li.user--subscribe, li.user--welcome').toggleClass('hidden');">Signout</button>
+            </li>
+            <li class="settings">
+              <a class="user--settings" href=""><i class="icon theme-icon-settings" />Settings</a>
+            </li>
+          </li>
         </ul>
       </li>
       <li class="breaking-news" data-show="mobile">
@@ -36,8 +48,19 @@
   </nav>
   <nav class="user">
     <ul class="menu links inline">
-      <li data-show="desktop"><a href=""><i class="icon theme-icon-user"/> Sign In</a></li>
-      <li data-show="desktop"><button class="button--action" href="">Subscribe</button></li>
+      <li class="user--login" data-show="desktop"><a href="" onclick="$('ul.user--authenticate, .user--actions, nav.user li.user--login, li.user--subscribe, li.user--welcome').toggleClass('hidden');"><i class="icon theme-icon-user"/> Sign In</a></li>
+      <li class="user--subscribe" data-show="desktop"><button class="button--action" href="">Subscribe</button></li>
+      <li class="user--welcome hidden" data-show="desktop">
+        <span class="message">You are signed in as <span class="username">Johnnie Knoxville</span></span>
+        <ul class="user--actions hidden">
+          <li class="signout">
+            <button class="button--action" href="" onclick="$('ul.user--authenticate, .user--actions, nav.user li.user--login, li.user--subscribe, li.user--welcome').toggleClass('hidden');"">Signout</button>
+          </li>
+          <li class="settings">
+            <a class="user--settings" href=""><i class="icon theme-icon-settings" />Settings</a>
+          </li>
+        </ul>
+      </li>
       <li class="mobile--menu--search" data-hide="desktop">
         <a onclick="$('~ ul.dropdown', this).slideToggle('fast'); $(this).parent('li').toggleClass('active open');" href=""><i class="icon theme-icon-search"/></a>
         <ul class="dropdown">

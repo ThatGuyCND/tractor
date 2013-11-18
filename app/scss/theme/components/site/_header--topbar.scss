@@ -17,6 +17,15 @@ nav {
       padding-left: 0;
       padding-top: 0.3em;
       
+      &.menu-item {
+        padding-top: 0;
+        border-bottom: 1px solid $white;
+        
+        &:last-child {
+          border-bottom: medium none;
+        }
+      }
+      
       @include respond-to($medium) {
         border-left: 2px solid $main-nav-grey;
         border-right: 2px solid $main-nav-grey;
@@ -56,6 +65,17 @@ nav {
     }
   }
   
+  &.global  {
+    .user--login {
+      .welcome {
+        display: block;
+      }
+      li {
+        display: inline-block;
+      }
+    }
+  }
+  
   &.user {
     > ul {
       > li {
@@ -64,6 +84,88 @@ nav {
         }
         &:last-child {
           border-right: medium none;
+        }
+      }
+    }
+    
+    .user--welcome {
+      vertical-align: middle;
+      
+      .user--actions {
+        display: inline;
+        visibility: visible;
+        min-width: 0;
+        position: relative;
+        
+        li {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  
+  .welcome {
+    .message {
+      font-size: 20px;
+      line-height: 1;
+    }
+    .username {
+      color: $dark-grey;
+      font-size: 18px;
+    }
+  }
+  
+  .user--welcome {
+    .message {
+      padding: 0.625em;
+      vertical-align: bottom;
+    }
+    
+    .username {
+      vertical-align: bottom;
+    }
+  }
+  
+  .user--actions {
+    padding-left: 0;
+    
+    li {
+      font-size: 16px;
+      vertical-align: middle;
+      
+      button,
+      a {
+        font-size: 12px;
+        line-height: 1;
+        vertical-align: bottom;
+      }
+      
+      button {
+        margin: 0;
+        padding: 0.625em;
+      }
+      
+      a {
+        color: $black;
+        display: block;
+        padding: 0.625em;
+        width: 100%;
+      }
+      
+/*
+      &.signout,
+      &.settings {
+        display: inline-block;
+        text-align: center;
+        width: 50%;
+      }
+*/
+      
+      &.signout {}
+      
+      &.settings {
+        .icon:before {
+          left: -0.5em;
         }
       }
     }

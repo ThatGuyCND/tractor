@@ -1,0 +1,25 @@
+<div ng-controller="BasicSliderCtrl">
+  <flex-slider slide="s in slides" animation="slide" control-nav="thumbnails">
+    <li data-thumb="{{s}}">
+      <img ng-src="{{s}}">
+      <div class="slide--content">
+        <h3 class="node--title" ph-txt words="5"></h3>
+        <div class="published">
+          <span class="date">
+            <span class="time">4:34 p.m. <span class="time-zone">EST</span> </span>
+            <span class="month">July</span>
+            <span class="day">3</span>,&nbsp;
+            <span class="year">2013</span>
+          </span>
+          <span class="author">Thomas Jefferson</span>
+          <span class="tags">
+            <span class="tag"><a href="">News</a></span>
+          </span>
+        </div>
+        <div class="node--body">
+          <p ph-txt words="30"></p>
+        </div>
+      </div>
+    </li>
+  </flex-slider>
+</div>

@@ -1,0 +1,56 @@
+.flexslider-container {}
+.flexslider {
+  @include box-shadow(none);
+  @include border-radius(0);
+  border-color: $lightest-grey;
+  background: $lightest-grey;
+  margin-bottom: 0;
+  
+  @include respond-to($medium) {
+    padding-right: 124px;
+  }
+  
+  ol {
+    @include respond-to($medium, max-width) {
+      display: none;
+    }
+  }
+}
+.flex-viewport {
+  .slides {}
+}
+
+@include respond-to($medium) {
+  .flex-control-thumbs {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    width: 122px;
+    
+    li {
+      display: block;
+      width: 100%;
+      
+      &:last-child {
+        img {
+          margin-bottom: 0;
+        }
+      }
+    }
+    
+    img {
+      @include transition(all 300ms ease);
+      opacity: 1;
+      max-height: 120px;
+      vertical-align: bottom;
+      margin-bottom: 2px;
+    }
+    
+    .flex-active {
+      max-height: 0;
+      opacity: 0;
+      margin-bottom: 0;
+    }
+  }
+}

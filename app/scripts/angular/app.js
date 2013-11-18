@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ngTractor', [])
+angular.module('ngTractor', ['angular-flexslider'])
   .config(function ($locationProvider, $routeProvider) {
     //$locationProvider.html5Mode(true);
     $routeProvider.
