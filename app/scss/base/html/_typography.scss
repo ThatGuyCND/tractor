@@ -41,6 +41,7 @@ $header-font-sizes: $h1-font-size, $h2-font-size, $h3-font-size, $h4-font-size, 
 
 .page--title {
   font-size: 32px;
+  text-transform: capitalize;
 }
 .node--title {}
 .block--title {}
@@ -90,17 +91,21 @@ a {
   }
 }
 
+/*
 .newspaper {
-  a {
-    &:link,
-    &:visited {
-      color: $link-pale-blue;
-    }
-    
-    &:hover,
-    &:focus,
-    &:active {
-      color: $link-blue;
+  .main-content {
+    a {
+      &:link,
+      &:visited {
+        color: $link-pale-blue;
+      }
+      
+      &:hover,
+      &:focus,
+      &:active {
+        color: $link-blue;
+      }
     }
   }
 }
+*/

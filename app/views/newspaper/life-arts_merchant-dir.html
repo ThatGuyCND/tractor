@@ -16,13 +16,20 @@
     <partial file="newspaper/components/merchant-dir"></partial>
   </region>
   <region name="main-content">
-    <h4 class="section--title">Restaurants &amp; Bars</h4>
-    <partial file="newspaper/components/merchant__index"></partial>
-    <partial file="newspaper/components/merchant__index"></partial>
-    <partial file="newspaper/components/merchant__index"></partial>
-    <partial file="newspaper/components/merchant__index"></partial>
-    <partial file="newspaper/components/merchant__index"></partial>
-    <partial file="newspaper/components/merchant__index"></partial>
+    <div class="block block--views block--merchant-directory view--merchant-directory">
+      <h4 class="section--title">Restaurants &amp; Bars</h4>
+      <div class="view--content">
+        <partial file="newspaper/components/merchant__index"></partial>
+        <partial file="newspaper/components/merchant__index"></partial>
+        <partial file="newspaper/components/merchant__index"></partial>
+        <partial file="newspaper/components/merchant__index"></partial>
+        <partial file="newspaper/components/merchant__index"></partial>
+        <partial file="newspaper/components/merchant__index"></partial>
+      </div>
+      <div class="view--footer">
+        <ui file="pager"></ui>
+      </div>
+    </div>
   </region>
   <region name="footer">
     <partial file="newspaper/site/footer"></partial>

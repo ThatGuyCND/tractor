@@ -3084,21 +3084,22 @@ h6 a:link, h6 a:visited, h6 a:hover, h6 a:focus, h6 a:active, h6 a.active, h6 a.
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000342}}
 .page--title {
   font-size: 32px;
+  text-transform: capitalize;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000353}}
 .block--title,
 .sub--title,
 .subheading {
   font-size: 28px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000357}}
 .section--title {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000363}}
 a:link, a:visited {
   -webkit-transition: all 0.2s ease-in;
   -webkit-transition-delay: 0s;
@@ -3109,12 +3110,12 @@ a:link, a:visited {
   font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000371}}
 a:hover, a:focus {
   color: #63adc5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000381}}
 .corporate .page--title {
   border-bottom-color: #5fbb5f;
   border-bottom-width: 2px;
@@ -3127,15 +3128,24 @@ a:hover, a:focus {
   margin-bottom: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000396}}
-.newspaper a:link, .newspaper a:visited {
-  color: #6badc9;
+/*
+.newspaper {
+  .main-content {
+    a {
+      &:link,
+      &:visited {
+        color: $link-pale-blue;
+      }
+      
+      &:hover,
+      &:focus,
+      &:active {
+        color: $link-blue;
+      }
+    }
+  }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\00003102}}
-.newspaper a:hover, .newspaper a:focus, .newspaper a:active {
-  color: #1c75bb;
-}
-
+*/
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\000031}}
 .page {
   float: right;
