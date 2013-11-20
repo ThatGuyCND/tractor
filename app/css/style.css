@@ -2381,6 +2381,12 @@ img {
   height: auto;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_html\.scss}line{font-family:\0000313}}
+html .newspaper {
+  color: #333333;
+  font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
+}
+
 @font-face {
   font-family: 'linecons';
   src: url("../fonts/linecons/linecons.eot");
@@ -2975,7 +2981,12 @@ h6 a:link, h6 a:visited, h6 a:hover, h6 a:focus, h6 a:active, h6 a.active, h6 a.
   font-size: 28px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000351}}
+.section--title {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000357}}
 a:link, a:visited {
   -webkit-transition: all 0.2s ease-in;
   -webkit-transition-delay: 0s;
@@ -2986,12 +2997,12 @@ a:link, a:visited {
   font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000365}}
 a:hover, a:focus {
   color: #63adc5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000375}}
 .corporate .page--title {
   border-bottom-color: #5fbb5f;
   border-bottom-width: 2px;
@@ -3043,9 +3054,10 @@ a:hover, a:focus {
 }
 
 /* .l-page-top, */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000357}}
 .l-header,
 .l-preface,
+.l-title-area,
 .l-main,
 .l-postscript,
 .l-sidebar-first,
@@ -3064,6 +3076,7 @@ a:hover, a:focus {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/\.rbenv\/versions\/1\.9\.3-p194\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
 .l-header:after,
 .l-preface:after,
+.l-title-area:after,
 .l-main:after,
 .l-postscript:after,
 .l-sidebar-first:after,
@@ -3075,7 +3088,7 @@ a:hover, a:focus {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000364}}
 .l-page-top,
 .l-highlighted,
 .l-content {
@@ -3097,7 +3110,7 @@ a:hover, a:focus {
   clear: both;
 }
 @media screen and (max-width: 56.249em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000364}}
   .l-page-top,
   .l-highlighted,
   .l-content {
@@ -3107,13 +3120,20 @@ a:hover, a:focus {
 }
 
 @media screen and (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000374}}
   .l-content {
     margin-top: 3em;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000380}}
+@media screen and (min-width: 56.25em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000382}}
+  .newspaper.sidebar-left .l-sidebar-first {
+    margin-top: 0;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000391}}
 .corporate .l-main {
   *zoom: 1;
   max-width: 64em;
@@ -3130,14 +3150,14 @@ a:hover, a:focus {
   clear: both;
 }
 @media screen and (max-width: 56.249em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000391}}
   .corporate .l-main {
     padding-left: 0;
     padding-right: 0;
   }
 }
 @media screen and (max-width: 56.249em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000399}}
   .corporate .w-highlighted {
     position: fixed;
     top: 0;
@@ -3148,7 +3168,7 @@ a:hover, a:focus {
   }
 }
 @media screen and (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\0000399}}
   .corporate .w-highlighted {
     border-bottom: 5px solid #5fbb5f;
     margin-bottom: 56px;
@@ -3156,11 +3176,11 @@ a:hover, a:focus {
 }
 
 @media screen and (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003116}}
   .sidebar-left {
     /* .l-super, */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003118}}
   .sidebar-left .l-sidebar-first {
     width: 32.29167%;
     float: left;
@@ -3169,7 +3189,7 @@ a:hover, a:focus {
     margin-top: 70px;
     padding-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003126}}
   .sidebar-left .l-main {
     width: 66.14583%;
     float: left;
@@ -3183,18 +3203,18 @@ a:hover, a:focus {
   }
 }
 @media screen and (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003133}}
   .sidebar-left.sidebar-right {
     /* .l-super, */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003135}}
   .sidebar-left.sidebar-right .l-sidebar-first {
     width: 23.82812%;
     float: left;
     margin-right: 1.5625%;
     display: inline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003130}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003141}}
   .sidebar-left.sidebar-right .l-main {
     width: 40.75521%;
     float: left;
@@ -3202,7 +3222,7 @@ a:hover, a:focus {
     display: inline;
     padding-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003146}}
   .sidebar-left.sidebar-right .l-sidebar-second {
     width: 32.29167%;
     float: left;
@@ -3218,7 +3238,7 @@ a:hover, a:focus {
 }
 
 @media screen and (min-width: 56.25em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003156}}
   .sidebar-right {
     /* .l-super, */
     /*
@@ -3228,7 +3248,7 @@ a:hover, a:focus {
         }
     */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003160}}
   .sidebar-right .l-main {
     width: 66.14583%;
     float: left;
@@ -3236,7 +3256,7 @@ a:hover, a:focus {
     display: inline;
     padding-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003154}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003165}}
   .sidebar-right .l-sidebar-second {
     width: 32.29167%;
     float: left;
@@ -3249,6 +3269,12 @@ a:hover, a:focus {
     margin-top: 70px;
     padding-left: 0;
   }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/base\/page\/_page\.scss}line{font-family:\00003184}}
+.merchant-directory .l-content,
+.home .l-content {
+  margin-top: 0;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\000031}}
@@ -3288,13 +3314,29 @@ a:hover, a:focus {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000335}}
 .block--menu--sidebar ul {
   list-style: none outside none;
+  margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000339}}
 .block--menu--sidebar ul.links {
   padding-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000346}}
-.block--menu--sidebar li a:link, .block--menu--sidebar li a:visited {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000343}}
+.block--menu--sidebar ul ul {
+  border-bottom: 1px solid #cccccc;
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000347}}
+.block--menu--sidebar ul ul a {
+  border-bottom: medium none;
+  padding: 0.25em;
+  padding-left: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000352}}
+.block--menu--sidebar ul ul a:after {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000360}}
+.block--menu--sidebar li a {
   display: block;
   width: 100%;
   border-bottom: 1px solid #cccccc;
@@ -3302,8 +3344,8 @@ a:hover, a:focus {
   position: relative;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000354}}
-.block--menu--sidebar li a:link:after, .block--menu--sidebar li a:visited:after {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000368}}
+.block--menu--sidebar li a:after {
   -webkit-transform: scale(2.5);
   -moz-transform: scale(2.5);
   -ms-transform: scale(2.5);
@@ -3317,18 +3359,48 @@ a:hover, a:focus {
   padding-top: 0.25em;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000370}}
-.block--menu--sidebar li a:hover, .block--menu--sidebar li a:focus, .block--menu--sidebar li a:active, .block--menu--sidebar li a.active, .block--menu--sidebar li a.active-trail {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000382}}
+.block--menu--sidebar li a:hover, .block--menu--sidebar li a:focus, .block--menu--sidebar li a:active, .block--menu--sidebar li a.active {
   background-color: #0074b4;
   color: #fcfcfc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000392}}
+.newspaper .block--menu--sidebar ul {
+  background-color: #fcfcfc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000395}}
+.newspaper .block--menu--sidebar ul ul {
+  background-color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003101}}
+.newspaper .block--menu--sidebar li a {
+  font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003103}}
+.newspaper .block--menu--sidebar li a .active-trail {
+  background-color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003107}}
+.newspaper .block--menu--sidebar li a.active-trail {
+  border-bottom: medium none;
+  color: #333333;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003111}}
+.newspaper .block--menu--sidebar li a.active-trail:hover {
+  background-color: transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003118}}
+.newspaper .block--menu--sidebar li:last-child a {
+  border-bottom: medium none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003127}}
 .block--webform .webform--footer {
   text-align: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003133}}
 .highlighted .block--search-form {
   max-width: 33%;
   width: 25%;
@@ -3338,13 +3410,13 @@ a:hover, a:focus {
   z-index: 5;
 }
 @media screen and (min-width: 64em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003133}}
   .highlighted .block--search-form {
     width: 33%;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003149}}
 input.form--search__query {
   border: medium none;
   font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
@@ -3356,7 +3428,7 @@ input.form--search__query {
   padding: 7px 38px 6px 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003160}}
 .form--search__submit {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -3374,12 +3446,12 @@ input.form--search__query {
   height: 100%;
   padding: 7px 0 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003174}}
 .form--search__submit:hover, .form--search__submit:focus {
   background-image: none;
   background-color: #cccccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003179}}
 .form--search__submit .icon:before {
   text-align: center;
   vertical-align: text-top;
@@ -3388,16 +3460,16 @@ input.form--search__query {
   text-indent: 0 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003188}}
 .block--popular-posts {
   border-bottom: 1px solid #1a1a1a;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003192}}
 .block--breaking-news {
   font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003195}}
 .block--breaking-news .block--title {
   border-bottom: medium none;
   display: inline;
@@ -3405,14 +3477,14 @@ input.form--search__query {
   font-size: 1.5rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003203}}
 .block--breaking-news__single {
   display: block;
   font-size: 14px;
   margin-top: 0.5em;
   padding-top: 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003209}}
 .block--breaking-news__single .block--title {
   color: #c32830;
   font-size: 14px;
@@ -3420,7 +3492,7 @@ input.form--search__query {
   margin-top: 0.125em;
   margin-left: 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003216}}
 .block--breaking-news__single .block--title i:last-child {
   display: inline-block;
   position: relative;
@@ -3428,11 +3500,11 @@ input.form--search__query {
   top: 0.125em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003178}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003226}}
 .topbar .block--breaking-news__single {
   padding: 0 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003181}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003229}}
 .topbar .block--breaking-news__single .block--title {
   background-color: #c32830;
   color: #fcfcfc;
@@ -3457,7 +3529,7 @@ input.form--search__query {
 .topbar .block--breaking-news__single .block--title:after {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003195}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003243}}
 .topbar .block--breaking-news__single .block--title:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3473,22 +3545,22 @@ input.form--search__query {
   width: 0;
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003258}}
 .topbar .block--breaking-news__single .block--content {
   padding: 0.4em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003214}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003262}}
 .topbar .block--breaking-news__single .block--content div:first-child {
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 0.3em;
   padding-bottom: 0.3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003221}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003269}}
 .topbar .block--breaking-news__single .block--content div:last-child a {
   font-size: 0.8em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003230}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003278}}
 .block--section-teaser {
   width: 100%;
   float: left;
@@ -3496,7 +3568,7 @@ input.form--search__query {
   display: inline;
 }
 @media screen and (min-width: 37.5em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003230}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003278}}
   .block--section-teaser {
     width: 49.21875%;
     float: left;
@@ -3510,7 +3582,7 @@ input.form--search__query {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003243}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003291}}
 .block--ad .block--content,
 .block--ad p:first-child,
 .block--aotm .block--content,
@@ -3519,14 +3591,14 @@ input.form--search__query {
 .block--aotw p:first-child {
   margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003247}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003295}}
 .block--ad img,
 .block--aotm img,
 .block--aotw img {
   /* @include rwdImage; */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003253}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003301}}
 .block--popular-posts ol {
   counter-reset: item-counter;
   list-style: none outside none;
@@ -3540,7 +3612,7 @@ input.form--search__query {
 .block--popular-posts ol li:nth-child(odd) {
   background-color: #ececec;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003259}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003307}}
 .block--popular-posts ol li:before {
   content: counter(item-counter) ".";
   counter-increment: item-counter;
@@ -3550,27 +3622,27 @@ input.form--search__query {
   top: 0;
   vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003270}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003318}}
 .block--popular-posts li {
   position: relative;
   padding: 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003275}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003323}}
 .block--popular-posts .node--index {
   padding-left: 3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003283}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003331}}
 #poll--reader-poll .form-item {
   clear: both;
   margin-bottom: 0.5em;
   padding-left: 2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003288}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003336}}
 #poll--reader-poll .form-item input {
   margin-left: -1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003292}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003340}}
 #poll--reader-poll .form-item label {
   display: inline-block;
   margin-bottom: 0.5em;
@@ -3579,20 +3651,20 @@ input.form--search__query {
 }
 
 /* Views */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003303}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003351}}
 .block--views__view .view--footer {
   text-align: right;
   padding-right: 1.2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003309}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003357}}
 .block--views__headline {
   background-color: #e6e6e6;
   margin-bottom: 1em;
   padding-bottom: 0.6em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003364}}
 .block--views__breaking-news h2.block--title {
   background-color: #0074b4;
   color: #fcfcfc;
@@ -3607,7 +3679,7 @@ input.form--search__query {
   position: relative;
   z-index: 2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003378}}
 .block--views__breaking-news h2.block--title:before {
   content: " ";
   border-color: transparent transparent transparent #0074b4;
@@ -3618,21 +3690,21 @@ input.form--search__query {
   left: 100%;
   z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003391}}
 .block--views__breaking-news .node--simple:first-child {
   background-color: #dddddd;
   border-top: 1px solid #1a1a1a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003396}}
 .block--views__breaking-news .node--simple:last-child {
   border-bottom: 1px solid #1a1a1a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003401}}
 .block--views__breaking-news .view--footer {
   border-bottom: 1px solid #1a1a1a;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003406}}
 .block--columnist__related-posts {
   width: 100%;
   float: left;
@@ -3640,14 +3712,14 @@ input.form--search__query {
   display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003410}}
 .block--view__movies {
   width: 100%;
   float: left;
   margin-right: 1.5625%;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003412}}
 .block--view__movies .node--movie {
   width: 49.21875%;
   float: left;
@@ -3660,7 +3732,7 @@ input.form--search__query {
   margin-right: 0;
 }
 @media screen and (min-width: 37.5em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003412}}
   .block--view__movies .node--movie {
     width: 23.82812%;
     float: left;
@@ -3672,7 +3744,7 @@ input.form--search__query {
     float: left;
     margin-right: 1.5625%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003420}}
   .block--view__movies .node--movie:last-child {
     float: right;
     margin-right: 0;
@@ -3681,22 +3753,22 @@ input.form--search__query {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003428}}
 .block--news__feed ul.links {
   margin: 0;
   padding-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003432}}
 .block--news__feed .node--simple {
   list-style: none outside none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003435}}
 .block--news__feed .node--simple:last-child {
   border-bottom: 1px solid #1a1a1a;
   margin-bottom: 0.5em;
 }
 @media screen and (min-width: 37.5em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003441}}
   .block--news__feed .node--title {
     width: 74.60938%;
     float: left;
@@ -3707,12 +3779,12 @@ input.form--search__query {
     padding-right: 0.5em;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003402}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003450}}
 .block--news__feed .post-date {
   color: #8c8c8c;
 }
 @media screen and (max-width: 37.499em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003402}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003450}}
   .block--news__feed .post-date {
     display: block;
     text-align: right;
@@ -3721,7 +3793,7 @@ input.form--search__query {
   }
 }
 @media screen and (min-width: 37.5em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003402}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003450}}
   .block--news__feed .post-date {
     width: 23.82812%;
     float: left;
@@ -3736,12 +3808,12 @@ input.form--search__query {
     padding-left: 0.5em;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003420}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003468}}
 .block--news__feed .pager {
   text-align: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003427}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003475}}
 .block--view__movies--now-playing .view--content,
 .block--view__movies--coming-soon .view--content {
   width: 100%;
@@ -3749,7 +3821,7 @@ input.form--search__query {
   margin-right: 1.5625%;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003431}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003479}}
 .block--view__movies--now-playing .node--movie,
 .block--view__movies--coming-soon .node--movie {
   width: 32.29167%;
@@ -3770,16 +3842,16 @@ input.form--search__query {
   margin-right: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003439}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003487}}
 .block--columnist__recent-articles ul.links {
   list-style: none outside none;
   padding-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003445}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003493}}
 .block--columnist__recent-articles .node--simple:last-child {
   border-bottom: 1px solid #1a1a1a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003450}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003498}}
 .block--columnist__recent-articles .view--footer {
   border-bottom: 1px solid #1a1a1a;
 }
@@ -3788,7 +3860,7 @@ input.form--search__query {
  * Corporate Theme
  *
  **/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003460}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003508}}
 .block--corporate .block--title {
   border-bottom-color: #5fbb5f;
   border-bottom-width: 2px;
@@ -3800,12 +3872,12 @@ input.form--search__query {
   text-transform: uppercase;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003473}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003521}}
 .block--explore-publications .field--item__select--single {
   position: relative;
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003477}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003525}}
 .block--explore-publications .field--item__select--single:after {
   -webkit-transform: rotate(90deg) scale(1.5);
   -moz-transform: rotate(90deg) scale(1.5);
@@ -3828,7 +3900,7 @@ input.form--search__query {
   height: 32px;
   pointer-events: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003497}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003545}}
 .block--explore-publications select {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -4584,8 +4656,49 @@ h4.node--title {
   font-weight: bold;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003514}}
+.node--merchant__index {
+  *zoom: 1;
+  max-width: 64em;
+  _width: 64em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #cccccc;
+  padding: 1em 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/\.rbenv\/versions\/1\.9\.3-p194\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.node--merchant__index:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003519}}
+.node--merchant__index .node--image {
+  width: 80px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003523}}
+.node--merchant__index .node--title {
+  font-weight: normal;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003528}}
+.node--merchant__index .node--content {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003532}}
+.node--merchant__index .merchant--address {
+  font-size: 14px;
+  line-height: 1.3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003537}}
+.node--merchant__index:last-child {
+  border-bottom: medium none;
+}
+
 /* Submission Info */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003513}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003543}}
 .node--submitted {
   width: 100%;
   float: left;
@@ -4593,70 +4706,70 @@ h4.node--title {
   display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003518}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003548}}
 .node--submitted__simple > * {
   font-size: 0.9rem;
   font-style: italic;
   font-weight: normal;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003524}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003554}}
 .node--submitted__simple .byline {
   font-size: 1em;
   font-weight: normal;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003529}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003559}}
 .node--submitted__simple .terms ul {
   display: inline-block;
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003535}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003565}}
 .node--submitted__extra {
   margin-top: 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003538}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003568}}
 .node--submitted__extra .user--avatar {
   display: inline-block;
   vertical-align: top;
   float: left;
   margin-right: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003544}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003574}}
 .node--submitted__extra .user--avatar img {
   display: inline-block;
   vertical-align: bottom;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003550}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003580}}
 .node--submitted__extra .user--full-name,
 .node--submitted__extra .date {
   line-height: 1.25rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003553}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003583}}
 .node--submitted__extra .user--full-name {
   font-size: 1.15em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003556}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003586}}
 .node--submitted__extra .date {
   font-size: 0.9em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003560}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003590}}
 .node--submitted__extra .user--links {
   margin: 0;
 }
 @media screen and (min-width: 37.5em) and (max-width: 56.249em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003535}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003565}}
   .node--submitted__extra {
     margin-bottom: 1em;
   }
 }
 
 /* User Profiles */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003571}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003601}}
 .user--profile .page--title {
   border-bottom: medium none;
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003576}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003606}}
 .user--profile .sub--title {
   border-bottom: 3px solid #1a1a1a;
   font-size: 1.2em;
@@ -4665,14 +4778,14 @@ h4.node--title {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003585}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003615}}
 .user--profile__full {
   width: 100%;
   float: left;
   margin-right: 1.5625%;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003602}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003632}}
 .user--profile__full .profile--image {
   width: 100%;
   float: left;
@@ -4680,7 +4793,7 @@ h4.node--title {
   display: inline;
   margin-bottom: 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003606}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003636}}
 .user--profile__full .profile--image img {
   display: inline-block;
   min-width: 100%;
@@ -4689,7 +4802,7 @@ h4.node--title {
   vertical-align: top;
 }
 @media screen and (min-width: 37.5em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003602}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003632}}
   .user--profile__full .profile--image {
     width: 23.82812%;
     float: left;
@@ -4698,19 +4811,19 @@ h4.node--title {
     margin-bottom: 0;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003616}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003646}}
 .user--profile__full .profile--content {
   width: 100%;
   float: left;
   margin-right: 1.5625%;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003619}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003649}}
 .user--profile__full .profile--content p:first-child {
   margin-top: 0;
 }
 @media screen and (min-width: 37.5em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003616}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_nodes\.scss}line{font-family:\00003646}}
   .user--profile__full .profile--content {
     width: 74.60938%;
     float: left;

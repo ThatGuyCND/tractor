@@ -48,6 +48,10 @@ $header-font-sizes: $h1-font-size, $h2-font-size, $h3-font-size, $h4-font-size, 
   font-size: 28px;
 }
 
+.section--title {
+  margin: 0;
+}
+
 a {
   &:link,
   &:visited {

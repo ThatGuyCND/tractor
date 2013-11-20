@@ -509,6 +509,36 @@ h4.node--title {
   }
 }
 
+.node--merchant {}
+
+.node--merchant__index {
+  @include container;
+  border-bottom: 1px solid $middle-grey;
+  padding: 1em 0;
+  
+  .node--image {
+    width: 80px;
+  }
+  
+  .node--title {
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .node--content {
+    display: inline-block;
+  }
+  
+  .merchant--address {
+    font-size: 14px;
+    line-height: 1.3
+  }
+  
+  &:last-child {
+    border-bottom: medium none;
+  }
+}
+
 /* Submission Info */  
 .node--submitted {
   @include span-columns(12);

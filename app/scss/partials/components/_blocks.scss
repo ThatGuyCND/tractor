@@ -34,42 +34,90 @@
 .block--menu--sidebar {
   ul {
     list-style: none outside none;
+    margin-top: 0;
     
     &.links {
       padding-left: 0;
+    }
+    
+    ul {
+      border-bottom: 1px solid $middle-grey;
+      padding-left: 0;
+      
+      a {
+        border-bottom: medium none;
+        padding: 0.25em;
+        padding-left: 1.5em;
+        
+        &:after {
+          display: none;
+        }
+      }
     }
   }
   
   li {
     a {
-      &:link,
-      &:visited {
-        display: block;
-        width: 100%;
-        border-bottom: 1px solid $middle-grey;
-        padding: 0.5em;
-        position: relative;
-        overflow: hidden;
-        
-        &:after {
-          @include transform(scale(2.5));
-          content: "d";
-          font-family: "Theme Icons";
-          position: absolute;
-          right: 8px;
-          top: 0;
-          padding-top: 0.25em;
-          text-align: center;
-        }
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid $middle-grey;
+      padding: 0.5em;
+      position: relative;
+      overflow: hidden;
+      
+      &:after {
+        @include transform(scale(2.5));
+        content: "d";
+        font-family: "Theme Icons";
+        position: absolute;
+        right: 8px;
+        top: 0;
+        padding-top: 0.25em;
+        text-align: center;
       }
       
       &:hover,
       &:focus,
       &:active,
-      &.active,
-      &.active-trail {
+      &.active {
         background-color: $link-blue;
         color: $white;
+      }
+    }
+  }
+}
+
+.newspaper {
+  .block--menu--sidebar {
+    ul {
+      background-color: $white;
+      
+      ul {
+        background-color: $trueWhite;
+      }
+    }
+      
+    li {
+      a {
+        font-family: $serif;
+        .active-trail {
+          background-color: $trueWhite;
+        }
+      
+        &.active-trail {
+          border-bottom: medium none;
+          color: $dark-grey;
+          
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+  
+      &:last-child {
+        a {
+          border-bottom: medium none;
+        }
       }
     }
   }

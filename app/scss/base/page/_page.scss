@@ -45,6 +45,7 @@
 .l-header,
 /* .l-highlighted, */
 .l-preface,
+.l-title-area,
 /* .l-super, */
 .l-main,
 /* .l-content,
@@ -73,6 +74,16 @@
 .l-content {
   @include respond-to($medium) {
     margin-top: 3em;
+  }
+}
+
+.newspaper {
+  &.sidebar-left {
+    .l-sidebar-first {
+      @include respond-to($medium) {
+        margin-top: 0;
+      }
+    }
   }
 }
 
@@ -164,5 +175,13 @@
       top: 0.67em;
     }
 */
+  }
+}
+
+// Specific Pages
+.merchant-directory,
+.home {
+  .l-content {
+    margin-top: 0;
   }
 }
