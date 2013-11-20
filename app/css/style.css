@@ -4088,6 +4088,29 @@ input.form--search__query {
   font-weight: bold;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003589}}
+.block--merchant-dir__terms {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003592}}
+.block--merchant-dir__terms label {
+  display: block;
+  width: 100%;
+}
+@media screen and (min-width: 37.5em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003592}}
+  .block--merchant-dir__terms label {
+    display: inline-block;
+    width: auto;
+  }
+}
+@media screen and (min-width: 37.5em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_blocks\.scss}line{font-family:\00003589}}
+  .block--merchant-dir__terms {
+    text-align: right;
+  }
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/Promet\/22CM\/prototype\/app\/scss\/partials\/components\/_flexslider\.scss}line{font-family:\000032}}
 .flexslider {
   -webkit-box-shadow: none;

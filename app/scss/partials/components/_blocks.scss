@@ -585,3 +585,21 @@ input.form--search__query {
     }
   }
 }
+
+.block--merchant-dir__terms {
+  text-align: center;
+  
+  label {
+    display: block;
+    width: 100%;
+    
+    @include respond-to($small) {
+      display: inline-block;
+      width: auto;
+    }
+  }
+  
+  @include respond-to($small) {
+    text-align: right;
+  }
+}
