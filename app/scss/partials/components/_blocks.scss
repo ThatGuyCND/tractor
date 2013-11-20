@@ -573,3 +573,15 @@ input.form--search__query {
     height: auto;
   }
 }
+
+.block--merchant__more-info {
+  ul {
+    @include respond-to ($small) {
+      @include span-columns ($total-columns / 3);
+      @include nth-omega;
+    }
+    label {
+      font-weight: bold;
+    }
+  }
+}

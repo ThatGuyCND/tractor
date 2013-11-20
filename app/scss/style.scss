@@ -94,6 +94,12 @@ ul {
       }
     }
   }
+  
+  &.no-style {
+    list-style: none outside none;
+    margin-top: 0;
+    padding-left: 0;
+  }
 }
 
 //header bits

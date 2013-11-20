@@ -1,0 +1,75 @@
+<layout file="sidebar__right" class="merchant-directory">
+  <region name="page-top">
+    <partial file="newspaper/site/top_bar"></partial>
+  </region>
+  <region name="header">
+    <partial file="newspaper/site/header"></partial>
+  </region>
+  <region name="highlighted">
+    <partial file="newspaper/site/nav__main"></partial>
+    <partial data-show="desktop" file="newspaper/site/search"></partial>
+  </region>
+  <region name="main-content">
+    <div id="breadcrumbs">
+      <ul class="breadcrumbs links inline">
+        <li class="breadcrumb"><a href="#/newsaper/home">Home</a></li>&nbsp;>&nbsp;
+        <li class="breadcrumb"><a href="#/newspaper/life-arts">Life &amp; Arts</a></li>&nbsp;>&nbsp;
+        <li class="breadcrumb"><a href="#/newspaper/life-arts_merchant-dir">Merchant Directory</a></li>
+      </ul>
+    </div>
+    <article class="node--merchant node--full node--merchant__full">
+      <h1 class="node--title">Johnnie's CharHouse</h1>
+      <div class="node--content">
+        <span class="merchant--image">
+          <img src="" alt="" ph-img="136x136" text="-" />
+        </span>
+        <div class="merchant--address">
+          <div class="street">12345 Restaurant Address</div>
+          <div class="locality">
+            <span class="city">Chicago</span>,&nbsp;
+            <span class="state">IL</span>&nbsp;
+            <span class="zip">60646</span>
+          </div>
+        </div>
+        <div class="merchant--contact">
+          <div class="phone">p. 312.624.8154</div>
+          <div class="fax">f. 312.624.3737</div>
+          <div class="website"><a href="http://johnniescharhouse.com" target="_blank">http://johnniescharhouse.com</a></div>
+          <!-- <div class="social-media">
+            <ul class="social-media-links">
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Zagat</a></li>
+              <li><a href="">Yelp!</a></li>
+              <li><a href="">OpenTable</a></li>
+              <li><a href="">FourSquare</a></li>
+            </ul>
+          </div> -->
+          <div class="share">
+            <button>Share</button>
+          </div>
+        </div>
+        <ul class="hours no-style">
+          <label>Hours:</label>
+          <li>Mon - Thur 5 pm - 11:30 pm</li>
+          <li>Fri - Sat 5 pm - 12:30 am</li>
+          <li>Sun 5 pm - 10:30 pm</li>
+        </ul>
+      </div>
+      <partial file="newspaper/components/merchant-gallery"></partial>
+    </article>
+  </region>
+  <region name="sidebar-second">
+    <partial file="newspaper/components/merchant-map"></partial>
+    <partial file="newspaper/components/merchant-coupons"></partial>
+  </region>
+  <region name="postscript">
+    <partial file="newspaper/components/merchant-more"></partial>
+  </region>
+  <region name="footer">
+    <partial file="newspaper/site/footer"></partial>
+  </region>
+  <region name="footer-sub">
+    <partial file="newspaper/site/copyright"></partial>
+  </region>
+</layout>

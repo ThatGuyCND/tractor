@@ -13,7 +13,8 @@
     <h1 class="page--title">Merchant Directory</h1>
   </region>
   <region name="sidebar-first">
-    <partial file="newspaper/components/merchant-dir"></partial>
+    <partial data-show="desktop" file="newspaper/components/merchant-dir"></partial>
+    <partial data-hide="desktop" file="newspaper/components/merchant-dir_mobile-select"></partial>
   </region>
   <region name="main-content">
     <div class="block block--views block--merchant-directory view--merchant-directory">

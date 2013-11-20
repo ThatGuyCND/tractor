@@ -539,6 +539,76 @@ h4.node--title {
   }
 }
 
+.node--merchant__full {
+  .node--content {
+    line-height: 1.375;
+    
+    @include respond-to($small) {
+      padding-left: 152px;
+      
+      .merchant--image {
+        display: inline-block;
+        float: left;
+        margin-left: -152px;
+      }
+    }
+  }
+  
+  .hours {
+    label {
+      font-weight: bold;
+    }
+  }
+}
+
+.merchant--image {
+  img {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}
+
+.merchant--address,
+.merchant--contact {
+  margin-bottom: 1em;
+}
+
+.merchant--address {}
+.marchant--contact {}
+
+// Image Gallery
+.merchant--gallery {}
+.image-gallery {
+  margin-bottom: 1em;
+  
+  .main {
+    width: 100%;
+    
+    img {
+      @include rwdImage;
+    }
+  }
+  
+  .thumbnail-nav {
+    font-size: 0;
+    text-align: center;
+    max-height: 68px;
+    overflow: hidden;
+    width: 100%;
+    
+    li {
+      margin-right: 11px;
+      margin-bottom: 8px;
+      
+      @include respond-to($medium) {
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
 /* Submission Info */  
 .node--submitted {
   @include span-columns(12);
