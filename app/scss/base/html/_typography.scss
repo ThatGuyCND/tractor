@@ -14,6 +14,11 @@ $header-font-sizes: $h1-font-size, $h2-font-size, $h3-font-size, $h4-font-size, 
     
     a {
       &:link,
+      &:visited {
+        color: $dark-grey;
+      }
+      
+      &:link,
       &:visited,
       &:hover,
       &:focus,
@@ -82,5 +87,20 @@ a {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-bottom: 1.5em;
+  }
+}
+
+.newspaper {
+  a {
+    &:link,
+    &:visited {
+      color: $link-pale-blue;
+    }
+    
+    &:hover,
+    &:focus,
+    &:active {
+      color: $link-blue;
+    }
   }
 }

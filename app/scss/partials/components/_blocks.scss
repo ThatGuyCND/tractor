@@ -52,6 +52,13 @@
         &:after {
           display: none;
         }
+        
+        &.active {
+          &:after {
+            display: inline-block;
+            padding-top: 0.125em;
+          }
+        }
       }
     }
   }
@@ -83,6 +90,10 @@
         background-color: $link-blue;
         color: $white;
       }
+      
+      &.active-trail {
+        background-color: $trueWhite;
+      }
     }
   }
 }
@@ -106,10 +117,15 @@
       
         &.active-trail {
           border-bottom: medium none;
-          color: $dark-grey;
+          /* color: $dark-grey; */
           
           &:hover {
-            background-color: transparent;
+            background-color: $trueWhite;
+          }
+          
+          &:after {
+            @include transform(scale(2.5) rotate(90deg));
+            top: 0.25em;
           }
         }
       }

@@ -89,5 +89,20 @@ $themes: ("FS" $FS-main $FS-secondary) ("LL" $LL-main $LL-secondary) ("MM" $MM-m
         }
 /*       } */
     }
+    
+    .sidebar--menu {
+      a {
+        &.active-trail {
+          color: #{nth($theme, 2)};
+        }
+        
+        &.active,
+        &:active,
+        &:hover,
+        &:focus {
+      		background-color: #{nth($theme, 3)};
+        }
+      }
+    }
   }
 }
